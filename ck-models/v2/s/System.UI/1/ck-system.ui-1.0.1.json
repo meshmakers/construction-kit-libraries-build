@@ -1,0 +1,272 @@
+{
+  "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
+  "dependencies": [
+    "System-2.0.0"
+  ],
+  "types": [
+    {
+      "isCollectionRoot": false,
+      "typeId": "Dashboard-1",
+      "derivedFromCkTypeId": "System.UI-1.0.1/UIElement-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "description": "A configurable dashboard containing multiple widgets arranged in a grid layout.",
+      "attributes": [
+        {
+          "id": "System-2.0.0/Name-1",
+          "name": "Name",
+          "isOptional": false
+        },
+        {
+          "id": "System-2.0.0/Description-1",
+          "name": "Description",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/Dashboard.Columns-1",
+          "name": "Columns",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/Dashboard.RowHeight-1",
+          "name": "RowHeight",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/Dashboard.Gap-1",
+          "name": "Gap",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "DashboardWidget-1",
+      "derivedFromCkTypeId": "System.UI-1.0.1/UIElement-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.0.0/ParentChild-1",
+          "targetCkTypeId": "System.UI-1.0.1/Dashboard-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "description": "A widget within a dashboard that displays data in a specific visualization format.",
+      "attributes": [
+        {
+          "id": "System-2.0.0/Name-1",
+          "name": "Name",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.Type-1",
+          "name": "Type",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.Col-1",
+          "name": "Col",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.Row-1",
+          "name": "Row",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.ColSpan-1",
+          "name": "ColSpan",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.RowSpan-1",
+          "name": "RowSpan",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.DataSourceType-1",
+          "name": "DataSourceType",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.DataSourceCkTypeId-1",
+          "name": "DataSourceCkTypeId",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.DataSourceRtId-1",
+          "name": "DataSourceRtId",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/DashboardWidget.Config-1",
+          "name": "Config",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "Page-1",
+      "derivedFromCkTypeId": "System.UI-1.0.1/UIElement-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "attributes": [
+        {
+          "id": "System.UI-1.0.1/Page.Content-1",
+          "name": "Content",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "StudioRoot-1",
+      "derivedFromCkTypeId": "System.UI-1.0.1/UIElement-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "attributes": [
+        {
+          "id": "System.UI-1.0.1/TargetCkTypeId-1",
+          "name": "TargetCkTypeId",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/TargetRtId-1",
+          "name": "TargetRtId",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "StudioTreeItem-1",
+      "derivedFromCkTypeId": "System.UI-1.0.1/UIElement-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.0.0/ParentChild-1",
+          "targetCkTypeId": "System.UI-1.0.1/StudioTreeItem-1"
+        },
+        {
+          "id": "System-2.0.0/ParentChild-1",
+          "targetCkTypeId": "System.UI-1.0.1/StudioRoot-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "attributes": [
+        {
+          "id": "System.UI-1.0.1/TargetCkTypeId-1",
+          "name": "TargetCkTypeId",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.1/TargetRoleId-1",
+          "name": "TargetRoleId",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "UIElement-1",
+      "derivedFromCkTypeId": "System-2.0.0/Entity-1",
+      "isFinal": false,
+      "isAbstract": true,
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false
+    }
+  ],
+  "associationRoles": [],
+  "attributes": [
+    {
+      "id": "Dashboard.Columns-1",
+      "valueType": "Int",
+      "description": "Number of columns in the dashboard grid layout."
+    },
+    {
+      "id": "Dashboard.Gap-1",
+      "valueType": "Int",
+      "description": "Gap between widgets in pixels."
+    },
+    {
+      "id": "Dashboard.RowHeight-1",
+      "valueType": "Int",
+      "description": "Height of each row in pixels."
+    },
+    {
+      "id": "DashboardWidget.Col-1",
+      "valueType": "Int",
+      "description": "Column position in the grid (1-based)."
+    },
+    {
+      "id": "DashboardWidget.ColSpan-1",
+      "valueType": "Int",
+      "description": "Number of columns the widget spans."
+    },
+    {
+      "id": "DashboardWidget.Config-1",
+      "valueType": "String",
+      "description": "JSON configuration for widget-specific settings."
+    },
+    {
+      "id": "DashboardWidget.DataSourceCkTypeId-1",
+      "valueType": "String",
+      "description": "Construction kit type ID for the data source."
+    },
+    {
+      "id": "DashboardWidget.DataSourceRtId-1",
+      "valueType": "String",
+      "description": "Runtime entity ID for the data source (optional)."
+    },
+    {
+      "id": "DashboardWidget.DataSourceType-1",
+      "valueType": "String",
+      "description": "Type of data source (runtimeEntity, systemQuery, static)."
+    },
+    {
+      "id": "DashboardWidget.Row-1",
+      "valueType": "Int",
+      "description": "Row position in the grid (1-based)."
+    },
+    {
+      "id": "DashboardWidget.RowSpan-1",
+      "valueType": "Int",
+      "description": "Number of rows the widget spans."
+    },
+    {
+      "id": "DashboardWidget.Type-1",
+      "valueType": "String",
+      "description": "Widget type identifier (entityCard, kpi, entityWithAssociations, table)."
+    },
+    {
+      "id": "Page.Content-1",
+      "valueType": "String"
+    },
+    {
+      "id": "TargetCkTypeId-1",
+      "valueType": "String"
+    },
+    {
+      "id": "TargetRoleId-1",
+      "valueType": "String"
+    },
+    {
+      "id": "TargetRtId-1",
+      "valueType": "String"
+    }
+  ],
+  "records": [],
+  "enums": [],
+  "modelId": "System.UI-1.0.1"
+}
