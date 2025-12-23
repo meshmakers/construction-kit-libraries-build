@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "System.UI",
+  "majorVersion": 2,
+  "latestVersion": "2.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "2.0.0",
+      "fileName": "ck-system.ui-2.0.0.json",
+      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.0.0.json",
+      "publishedAt": "2025-12-23T08:06:36.7565232Z"
+    }
+  ],
+  "updatedAt": "2025-12-23T08:06:36.758509Z"
+}
