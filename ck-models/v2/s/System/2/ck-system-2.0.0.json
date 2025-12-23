@@ -10,6 +10,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Query type for performing aggregation operations (Count, Min, Max, Avg, Sum) on entity data without grouping.",
       "attributes": [
         {
           "id": "System-2.0.0/AggregationQueryColumn-1",
@@ -41,6 +42,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Manages auto-incrementing sequences for generating unique identifiers with configurable format and range.",
       "attributes": [
         {
           "id": "System-2.0.0/AutoIncrement.End-1",
@@ -104,7 +106,8 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "isStreamType": false,
+      "description": "Abstract base type for all entities in the system. Provides common indexing and association capabilities."
     },
     {
       "isCollectionRoot": false,
@@ -114,6 +117,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Query type for performing grouped aggregation operations with GROUP BY functionality on entity data.",
       "attributes": [
         {
           "id": "System-2.0.0/Query.GroupByColumns-1",
@@ -143,6 +147,58 @@
       ]
     },
     {
+      "isCollectionRoot": true,
+      "typeId": "Query-1",
+      "derivedFromCkTypeId": "System-2.0.0/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "description": "Legacy query type for backward compatibility. Use SimpleRtQuery, AggregationRtQuery, or GroupingAggregationRtQuery instead.",
+      "attributes": [
+        {
+          "id": "System-2.0.0/Query.CkTypeId-1",
+          "name": "QueryCkTypeId",
+          "isOptional": false
+        },
+        {
+          "id": "System-2.0.0/Query.Types-1",
+          "name": "QueryType",
+          "isOptional": false
+        },
+        {
+          "id": "System-2.0.0/Query.Columns-1",
+          "name": "Columns",
+          "isOptional": false
+        },
+        {
+          "id": "System-2.0.0/Query.Sorting-1",
+          "name": "Sorting",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/Query.FieldFilter-1",
+          "name": "FieldFilter",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/Query.TextSearchFilter-1",
+          "name": "TextSearchFilter",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/Query.AttributeSearchFilter-1",
+          "name": "AttributeSearchFilter",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/Name-1",
+          "name": "Name",
+          "isOptional": false
+        }
+      ]
+    },
+    {
       "isCollectionRoot": false,
       "typeId": "SimpleRtQuery-1",
       "derivedFromCkTypeId": "System-2.0.0/SystemQuery-1",
@@ -150,6 +206,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Query type for retrieving rows/tuples from entities with support for column selection, sorting, and filtering.",
       "attributes": [
         {
           "id": "System-2.0.0/Query.Columns-1",
@@ -186,6 +243,7 @@
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Abstract base type for all query types. Defines common query properties like name, description, and target type.",
       "attributes": [
         {
           "id": "System-2.0.0/Name-1",
@@ -224,6 +282,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Represents a tenant in the multi-tenant system with its unique identifier, parent relationship, and database mapping.",
       "attributes": [
         {
           "id": "System-2.0.0/TenantId-1",
@@ -288,58 +347,70 @@
       "inboundName": "Children",
       "outboundName": "Parent",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "One"
+      "outboundMultiplicity": "One",
+      "description": "Hierarchical parent-child relationship for building tree structures."
     },
     {
       "id": "Related-1",
       "inboundName": "RelatesFrom",
       "outboundName": "RelatesTo",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "N"
+      "outboundMultiplicity": "N",
+      "description": "Generic many-to-many relationship for linking related entities."
     }
   ],
   "attributes": [
     {
       "id": "AggregationQueryColumn-1",
       "valueType": "Record",
-      "valueCkRecordId": "System-2.0.0/AggregationQueryColumn-1"
+      "valueCkRecordId": "System-2.0.0/AggregationQueryColumn-1",
+      "description": "Defines an aggregation column with its attribute path and aggregation type."
     },
     {
       "id": "AggregationType-1",
       "valueType": "Enum",
-      "valueCkEnumId": "System-2.0.0/AggregationTypes-1"
+      "valueCkEnumId": "System-2.0.0/AggregationTypes-1",
+      "description": "Type of aggregation function to apply (Count, Min, Max, Avg, Sum)."
     },
     {
       "id": "AttributePath-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Path to an attribute, supporting nested paths with dot notation."
     },
     {
       "id": "AttributePaths-1",
-      "valueType": "StringArray"
+      "valueType": "StringArray",
+      "description": "Array of attribute paths for multi-attribute operations."
     },
     {
       "id": "AutoIncrement.CurrentValue-1",
-      "valueType": "Int"
+      "valueType": "Int",
+      "description": "The current value of the auto-increment counter."
     },
     {
       "id": "AutoIncrement.End-1",
-      "valueType": "Int"
+      "valueType": "Int",
+      "description": "The upper limit of the auto-increment sequence."
     },
     {
       "id": "AutoIncrement.Format-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Optional format string for generating formatted identifiers (e.g., \u0027INV-{0:D6}\u0027)."
     },
     {
       "id": "ComparisonValue-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "The value to compare against in filter operations."
     },
     {
       "id": "ConfigurationValue-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Stores configuration data such as schema version or identity information."
     },
     {
       "id": "DatabaseName-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Name of the database associated with this tenant."
     },
     {
       "id": "Description-1",
@@ -348,11 +419,13 @@
     },
     {
       "id": "DisplayName-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Human-readable display name shown in user interfaces."
     },
     {
       "id": "Enabled-1",
-      "valueType": "Boolean"
+      "valueType": "Boolean",
+      "description": "Indicates whether the entity is active and operational."
     },
     {
       "id": "EnvironmentMode-1",
@@ -360,12 +433,14 @@
       "valueCkEnumId": "System-2.0.0/EnvironmentModes-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "Defines the operational mode of the tenant (Development, Testing, Staging, Production)."
     },
     {
       "id": "FieldFilter.Operator-1",
       "valueType": "Enum",
-      "valueCkEnumId": "System-2.0.0/FieldFilterOperator-1"
+      "valueCkEnumId": "System-2.0.0/FieldFilterOperator-1",
+      "description": "Comparison operator for field filtering (Equals, Like, GreaterThan, etc.)."
     },
     {
       "id": "MaintenanceLevel-1",
@@ -373,56 +448,77 @@
       "valueCkEnumId": "System-2.0.0/MaintenanceLevels-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "Defines the maintenance state of the tenant (Off, UserApps, FullSystem)."
     },
     {
       "id": "Name-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Unique identifier name for the entity."
     },
     {
       "id": "ParentTenantId-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Identifier of the parent tenant for hierarchical tenant structures."
     },
     {
       "id": "Query.AttributeSearchFilter-1",
       "valueType": "Record",
-      "valueCkRecordId": "System-2.0.0/AttributeSearchFilter-1"
+      "valueCkRecordId": "System-2.0.0/AttributeSearchFilter-1",
+      "description": "Search filter applied to specific attributes only."
     },
     {
       "id": "Query.CkTypeId-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "The Construction Kit type ID that this query targets."
     },
     {
       "id": "Query.Columns-1",
-      "valueType": "StringArray"
+      "valueType": "StringArray",
+      "description": "Array of attribute paths to include in the query result."
     },
     {
       "id": "Query.FieldFilter-1",
       "valueType": "RecordArray",
-      "valueCkRecordId": "System-2.0.0/FieldFilter-1"
+      "valueCkRecordId": "System-2.0.0/FieldFilter-1",
+      "description": "Array of field filters to apply conditions on specific attributes."
     },
     {
       "id": "Query.GroupByColumns-1",
-      "valueType": "StringArray"
+      "valueType": "StringArray",
+      "description": "Array of attribute paths to group results by in aggregation queries."
     },
     {
       "id": "Query.Sorting-1",
       "valueType": "RecordArray",
-      "valueCkRecordId": "System-2.0.0/SortOrderItem-1"
+      "valueCkRecordId": "System-2.0.0/SortOrderItem-1",
+      "description": "Array of sort specifications defining the order of query results."
     },
     {
       "id": "Query.TextSearchFilter-1",
       "valueType": "Record",
-      "valueCkRecordId": "System-2.0.0/TextSearchFilter-1"
+      "valueCkRecordId": "System-2.0.0/TextSearchFilter-1",
+      "description": "Full-text search filter applied across searchable fields."
+    },
+    {
+      "id": "Query.Types-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "System-2.0.0/QueryTypes-1",
+      "defaultValues": [
+        "0"
+      ],
+      "description": "Legacy query type selector. Deprecated - use specific query types instead."
     },
     {
       "id": "SortOrder-1",
       "valueType": "Enum",
-      "valueCkEnumId": "System-2.0.0/SortOrders-1"
+      "valueCkEnumId": "System-2.0.0/SortOrders-1",
+      "description": "Sort direction for ordering results (Ascending, Descending, Default)."
     },
     {
       "id": "TenantId-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Unique identifier for the tenant in the multi-tenant system."
     }
   ],
   "records": [
@@ -430,6 +526,7 @@
       "recordId": "AggregationQueryColumn-1",
       "isFinal": false,
       "isAbstract": false,
+      "description": "Defines an aggregation column specifying which attribute to aggregate and how.",
       "attributes": [
         {
           "id": "System-2.0.0/AttributePath-1",
@@ -447,6 +544,7 @@
       "recordId": "AttributeSearchFilter-1",
       "isFinal": false,
       "isAbstract": false,
+      "description": "Defines a search filter that searches only within specified attributes.",
       "attributes": [
         {
           "id": "System-2.0.0/AttributePaths-1",
@@ -464,6 +562,7 @@
       "recordId": "FieldFilter-1",
       "isFinal": false,
       "isAbstract": false,
+      "description": "Defines a filter condition for a specific attribute with an operator and comparison value.",
       "attributes": [
         {
           "id": "System-2.0.0/AttributePath-1",
@@ -486,6 +585,7 @@
       "recordId": "SortOrderItem-1",
       "isFinal": false,
       "isAbstract": false,
+      "description": "Specifies the sorting configuration for a single attribute in query results.",
       "attributes": [
         {
           "id": "System-2.0.0/AttributePath-1",
@@ -503,6 +603,7 @@
       "recordId": "TextSearchFilter-1",
       "isFinal": false,
       "isAbstract": false,
+      "description": "Defines a full-text search filter that searches across all searchable fields.",
       "attributes": [
         {
           "id": "System-2.0.0/ComparisonValue-1",
@@ -696,6 +797,26 @@
       "description": "This enum defines the maintenance level of a tenant."
     },
     {
+      "enumId": "QueryTypes-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Flat",
+          "description": "A flat query",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Tree",
+          "description": "A tree query that returns results from a tree",
+          "isExtension": false
+        }
+      ],
+      "description": "The type of query"
+    },
+    {
       "enumId": "SortOrders-1",
       "useFlags": false,
       "isExtensible": false,
@@ -723,5 +844,5 @@
     }
   ],
   "modelId": "System-2.0.0",
-  "description": "System model library"
+  "description": "Core system model library providing foundational types for entity management, multi-tenant configuration, auto-increment sequences, and a comprehensive query system with support for filtering, sorting, aggregations, and text search."
 }
