@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "System.Reporting",
+  "majorVersion": 2,
+  "latestVersion": "2.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "2.0.0",
+      "fileName": "ck-system.reporting-2.0.0.json",
+      "filePath": "ck-models/v2/s/System.Reporting/2/ck-system.reporting-2.0.0.json",
+      "publishedAt": "2025-12-23T13:05:53.6610222Z"
+    }
+  ],
+  "updatedAt": "2025-12-23T13:05:53.6650418Z"
+}
