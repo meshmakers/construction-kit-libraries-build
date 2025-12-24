@@ -5,7 +5,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "AggregationRtQuery-1",
-      "derivedFromCkTypeId": "System-2.0.0/SystemQuery-1",
+      "derivedFromCkTypeId": "System-2.0.0/PersistentQuery-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -112,7 +112,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "GroupingAggregationRtQuery-1",
-      "derivedFromCkTypeId": "System-2.0.0/SystemQuery-1",
+      "derivedFromCkTypeId": "System-2.0.0/PersistentQuery-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -143,6 +143,33 @@
           "id": "System-2.0.0/Query.AttributeSearchFilter-1",
           "name": "AttributeSearchFilter",
           "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "PersistentQuery-1",
+      "derivedFromCkTypeId": "System-2.0.0/Entity-1",
+      "isFinal": false,
+      "isAbstract": true,
+      "enableChangeStreamPreAndPostImages": false,
+      "isStreamType": false,
+      "description": "Abstract base type for all query types. Defines common query properties like name, description, and target type.",
+      "attributes": [
+        {
+          "id": "System-2.0.0/Name-1",
+          "name": "Name",
+          "isOptional": false
+        },
+        {
+          "id": "System-2.0.0/Description-1",
+          "name": "Description",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/Query.CkTypeId-1",
+          "name": "QueryCkTypeId",
+          "isOptional": false
         }
       ]
     },
@@ -201,7 +228,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "SimpleRtQuery-1",
-      "derivedFromCkTypeId": "System-2.0.0/SystemQuery-1",
+      "derivedFromCkTypeId": "System-2.0.0/PersistentQuery-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -232,33 +259,6 @@
           "id": "System-2.0.0/Query.AttributeSearchFilter-1",
           "name": "AttributeSearchFilter",
           "isOptional": true
-        }
-      ]
-    },
-    {
-      "isCollectionRoot": true,
-      "typeId": "SystemQuery-1",
-      "derivedFromCkTypeId": "System-2.0.0/Entity-1",
-      "isFinal": false,
-      "isAbstract": true,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
-      "description": "Abstract base type for all query types. Defines common query properties like name, description, and target type.",
-      "attributes": [
-        {
-          "id": "System-2.0.0/Name-1",
-          "name": "Name",
-          "isOptional": false
-        },
-        {
-          "id": "System-2.0.0/Description-1",
-          "name": "Description",
-          "isOptional": true
-        },
-        {
-          "id": "System-2.0.0/Query.CkTypeId-1",
-          "name": "QueryCkTypeId",
-          "isOptional": false
         }
       ]
     },
