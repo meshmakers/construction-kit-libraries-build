@@ -95,12 +95,12 @@
         {
           "id": "System.UI-2.0.0/DashboardWidget.DataSourceCkTypeId-1",
           "name": "DataSourceCkTypeId",
-          "isOptional": false
+          "isOptional": true
         },
         {
           "id": "System.UI-2.0.0/DashboardWidget.DataSourceRtId-1",
           "name": "DataSourceRtId",
-          "isOptional": false
+          "isOptional": true
         },
         {
           "id": "System.UI-2.0.0/DashboardWidget.Config-1",
