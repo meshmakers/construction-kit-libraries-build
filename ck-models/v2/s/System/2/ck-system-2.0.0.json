@@ -13,7 +13,7 @@
       "description": "Query type for performing aggregation operations (Count, Min, Max, Avg, Sum) on entity data without grouping.",
       "attributes": [
         {
-          "id": "System-2.0.0/AggregationQueryColumn-1",
+          "id": "System-2.0.0/AggregationQueryColumns-1",
           "name": "Columns",
           "isOptional": false
         },
@@ -125,7 +125,7 @@
           "isOptional": false
         },
         {
-          "id": "System-2.0.0/AggregationQueryColumn-1",
+          "id": "System-2.0.0/AggregationQueryColumns-1",
           "name": "Columns",
           "isOptional": false
         },
@@ -365,6 +365,12 @@
       "valueType": "Record",
       "valueCkRecordId": "System-2.0.0/AggregationQueryColumn-1",
       "description": "Defines an aggregation column with its attribute path and aggregation type."
+    },
+    {
+      "id": "AggregationQueryColumns-1",
+      "valueType": "RecordArray",
+      "valueCkRecordId": "System-2.0.0/AggregationQueryColumn-1",
+      "description": "Defines a set of aggregation columns for the query, with its attribute path and aggregation type."
     },
     {
       "id": "AggregationType-1",
