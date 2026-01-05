@@ -97,6 +97,16 @@
               ]
             }
           ]
+        },
+        {
+          "indexType": "Ascending",
+          "fields": [
+            {
+              "attributePaths": [
+                "RtBlueprintSource"
+              ]
+            }
+          ]
         }
       ],
       "associations": [
@@ -107,7 +117,24 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
-      "description": "Abstract base type for all entities in the system. Provides common indexing and association capabilities."
+      "description": "Abstract base type for all entities in the system. Provides common indexing and association capabilities.",
+      "attributes": [
+        {
+          "id": "System-2.0.0/RtBlueprintSource-1",
+          "name": "RtBlueprintSource",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/RtBlueprintLocked-1",
+          "name": "RtBlueprintLocked",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.0/RtBlueprintAppliedAt-1",
+          "name": "RtBlueprintAppliedAt",
+          "isOptional": true
+        }
+      ]
     },
     {
       "isCollectionRoot": false,
@@ -514,6 +541,21 @@
         "0"
       ],
       "description": "Legacy query type selector. Deprecated - use specific query types instead."
+    },
+    {
+      "id": "RtBlueprintAppliedAt-1",
+      "valueType": "DateTime",
+      "description": "Timestamp when the blueprint was applied to create or update this entity."
+    },
+    {
+      "id": "RtBlueprintLocked-1",
+      "valueType": "Boolean",
+      "description": "If true, the entity is managed by the blueprint and will be updated when the blueprint is updated. If false, user modifications are preserved."
+    },
+    {
+      "id": "RtBlueprintSource-1",
+      "valueType": "String",
+      "description": "Identifies the blueprint that created this entity (format: \u0027BlueprintName-Version\u0027). Null if entity was created manually."
     },
     {
       "id": "SortOrder-1",
