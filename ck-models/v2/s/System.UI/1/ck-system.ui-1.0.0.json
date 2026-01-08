@@ -124,7 +124,7 @@
       "id": "Theme.Colors-1",
       "valueType": "Record",
       "valueCkRecordId": "System.UI-1.0.0/Theme.Colors-1",
-      "description": "Theme for application"
+      "description": "Theme color configuration for an application"
     }
   ],
   "records": [
