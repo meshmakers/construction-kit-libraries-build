@@ -85,8 +85,23 @@
   "associationRoles": [],
   "attributes": [
     {
+      "id": "NeutralColor-1",
+      "valueType": "String",
+      "description": "The neutral color of the theme"
+    },
+    {
       "id": "Page.Content-1",
       "valueType": "String"
+    },
+    {
+      "id": "PrimaryColor-1",
+      "valueType": "String",
+      "description": "The primary color of the theme"
+    },
+    {
+      "id": "SecondaryColor-1",
+      "valueType": "String",
+      "description": "The secondary color of the theme"
     },
     {
       "id": "TargetCkTypeId-1",
@@ -99,9 +114,49 @@
     {
       "id": "TargetRtId-1",
       "valueType": "String"
+    },
+    {
+      "id": "TertiaryColor-1",
+      "valueType": "String",
+      "description": "The tertiary color of the theme"
+    },
+    {
+      "id": "Theme.Colors-1",
+      "valueType": "Record",
+      "valueCkRecordId": "System.UI-1.0.0/Theme.Colors-1",
+      "description": "Theme for application"
     }
   ],
-  "records": [],
+  "records": [
+    {
+      "recordId": "Theme.Colors-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "description": "Theme information for an app",
+      "attributes": [
+        {
+          "id": "System.UI-1.0.0/PrimaryColor-1",
+          "name": "PrimaryColor",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.0/SecondaryColor-1",
+          "name": "SecondaryColor",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.0/TertiaryColor-1",
+          "name": "TertiaryColor",
+          "isOptional": false
+        },
+        {
+          "id": "System.UI-1.0.0/NeutralColor-1",
+          "name": "NeutralColor",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
   "enums": [],
   "modelId": "System.UI-1.0.0"
 }
