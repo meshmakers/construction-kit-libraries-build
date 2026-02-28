@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Identity",
   "majorVersion": 2,
-  "latestVersion": "2.0.2",
+  "latestVersion": "2.1.0",
   "description": null,
   "versions": [
     {
@@ -16,7 +16,13 @@
       "fileName": "ck-system.identity-2.0.2.json",
       "filePath": "ck-models/v2/s/System.Identity/2/ck-system.identity-2.0.2.json",
       "publishedAt": "2026-02-03T10:00:17.8431999Z"
+    },
+    {
+      "version": "2.1.0",
+      "fileName": "ck-system.identity-2.1.0.json",
+      "filePath": "ck-models/v2/s/System.Identity/2/ck-system.identity-2.1.0.json",
+      "publishedAt": "2026-02-28T13:50:46.9220464Z"
     }
   ],
-  "updatedAt": "2026-02-03T10:00:17.845919Z"
+  "updatedAt": "2026-02-28T13:50:46.9260753Z"
 }
