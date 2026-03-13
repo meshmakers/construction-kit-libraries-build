@@ -492,7 +492,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
-      "description": "Persistent query that retrieves time-series stream data from CrateDB for a given CK type with optional RtId scope, time filtering, and field filters.",
+      "description": "Persistent query that retrieves time-series stream data from CrateDB for a given CK type with optional RtIds scope, time filtering, and field filters.",
       "attributes": [
         {
           "id": "System-2.0.5/StreamDataQuery.Columns-1",
@@ -887,7 +887,7 @@
     {
       "id": "StreamDataQuery.From-1",
       "valueType": "DateTime",
-      "description": "Default start of the time window for the stream data query."
+      "description": "Start of the time window for the stream data query. Can be overridden at execution time."
     },
     {
       "id": "StreamDataQuery.Limit-1",
@@ -902,7 +902,7 @@
     {
       "id": "StreamDataQuery.To-1",
       "valueType": "DateTime",
-      "description": "Default end of the time window for the stream data query."
+      "description": "End of the time window for the stream data query. Can be overridden at execution time."
     },
     {
       "id": "TenantId-1",
