@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Basic.Accounting",
+  "majorVersions": [
+    {
+      "majorVersion": 1,
+      "catalogPath": "ck-models/v2/b/Basic.Accounting/1/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-04T14:30:33.1607622Z"
+}
