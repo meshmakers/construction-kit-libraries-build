@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Basic",
+  "majorVersions": [
+    {
+      "majorVersion": 2,
+      "catalogPath": "ck-models/v2/b/Basic/2/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-04T14:30:01.2586158Z"
+}
