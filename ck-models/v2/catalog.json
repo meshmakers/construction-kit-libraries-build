@@ -1,7 +1,11 @@
 {
   "version": "1.0",
-  "updatedAt": "2025-11-11T10:29:48.369412Z",
+  "updatedAt": "2026-04-04T14:30:02.2464275Z",
   "models": [
+    {
+      "modelName": "Basic",
+      "catalogPath": "ck-models/v2/b/Basic/catalog.json"
+    },
     {
       "modelName": "System",
       "catalogPath": "ck-models/v2/s/System/catalog.json"
