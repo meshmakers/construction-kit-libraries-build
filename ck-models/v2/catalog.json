@@ -1,10 +1,14 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-04T14:30:02.2464275Z",
+  "updatedAt": "2026-04-04T14:30:34.1583395Z",
   "models": [
     {
       "modelName": "Basic",
       "catalogPath": "ck-models/v2/b/Basic/catalog.json"
+    },
+    {
+      "modelName": "Basic.Accounting",
+      "catalogPath": "ck-models/v2/b/Basic.Accounting/catalog.json"
     },
     {
       "modelName": "System",
