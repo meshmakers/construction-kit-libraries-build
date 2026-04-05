@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "OctoSdkDemo",
+  "majorVersion": 1,
+  "latestVersion": "1.0.1",
+  "description": null,
+  "versions": [
+    {
+      "version": "1.0.1",
+      "fileName": "ck-octosdkdemo-1.0.1.json",
+      "filePath": "ck-models/v2/o/OctoSdkDemo/1/ck-octosdkdemo-1.0.1.json",
+      "publishedAt": "2026-04-05T07:46:31.1932629Z"
+    }
+  ],
+  "updatedAt": "2026-04-05T07:46:31.1950378Z"
+}
