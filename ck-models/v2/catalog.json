@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-06T19:24:36.0930048Z",
+  "updatedAt": "2026-04-06T19:24:39.8911238Z",
   "models": [
     {
       "modelName": "Basic",
@@ -9,6 +9,10 @@
     {
       "modelName": "Basic.Accounting",
       "catalogPath": "ck-models/v2/b/Basic.Accounting/catalog.json"
+    },
+    {
+      "modelName": "Basic.Energy",
+      "catalogPath": "ck-models/v2/b/Basic.Energy/catalog.json"
     },
     {
       "modelName": "Industry.Basic",
