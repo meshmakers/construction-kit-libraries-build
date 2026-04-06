@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "Industry.Maintenance",
+  "majorVersion": 2,
+  "latestVersion": "2.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "2.0.0",
+      "fileName": "ck-industry.maintenance-2.0.0.json",
+      "filePath": "ck-models/v2/i/Industry.Maintenance/2/ck-industry.maintenance-2.0.0.json",
+      "publishedAt": "2026-04-06T19:26:54.2134466Z"
+    }
+  ],
+  "updatedAt": "2026-04-06T19:26:54.2278155Z"
+}
