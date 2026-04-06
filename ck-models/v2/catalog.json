@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-06T19:24:45.5751217Z",
+  "updatedAt": "2026-04-06T19:26:43.2137612Z",
   "models": [
     {
       "modelName": "Basic",
@@ -21,6 +21,10 @@
     {
       "modelName": "Industry.Basic",
       "catalogPath": "ck-models/v2/i/Industry.Basic/catalog.json"
+    },
+    {
+      "modelName": "Industry.Fluid",
+      "catalogPath": "ck-models/v2/i/Industry.Fluid/catalog.json"
     },
     {
       "modelName": "Industry.Manufacturing",
