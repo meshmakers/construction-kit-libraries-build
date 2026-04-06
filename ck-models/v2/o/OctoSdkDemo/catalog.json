@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "OctoSdkDemo",
+  "majorVersions": [
+    {
+      "majorVersion": 2,
+      "catalogPath": "ck-models/v2/o/OctoSdkDemo/2/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-06T19:24:33.870056Z"
+}
