@@ -7,12 +7,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "PartialFeedback-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Industry.Manufacturing-2.0.0/ShiftOrderItem-1"
         },
         {
@@ -59,7 +59,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "ProductionOrder-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -91,12 +91,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "ProductionOrderItem-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Industry.Manufacturing-2.0.0/ProductionOrder-1"
         },
         {
@@ -143,7 +143,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "Shift-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -165,12 +165,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "ShiftMachine-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Industry.Manufacturing-2.0.0/Shift-1"
         },
         {
@@ -196,12 +196,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "ShiftOrderItem-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Industry.Manufacturing-2.0.0/Shift-1"
         },
         {
