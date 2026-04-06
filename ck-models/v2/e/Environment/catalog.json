@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Environment",
+  "majorVersions": [
+    {
+      "majorVersion": 3,
+      "catalogPath": "ck-models/v2/e/Environment/3/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-06T19:26:48.6102165Z"
+}
