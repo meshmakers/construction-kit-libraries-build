@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "EnergyCommunity",
+  "majorVersions": [
+    {
+      "majorVersion": 3,
+      "catalogPath": "ck-models/v2/e/EnergyCommunity/3/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-06T19:24:41.7337848Z"
+}
