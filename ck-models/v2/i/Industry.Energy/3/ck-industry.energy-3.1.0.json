@@ -12,7 +12,7 @@
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
@@ -87,7 +87,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "EnergyCost-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "indexes": [
@@ -116,7 +116,7 @@
       ],
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
@@ -149,7 +149,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "EnergyForecast-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "indexes": [
@@ -166,7 +166,7 @@
       ],
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
@@ -282,7 +282,7 @@
       ],
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
