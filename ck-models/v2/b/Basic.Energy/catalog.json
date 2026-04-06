@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Basic.Energy",
+  "majorVersions": [
+    {
+      "majorVersion": 1,
+      "catalogPath": "ck-models/v2/b/Basic.Energy/1/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-06T19:24:37.5861659Z"
+}
