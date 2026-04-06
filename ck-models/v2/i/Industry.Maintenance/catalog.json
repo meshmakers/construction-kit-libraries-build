@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Industry.Maintenance",
+  "majorVersions": [
+    {
+      "majorVersion": 2,
+      "catalogPath": "ck-models/v2/i/Industry.Maintenance/2/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-04-06T19:26:57.4244831Z"
+}
