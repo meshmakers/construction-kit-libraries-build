@@ -1,18 +1,18 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "System-2.0.7"
+    "System-2.0.8"
   ],
   "types": [
     {
       "isCollectionRoot": true,
       "typeId": "Message-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "System.Ai-2.0.0/NodeContext-1"
         }
       ],
@@ -40,12 +40,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Node-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "System.Ai-2.0.0/Workspace-1"
         },
         {
@@ -58,7 +58,7 @@
       "description": "Represents a conversation node with navigation, interaction type, and optional metadata",
       "attributes": [
         {
-          "id": "System-2.0.7/Name-1",
+          "id": "System-2.0.8/Name-1",
           "name": "Name",
           "isOptional": false
         },
@@ -82,12 +82,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "NodeContext-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.7/ParentChild-1",
+          "id": "System-2.0.8/ParentChild-1",
           "targetCkTypeId": "System.Ai-2.0.0/Node-1"
         }
       ],
@@ -105,7 +105,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "Workspace-1",
-      "derivedFromCkTypeId": "System-2.0.7/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.8/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -113,7 +113,7 @@
       "description": "Represents a conversation workspace containing multiple interconnected nodes",
       "attributes": [
         {
-          "id": "System-2.0.7/Name-1",
+          "id": "System-2.0.8/Name-1",
           "name": "Name",
           "isOptional": false
         },
