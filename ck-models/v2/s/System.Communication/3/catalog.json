@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Communication",
   "majorVersion": 3,
-  "latestVersion": "3.3.0",
+  "latestVersion": "3.5.0",
   "description": null,
   "versions": [
     {
@@ -28,7 +28,13 @@
       "fileName": "ck-system.communication-3.3.0.json",
       "filePath": "ck-models/v2/s/System.Communication/3/ck-system.communication-3.3.0.json",
       "publishedAt": "2026-04-14T13:06:26.0472245Z"
+    },
+    {
+      "version": "3.5.0",
+      "fileName": "ck-system.communication-3.5.0.json",
+      "filePath": "ck-models/v2/s/System.Communication/3/ck-system.communication-3.5.0.json",
+      "publishedAt": "2026-04-14T16:20:51.4706276Z"
     }
   ],
-  "updatedAt": "2026-04-14T13:06:26.0539932Z"
+  "updatedAt": "2026-04-14T16:20:51.4742589Z"
 }
