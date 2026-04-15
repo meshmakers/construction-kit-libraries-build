@@ -308,8 +308,8 @@
       "id": "MachineOrderAssignment-1",
       "inboundName": "OrderItems",
       "outboundName": "Machine",
-      "inboundMultiplicity": "One",
-      "outboundMultiplicity": "N",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "One",
       "description": "Defined on ProductionOrderItem \u2192 Machine. Creates: ProductionOrderItem.Machine (the assigned machine) and Machine.OrderItems (all order items assigned to this machine)"
     },
     {
