@@ -450,6 +450,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "An external client that connects via SignalR to execute data pipelines. Adapters manage pools and receive pipeline configurations from the Communication Controller.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/CommunicationStateTimestamp-1",
@@ -496,6 +497,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "A logical grouping of pipelines and triggers that belong together. DataFlows organize the data integration logic within a tenant.",
       "attributes": [
         {
           "id": "System-2.0.9/Name-1",
@@ -564,6 +566,7 @@
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Abstract base type for entities that can be deployed to adapters or pools. Tracks deployment state, name, description, and status messages.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/DeploymentState-1",
@@ -637,6 +640,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "SMTP email sender configuration for outgoing email delivery.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/Host-1",
@@ -978,6 +982,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "A data processing pipeline that defines a sequence of processing nodes. Pipelines are deployed to adapters for execution and can be organized within data flows.",
       "attributes": [
         {
           "id": "System-2.0.9/Enabled-1",
@@ -1036,6 +1041,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Records an individual pipeline execution with its status, timing, trigger type, and optional input/output data. Linked to the executed pipeline and the adapter that performed the execution.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/ExecutionId-1",
@@ -1098,6 +1104,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Aggregated execution statistics for a pipeline across multiple time windows (1h, 12h, 24h, 30d). Tracks success/failure counts and average duration per period.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/LastHourSuccessCount-1",
@@ -1189,6 +1196,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "A scheduled trigger that executes one or more pipelines based on a cron expression. Organized within data flows alongside the pipelines they trigger.",
       "attributes": [
         {
           "id": "System-2.0.9/Enabled-1",
@@ -1210,6 +1218,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "A group of managed devices or entities. Pool operators register via SignalR to handle device communication within the pool.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/CommunicationStateTimestamp-1",
@@ -1340,6 +1349,7 @@
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "Configuration for connecting to an SFTP server. Supports password and private key authentication.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/Host-1",
@@ -1392,6 +1402,7 @@
       ],
       "enableChangeStreamPreAndPostImages": false,
       "isStreamType": false,
+      "description": "A label that can be associated with any entity for categorization and filtering purposes.",
       "attributes": [
         {
           "id": "System.Communication-3.12.0/Tag-1",
@@ -1412,28 +1423,32 @@
       "inboundName": "ExecutedPipeline",
       "outboundName": "PipelineExecutions",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "One"
+      "outboundMultiplicity": "One",
+      "description": "Links a pipeline execution record to the pipeline that was executed."
     },
     {
       "id": "Executes-1",
       "inboundName": "Executes",
       "outboundName": "ExecutedBy",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "One"
+      "outboundMultiplicity": "One",
+      "description": "Links a pipeline to the adapter that executes it. Each pipeline is executed by exactly one adapter."
     },
     {
       "id": "ExecutingAdapter-1",
       "inboundName": "ExecutingAdapter",
       "outboundName": "AdapterExecutions",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "One"
+      "outboundMultiplicity": "One",
+      "description": "Links a pipeline execution record to the adapter that performed the execution."
     },
     {
       "id": "Manages-1",
       "inboundName": "Manages",
       "outboundName": "ManagedBy",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "ZeroOrOne"
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Links an adapter to the pools it manages. A pool can be managed by at most one adapter."
     },
     {
       "id": "MapsFrom-1",
@@ -1464,41 +1479,47 @@
       "inboundName": "SendsDataTo",
       "outboundName": "ReceivesDataFrom",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "N"
+      "outboundMultiplicity": "N",
+      "description": "Links a pipeline to downstream pipelines that receive its output data for chained processing."
     },
     {
       "id": "StatisticsForPipeline-1",
       "inboundName": "StatisticsForPipeline",
       "outboundName": "PipelineStatistics",
       "inboundMultiplicity": "One",
-      "outboundMultiplicity": "ZeroOrOne"
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Links a pipeline statistics record to the pipeline it aggregates metrics for. Each pipeline has at most one statistics record."
     },
     {
       "id": "Tag-1",
       "inboundName": "TaggedBy",
       "outboundName": "IsTagging",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "N"
+      "outboundMultiplicity": "N",
+      "description": "Links a tag to the entities it labels for categorization and filtering."
     },
     {
       "id": "Triggers-1",
       "inboundName": "Triggers",
       "outboundName": "TriggeredBy",
       "inboundMultiplicity": "ZeroOrOne",
-      "outboundMultiplicity": "N"
+      "outboundMultiplicity": "N",
+      "description": "Links a pipeline trigger to the pipelines it starts on schedule."
     },
     {
       "id": "Uses-1",
       "inboundName": "UsedBy",
       "outboundName": "IsUsing",
       "inboundMultiplicity": "N",
-      "outboundMultiplicity": "N"
+      "outboundMultiplicity": "N",
+      "description": "Links a pipeline to the configurations it requires for execution (e.g. connection settings for external systems)."
     }
   ],
   "attributes": [
     {
       "id": "AdapterConfiguration-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "JSON-serialized adapter-specific configuration that is deployed to the adapter."
     },
     {
       "id": "AdminPassword-1",
@@ -1551,11 +1572,13 @@
       "valueCkEnumId": "System.Communication-3.12.0/CommunicationState-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "Current SignalR connection state of the adapter or pool operator."
     },
     {
       "id": "CommunicationStateTimestamp-1",
-      "valueType": "DateTime"
+      "valueType": "DateTime",
+      "description": "Timestamp of the last communication state change (online/offline transition)."
     },
     {
       "id": "CompletedAt-1",
@@ -1568,7 +1591,8 @@
       "valueCkEnumId": "System.Communication-3.12.0/ConfigurationState-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "Current configuration deployment state of the adapter or pool."
     },
     {
       "id": "ConsumerPrice-1",
@@ -1590,11 +1614,13 @@
     },
     {
       "id": "Deployment.ImageName-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Docker image name of the adapter container (e.g. octo-mesh-adapter)."
     },
     {
       "id": "Deployment.ImageVersion-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Docker image version tag of the adapter container."
     },
     {
       "id": "DeploymentState-1",
@@ -1602,7 +1628,8 @@
       "valueCkEnumId": "System.Communication-3.12.0/DeploymentState-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "Current deployment state of the entity (undeployed, pending, deployed, or error)."
     },
     {
       "id": "DurationMs-1",
@@ -1630,7 +1657,8 @@
       "valueCkEnumId": "System.Communication-3.12.0/PipelineExecutionStatus-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "Current status of the pipeline execution (Running, Completed, Failed, Interrupted, Cancelled)."
     },
     {
       "id": "ExternalId-1",
@@ -1862,7 +1890,8 @@
     },
     {
       "id": "Name-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Optional display name for the tag."
     },
     {
       "id": "NetworkPartnerId-1",
@@ -1899,7 +1928,8 @@
       "valueType": "String",
       "defaultValues": [
         ""
-      ]
+      ],
+      "description": "JSON-serialized pipeline node graph that defines the data processing logic."
     },
     {
       "id": "PollIntervalSeconds-1",
@@ -1979,7 +2009,8 @@
     },
     {
       "id": "SenderEmail-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Email address used as the sender (From) for outgoing emails."
     },
     {
       "id": "SourceAttributePath-1",
@@ -1998,7 +2029,8 @@
     },
     {
       "id": "StatusMessage-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "Human-readable status or error message from the last deployment or configuration attempt."
     },
     {
       "id": "SystemId-1",
@@ -2012,7 +2044,8 @@
     },
     {
       "id": "Tag-1",
-      "valueType": "String"
+      "valueType": "String",
+      "description": "The tag value used for categorization and filtering."
     },
     {
       "id": "TargetAttributePath-1",
@@ -2038,7 +2071,8 @@
       "valueCkEnumId": "System.Communication-3.12.0/PipelineTriggerType-1",
       "defaultValues": [
         "0"
-      ]
+      ],
+      "description": "How this pipeline execution was initiated (Manual, Scheduled, Event, or Startup)."
     },
     {
       "id": "UiThemeColors-1",
@@ -2154,7 +2188,8 @@
           "name": "Offline",
           "isExtension": false
         }
-      ]
+      ],
+      "description": "Indicates the current SignalR connection state of an adapter or pool operator."
     },
     {
       "enumId": "ConfigurationState-1",
@@ -2181,7 +2216,8 @@
           "name": "Error",
           "isExtension": false
         }
-      ]
+      ],
+      "description": "Indicates whether a deployable entity has been successfully configured with its pipeline definitions and settings."
     },
     {
       "enumId": "DeploymentState-1",
@@ -2208,7 +2244,8 @@
           "name": "Error",
           "isExtension": false
         }
-      ]
+      ],
+      "description": "Tracks whether a deployable entity (adapter, pipeline, pool, or trigger) is currently deployed and active."
     },
     {
       "enumId": "PipelineExecutionStatus-1",
@@ -2240,7 +2277,8 @@
           "name": "Cancelled",
           "isExtension": false
         }
-      ]
+      ],
+      "description": "Status of a pipeline execution lifecycle, from running through completion or failure."
     },
     {
       "enumId": "PipelineTriggerType-1",
@@ -2267,8 +2305,10 @@
           "name": "Startup",
           "isExtension": false
         }
-      ]
+      ],
+      "description": "Indicates how a pipeline execution was initiated."
     }
   ],
-  "modelId": "System.Communication-3.12.0"
+  "modelId": "System.Communication-3.12.0",
+  "description": "Construction kit model for the OctoMesh Communication Controller. Defines adapters, pipelines, pools, triggers, configurations, and execution tracking for data ingress and egress."
 }
