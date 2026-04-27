@@ -15,37 +15,47 @@
       "description": "Per-tenant UI branding and theming for a frontend app (app names, logos, favicon, light/dark palettes, gradients). Singleton per tenant via rtWellKnownName = \u0027Branding\u0027. Derives from UIElement (same as Dashboard, ProcessDiagram, SymbolDefinition, SymbolLibrary) \u2014 consistent with SystemUiCkModel convention.",
       "attributes": [
         {
-          "id": "System.UI-2.1.0/AppName-1",
+          "id": "System-2.0.9/Name-1",
+          "name": "Name",
+          "isOptional": true
+        },
+        {
+          "id": "System-2.0.9/Description-1",
+          "name": "Description",
+          "isOptional": true
+        },
+        {
+          "id": "System.UI-2.1.0/Branding.AppName-1",
           "name": "AppName",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/AppTitle-1",
+          "id": "System.UI-2.1.0/Branding.AppTitle-1",
           "name": "AppTitle",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/HeaderLogo-1",
+          "id": "System.UI-2.1.0/Branding.HeaderLogo-1",
           "name": "HeaderLogo",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/FooterLogo-1",
+          "id": "System.UI-2.1.0/Branding.FooterLogo-1",
           "name": "FooterLogo",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/Favicon-1",
+          "id": "System.UI-2.1.0/Branding.Favicon-1",
           "name": "Favicon",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/LightTheme-1",
+          "id": "System.UI-2.1.0/Branding.LightTheme-1",
           "name": "LightTheme",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/DarkTheme-1",
+          "id": "System.UI-2.1.0/Branding.DarkTheme-1",
           "name": "DarkTheme",
           "isOptional": true
         }
@@ -391,25 +401,41 @@
   "associationRoles": [],
   "attributes": [
     {
-      "id": "AppName-1",
+      "id": "Branding.AppName-1",
       "valueType": "String",
       "description": "Full display name of the application (e.g. \u0027Maco Application\u0027)."
     },
     {
-      "id": "AppTitle-1",
+      "id": "Branding.AppTitle-1",
       "valueType": "String",
       "description": "Text rendered into the browser tab (document.title)."
     },
     {
-      "id": "BackgroundColor-1",
-      "valueType": "String",
-      "description": "Page/surface background color (not derived from any palette base)."
-    },
-    {
-      "id": "DarkTheme-1",
+      "id": "Branding.DarkTheme-1",
       "valueType": "Record",
       "valueCkRecordId": "System.UI-2.1.0/ThemePalette-1",
       "description": "Color palette applied when the user/system selects the dark theme. Leave unset for single-theme apps."
+    },
+    {
+      "id": "Branding.Favicon-1",
+      "valueType": "Binary",
+      "description": "Browser favicon."
+    },
+    {
+      "id": "Branding.FooterLogo-1",
+      "valueType": "Binary",
+      "description": "Logo displayed in the page footer."
+    },
+    {
+      "id": "Branding.HeaderLogo-1",
+      "valueType": "Binary",
+      "description": "Logo displayed in the page header/topbar."
+    },
+    {
+      "id": "Branding.LightTheme-1",
+      "valueType": "Record",
+      "valueCkRecordId": "System.UI-2.1.0/ThemePalette-1",
+      "description": "Color palette applied when the user/system selects the light theme."
     },
     {
       "id": "Dashboard.Columns-1",
@@ -470,59 +496,6 @@
       "id": "DashboardWidget.Type-1",
       "valueType": "String",
       "description": "Widget type identifier (entityCard, kpi, entityWithAssociations, table)."
-    },
-    {
-      "id": "Favicon-1",
-      "valueType": "Binary",
-      "description": "Browser favicon."
-    },
-    {
-      "id": "FooterGradient-1",
-      "valueType": "Record",
-      "valueCkRecordId": "System.UI-2.1.0/ThemeGradient-1",
-      "description": "Gradient applied to the footer. Rendered as linear-gradient(90deg, start, end)."
-    },
-    {
-      "id": "FooterLogo-1",
-      "valueType": "Binary",
-      "description": "Logo displayed in the page footer."
-    },
-    {
-      "id": "GradientEndColor-1",
-      "valueType": "String",
-      "description": "Gradient end color (hex)."
-    },
-    {
-      "id": "GradientStartColor-1",
-      "valueType": "String",
-      "description": "Gradient start color (hex)."
-    },
-    {
-      "id": "HeaderGradient-1",
-      "valueType": "Record",
-      "valueCkRecordId": "System.UI-2.1.0/ThemeGradient-1",
-      "description": "Gradient applied to the header/topbar. Rendered as linear-gradient(90deg, start, end)."
-    },
-    {
-      "id": "HeaderLogo-1",
-      "valueType": "Binary",
-      "description": "Logo displayed in the page header/topbar."
-    },
-    {
-      "id": "LightTheme-1",
-      "valueType": "Record",
-      "valueCkRecordId": "System.UI-2.1.0/ThemePalette-1",
-      "description": "Color palette applied when the user/system selects the light theme."
-    },
-    {
-      "id": "NeutralColor-1",
-      "valueType": "String",
-      "description": "Base for the neutral family (base/border/subtle)."
-    },
-    {
-      "id": "PrimaryColor-1",
-      "valueType": "String",
-      "description": "Base for the primary Kendo color family; full palette generated via HSL math."
     },
     {
       "id": "ProcessDiagram.Animations-1",
@@ -588,11 +561,6 @@
       "id": "ProcessDiagram.Version-1",
       "valueType": "String",
       "description": "Schema version for migrations (e.g., \u00221.0.0\u0022)."
-    },
-    {
-      "id": "SecondaryColor-1",
-      "valueType": "String",
-      "description": "Base for the secondary Kendo color family."
     },
     {
       "id": "SymbolDefinition.BoundsHeight-1",
@@ -680,7 +648,49 @@
       "description": "Library version for tracking changes (e.g., \u00221.0.0\u0022)."
     },
     {
-      "id": "TertiaryColor-1",
+      "id": "ThemeGradient.EndColor-1",
+      "valueType": "String",
+      "description": "Gradient end color (hex)."
+    },
+    {
+      "id": "ThemeGradient.StartColor-1",
+      "valueType": "String",
+      "description": "Gradient start color (hex)."
+    },
+    {
+      "id": "ThemePalette.BackgroundColor-1",
+      "valueType": "String",
+      "description": "Page/surface background color (not derived from any palette base)."
+    },
+    {
+      "id": "ThemePalette.FooterGradient-1",
+      "valueType": "Record",
+      "valueCkRecordId": "System.UI-2.1.0/ThemeGradient-1",
+      "description": "Gradient applied to the footer. Rendered as linear-gradient(90deg, start, end)."
+    },
+    {
+      "id": "ThemePalette.HeaderGradient-1",
+      "valueType": "Record",
+      "valueCkRecordId": "System.UI-2.1.0/ThemeGradient-1",
+      "description": "Gradient applied to the header/topbar. Rendered as linear-gradient(90deg, start, end)."
+    },
+    {
+      "id": "ThemePalette.NeutralColor-1",
+      "valueType": "String",
+      "description": "Base for the neutral family (base/border/subtle)."
+    },
+    {
+      "id": "ThemePalette.PrimaryColor-1",
+      "valueType": "String",
+      "description": "Base for the primary Kendo color family; full palette generated via HSL math."
+    },
+    {
+      "id": "ThemePalette.SecondaryColor-1",
+      "valueType": "String",
+      "description": "Base for the secondary Kendo color family."
+    },
+    {
+      "id": "ThemePalette.TertiaryColor-1",
       "valueType": "String",
       "description": "Base for the tertiary Kendo color family."
     }
@@ -693,12 +703,12 @@
       "description": "Two-stop linear gradient definition. Rendered at 90deg (to-right) by ThemeService \u2014 no angle override persisted.",
       "attributes": [
         {
-          "id": "System.UI-2.1.0/GradientStartColor-1",
+          "id": "System.UI-2.1.0/ThemeGradient.StartColor-1",
           "name": "StartColor",
           "isOptional": false
         },
         {
-          "id": "System.UI-2.1.0/GradientEndColor-1",
+          "id": "System.UI-2.1.0/ThemeGradient.EndColor-1",
           "name": "EndColor",
           "isOptional": false
         }
@@ -711,37 +721,37 @@
       "description": "Color palette consumed by ThemeService to generate the Kendo CSS variable set. All fields optional \u2014 consumers fall back to per-app defaults when absent.",
       "attributes": [
         {
-          "id": "System.UI-2.1.0/PrimaryColor-1",
+          "id": "System.UI-2.1.0/ThemePalette.PrimaryColor-1",
           "name": "PrimaryColor",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/SecondaryColor-1",
+          "id": "System.UI-2.1.0/ThemePalette.SecondaryColor-1",
           "name": "SecondaryColor",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/TertiaryColor-1",
+          "id": "System.UI-2.1.0/ThemePalette.TertiaryColor-1",
           "name": "TertiaryColor",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/NeutralColor-1",
+          "id": "System.UI-2.1.0/ThemePalette.NeutralColor-1",
           "name": "NeutralColor",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/BackgroundColor-1",
+          "id": "System.UI-2.1.0/ThemePalette.BackgroundColor-1",
           "name": "BackgroundColor",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/HeaderGradient-1",
+          "id": "System.UI-2.1.0/ThemePalette.HeaderGradient-1",
           "name": "HeaderGradient",
           "isOptional": true
         },
         {
-          "id": "System.UI-2.1.0/FooterGradient-1",
+          "id": "System.UI-2.1.0/ThemePalette.FooterGradient-1",
           "name": "FooterGradient",
           "isOptional": true
         }
