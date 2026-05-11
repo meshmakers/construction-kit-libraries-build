@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "System.StreamData",
+  "majorVersion": 1,
+  "latestVersion": "1.1.0",
+  "description": "StreamData model. Defines CkArchive (per-CkType time-series archive definitions), CkRollupArchive (derived bucketed-aggregation archives), and supporting enum/record types. Loaded only when StreamData is enabled at the instance level.",
+  "versions": [
+    {
+      "version": "1.1.0",
+      "fileName": "ck-system.streamdata-1.1.0.json",
+      "filePath": "ck-models/v2/s/System.StreamData/1/ck-system.streamdata-1.1.0.json",
+      "publishedAt": "2026-05-11T14:41:32.5472153Z"
+    }
+  ],
+  "updatedAt": "2026-05-11T14:41:32.5493121Z"
+}
