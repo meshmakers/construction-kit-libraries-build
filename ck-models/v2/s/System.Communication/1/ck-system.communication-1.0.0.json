@@ -18,7 +18,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Communication-1.0.0/CommunicationStateTimestamp-1",
@@ -59,7 +58,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-1.0.2/Name-1",
@@ -80,7 +78,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-1.0.2/Enabled-1",
@@ -101,7 +98,6 @@
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Communication-1.0.0/DeploymentState-1",
@@ -132,7 +128,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Communication-1.0.0/Host-1",
@@ -172,8 +167,7 @@
       "derivedFromCkTypeId": "System.Communication-1.0.0/Adapter-1",
       "isFinal": false,
       "isAbstract": false,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     },
     {
       "isCollectionRoot": false,
@@ -181,8 +175,7 @@
       "derivedFromCkTypeId": "System.Communication-1.0.0/Pipeline-1",
       "isFinal": false,
       "isAbstract": false,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     },
     {
       "isCollectionRoot": false,
@@ -190,8 +183,7 @@
       "derivedFromCkTypeId": "System.Communication-1.0.0/Adapter-1",
       "isFinal": false,
       "isAbstract": false,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     },
     {
       "isCollectionRoot": false,
@@ -205,8 +197,7 @@
           "targetCkTypeId": "System.Communication-1.0.0/DataPipelineTrigger-1"
         }
       ],
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     },
     {
       "isCollectionRoot": false,
@@ -229,7 +220,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-1.0.2/Enabled-1",
@@ -250,7 +240,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Communication-1.0.0/CommunicationStateTimestamp-1",
@@ -276,7 +265,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "The SAP configuration type is used to configure the connection to an SAP system.",
       "attributes": [
         {
@@ -354,7 +342,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Communication-1.0.0/Tag-1",

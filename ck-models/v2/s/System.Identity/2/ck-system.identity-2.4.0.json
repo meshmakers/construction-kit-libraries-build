@@ -11,7 +11,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/RequireResourceIndicator-1",
@@ -42,7 +41,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/IsEmphasized-1",
@@ -63,7 +61,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-2.0.9/TenantId-1",
@@ -94,7 +91,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-2.0.9/Enabled-1",
@@ -382,7 +378,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Maps an email domain pattern to a group for automatic group assignment on user login.",
       "attributes": [
         {
@@ -422,7 +417,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Maps a user from a parent tenant to roles in this (child) tenant.",
       "attributes": [
         {
@@ -454,7 +448,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/ClientId-1",
@@ -475,7 +468,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/ClientId-1",
@@ -526,7 +518,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A group that can be assigned roles. Users and other groups can be members.",
       "attributes": [
         {
@@ -553,7 +544,6 @@
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-2.0.9/Name-1",
@@ -594,7 +584,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/IsEmphasized-1",
@@ -615,7 +604,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/EnableEmailNotifications-1",
@@ -636,7 +624,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/Host-1",
@@ -672,7 +659,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/ClientId-1",
@@ -693,7 +679,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Identity provider that delegates authentication to a parent tenant.",
       "attributes": [
         {
@@ -710,7 +695,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/Host-1",
@@ -746,7 +730,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/PermissionId-1",
@@ -767,7 +750,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-2.0.9/Name-1",
@@ -798,7 +780,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/GrantKey-1",
@@ -859,7 +840,6 @@
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-2.0.9/Enabled-1",
@@ -900,7 +880,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System-2.0.9/Name-1",
@@ -964,7 +943,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.Identity-2.4.0/UserName-1",
@@ -1196,7 +1174,7 @@
       "id": "AllowedScopes-1",
       "valueType": "StringArray",
       "defaultValues": [],
-      "description": "Specifies the api scopes that the client is allowed to request. If empty, the client can\u0027t access any scope"
+      "description": "Specifies the api scopes that the client is allowed to request. If empty, the client can't access any scope"
     },
     {
       "id": "AlwaysIncludeUserClaimsInIdToken-1",
@@ -1233,7 +1211,7 @@
       "defaultValues": [
         "true"
       ],
-      "description": "Specifies if the user\u0027s session id should be sent to the BackChannelLogoutUri. Defaults to true."
+      "description": "Specifies if the user's session id should be sent to the BackChannelLogoutUri. Defaults to true."
     },
     {
       "id": "BackChannelLogoutUri-1",
@@ -1302,7 +1280,7 @@
     {
       "id": "CoordinateLifetimeWithUserSession-1",
       "valueType": "Boolean",
-      "description": "When enabled, the client\u0027s token lifetimes (e.g. refresh tokens) will be tied to the user\u0027s session lifetime."
+      "description": "When enabled, the client's token lifetimes (e.g. refresh tokens) will be tied to the user's session lifetime."
     },
     {
       "id": "CreationDateTime-1",
@@ -1314,7 +1292,7 @@
       "defaultValues": [
         "00:05:00"
       ],
-      "description": "Clock skew used in validating the client\u0027s DPoP proof token \u0027iat\u0027 claim value. Defaults to 5 minutes."
+      "description": "Clock skew used in validating the client's DPoP proof token 'iat' claim value. Defaults to 5 minutes."
     },
     {
       "id": "DPoPValidationMode-1",
@@ -1357,7 +1335,7 @@
     {
       "id": "EmailDomainPattern-1",
       "valueType": "String",
-      "description": "Email domain pattern to match (e.g., \u0022meshmakers.com\u0022). Matched against the domain part of the user\u0027s email."
+      "description": "Email domain pattern to match (e.g., \"meshmakers.com\"). Matched against the domain part of the user's email."
     },
     {
       "id": "EnableEmailNotifications-1",
@@ -1390,7 +1368,7 @@
       "defaultValues": [
         "true"
       ],
-      "description": "Specifies if the user\u0027s session id should be sent to the FrontChannelLogoutUri. Defaults to true."
+      "description": "Specifies if the user's session id should be sent to the FrontChannelLogoutUri. Defaults to true."
     },
     {
       "id": "FrontChannelLogoutUri-1",
@@ -1408,7 +1386,7 @@
     {
       "id": "GroupDescription-1",
       "valueType": "String",
-      "description": "An optional description of the group\u0027s purpose."
+      "description": "An optional description of the group's purpose."
     },
     {
       "id": "GroupName-1",
@@ -1732,7 +1710,7 @@
     {
       "id": "SourceTenantId-1",
       "valueType": "String",
-      "description": "The tenant ID where the user\u0027s account resides."
+      "description": "The tenant ID where the user's account resides."
     },
     {
       "id": "SourceUserId-1",
@@ -1821,7 +1799,7 @@
     {
       "id": "UserSsoLifetime-1",
       "valueType": "Int",
-      "description": "Lifetime of user\u0027s single sign-on session (in seconds). Defaults to null (no expiration)."
+      "description": "Lifetime of user's single sign-on session (in seconds). Defaults to null (no expiration)."
     },
     {
       "id": "UserTokens-1",

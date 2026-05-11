@@ -11,7 +11,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A configurable dashboard containing multiple widgets arranged in a grid layout.",
       "attributes": [
         {
@@ -54,7 +53,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A widget within a dashboard that displays data in a specific visualization format.",
       "attributes": [
         {
@@ -116,7 +114,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.UI-2.0.0/Page.Content-1",
@@ -132,7 +129,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "HMI-style process diagram with tanks, pipes, valves, pumps, and other industrial elements.",
       "attributes": [
         {
@@ -219,7 +215,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.UI-2.0.0/TargetCkTypeId-1",
@@ -250,7 +245,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.UI-2.0.0/TargetCkTypeId-1",
@@ -277,7 +271,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A reusable symbol definition composed of primitives, belonging to a symbol library.",
       "attributes": [
         {
@@ -364,7 +357,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A library containing reusable symbol definitions composed of primitives for process diagrams.",
       "attributes": [
         {
@@ -405,8 +397,7 @@
       "derivedFromCkTypeId": "System-2.0.2/Entity-1",
       "isFinal": false,
       "isAbstract": true,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     }
   ],
   "associationRoles": [],
@@ -493,7 +484,7 @@
     {
       "id": "ProcessDiagram.CanvasBackgroundColor-1",
       "valueType": "String",
-      "description": "Background color (CSS color or \u0027transparent\u0027)."
+      "description": "Background color (CSS color or 'transparent')."
     },
     {
       "id": "ProcessDiagram.CanvasHeight-1",
@@ -548,7 +539,7 @@
     {
       "id": "ProcessDiagram.Version-1",
       "valueType": "String",
-      "description": "Schema version for migrations (e.g., \u00221.0.0\u0022)."
+      "description": "Schema version for migrations (e.g., \"1.0.0\")."
     },
     {
       "id": "SecondaryColor-1",
@@ -578,7 +569,7 @@
     {
       "id": "SymbolDefinition.Category-1",
       "valueType": "String",
-      "description": "Category for grouping symbols (e.g., \u0022Tanks\u0022, \u0022Valves\u0022, \u0022Sensors\u0022)."
+      "description": "Category for grouping symbols (e.g., \"Tanks\", \"Valves\", \"Sensors\")."
     },
     {
       "id": "SymbolDefinition.ConnectionPoints-1",
@@ -618,7 +609,7 @@
     {
       "id": "SymbolDefinition.Version-1",
       "valueType": "String",
-      "description": "Symbol version for tracking changes (e.g., \u00221.0.0\u0022)."
+      "description": "Symbol version for tracking changes (e.g., \"1.0.0\")."
     },
     {
       "id": "SymbolLibrary.Author-1",
@@ -638,7 +629,7 @@
     {
       "id": "SymbolLibrary.Version-1",
       "valueType": "String",
-      "description": "Library version for tracking changes (e.g., \u00221.0.0\u0022)."
+      "description": "Library version for tracking changes (e.g., \"1.0.0\")."
     },
     {
       "id": "TargetCkTypeId-1",

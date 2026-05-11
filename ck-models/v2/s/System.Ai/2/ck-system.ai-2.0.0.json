@@ -17,7 +17,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a single message in a conversation with content, user flag, and timestamp",
       "attributes": [
         {
@@ -54,7 +53,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a conversation node with navigation, interaction type, and optional metadata",
       "attributes": [
         {
@@ -92,7 +90,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents the context of a conversation node, containing associated messages",
       "attributes": [
         {
@@ -109,7 +106,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a conversation workspace containing multiple interconnected nodes",
       "attributes": [
         {

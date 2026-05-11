@@ -98,7 +98,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Query type for performing aggregation operations (Count, Min, Max, Avg, Sum) on entity data without grouping.",
       "attributes": [
         {
@@ -130,7 +129,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Manages auto-incrementing sequences for generating unique identifiers with configurable format and range.",
       "attributes": [
         {
@@ -157,7 +155,6 @@
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Base type for all configuration types"
     },
     {
@@ -205,7 +202,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Abstract base type for all entities in the system. Provides common indexing and association capabilities.",
       "attributes": [
         {
@@ -232,7 +228,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Query type for performing grouped aggregation operations with GROUP BY functionality on entity data.",
       "attributes": [
         {
@@ -293,7 +288,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Records executed CK model migrations per tenant. Each instance represents one migration execution from a source version to a target version.",
       "attributes": [
         {
@@ -370,7 +364,6 @@
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Abstract base type for all query types. Defines common query properties like name, description, and target type.",
       "attributes": [
         {
@@ -397,7 +390,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Legacy query type for backward compatibility. Use SimpleRtQuery, AggregationRtQuery, or GroupingAggregationRtQuery instead.",
       "attributes": [
         {
@@ -449,7 +441,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Query type for retrieving rows/tuples from entities with support for column selection, sorting, and filtering.",
       "attributes": [
         {
@@ -498,7 +489,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a tenant in the multi-tenant system with its unique identifier, parent relationship, and database mapping.",
       "attributes": [
         {
@@ -525,7 +515,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Configuration for a tenant regarding data version of schema or identity data",
       "attributes": [
         {
@@ -542,7 +531,6 @@
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Configuration for a tenant if the tenant is in a specific mode, e.g. test mode or maintenance mode",
       "attributes": [
         {
@@ -618,7 +606,7 @@
     {
       "id": "AutoIncrement.Format-1",
       "valueType": "String",
-      "description": "Optional format string for generating formatted identifiers (e.g., \u0027INV-{0:D6}\u0027)."
+      "description": "Optional format string for generating formatted identifiers (e.g., 'INV-{0:D6}')."
     },
     {
       "id": "ComparisonValue-1",
@@ -682,7 +670,7 @@
     {
       "id": "MigrationHistory.CkModelName-1",
       "valueType": "String",
-      "description": "Name of the CK model that was migrated (e.g., \u0027System\u0027)."
+      "description": "Name of the CK model that was migrated (e.g., 'System')."
     },
     {
       "id": "MigrationHistory.DurationMs-1",
@@ -810,7 +798,7 @@
     {
       "id": "RtBlueprintSource-1",
       "valueType": "String",
-      "description": "Identifies the blueprint that created this entity (format: \u0027BlueprintName-Version\u0027). Null if entity was created manually."
+      "description": "Identifies the blueprint that created this entity (format: 'BlueprintName-Version'). Null if entity was created manually."
     },
     {
       "id": "SortOrder-1",

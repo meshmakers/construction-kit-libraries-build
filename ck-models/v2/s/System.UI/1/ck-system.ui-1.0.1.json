@@ -11,7 +11,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A configurable dashboard containing multiple widgets arranged in a grid layout.",
       "attributes": [
         {
@@ -54,7 +53,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A widget within a dashboard that displays data in a specific visualization format.",
       "attributes": [
         {
@@ -116,7 +114,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.UI-1.0.1/Page.Content-1",
@@ -132,7 +129,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.UI-1.0.1/TargetCkTypeId-1",
@@ -163,7 +159,6 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "System.UI-1.0.1/TargetCkTypeId-1",
@@ -183,8 +178,7 @@
       "derivedFromCkTypeId": "System-1.0.3/Entity-1",
       "isFinal": false,
       "isAbstract": true,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     }
   ],
   "associationRoles": [],
