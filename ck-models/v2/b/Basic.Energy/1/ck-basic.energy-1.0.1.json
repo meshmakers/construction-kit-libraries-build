@@ -533,8 +533,7 @@
       "id": "DataQuality-1",
       "valueType": "Enum",
       "valueCkEnumId": "Basic.Energy-1.0.1/DataQuality-1",
-      "description": "The quality of the received data",
-      "isDataStream": true
+      "description": "The quality of the received data"
     },
     {
       "id": "EdaConversationId-1",
