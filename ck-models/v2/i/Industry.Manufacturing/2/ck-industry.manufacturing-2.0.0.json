@@ -343,8 +343,7 @@
     {
       "id": "Availability-1",
       "valueType": "Double",
-      "description": "OEE Availability metric - percentage of planned production time that operation is available (0.0 - 1.0)",
-      "isDataStream": true
+      "description": "OEE Availability metric - percentage of planned production time that operation is available (0.0 - 1.0)"
     },
     {
       "id": "CycleTimeForOnePiece-1",
@@ -374,20 +373,17 @@
       "id": "OeeStatistics-1",
       "valueType": "Record",
       "valueCkRecordId": "Industry.Manufacturing-2.0.0/OeeStatistics-1",
-      "description": "Complete OEE statistics bundle containing Total, Availability, Performance, and Quality metrics",
-      "isDataStream": true
+      "description": "Complete OEE statistics bundle containing Total, Availability, Performance, and Quality metrics"
     },
     {
       "id": "OrderNumber-1",
       "valueType": "String",
-      "description": "Unique identifier for the production order",
-      "isDataStream": true
+      "description": "Unique identifier for the production order"
     },
     {
       "id": "Performance-1",
       "valueType": "Double",
-      "description": "OEE Performance metric - speed at which work center runs as percentage of designed speed (0.0 - 1.0)",
-      "isDataStream": true
+      "description": "OEE Performance metric - speed at which work center runs as percentage of designed speed (0.0 - 1.0)"
     },
     {
       "id": "PlannedQuantity-1",
@@ -419,8 +415,7 @@
     {
       "id": "Quality-1",
       "valueType": "Double",
-      "description": "OEE Quality metric - percentage of good parts out of total parts produced (0.0 - 1.0)",
-      "isDataStream": true
+      "description": "OEE Quality metric - percentage of good parts out of total parts produced (0.0 - 1.0)"
     },
     {
       "id": "QuantityGood-1",
@@ -460,8 +455,7 @@
     {
       "id": "Total-1",
       "valueType": "Double",
-      "description": "Overall Equipment Effectiveness (OEE) total percentage (0.0 - 1.0)",
-      "isDataStream": true
+      "description": "Overall Equipment Effectiveness (OEE) total percentage (0.0 - 1.0)"
     }
   ],
   "records": [
