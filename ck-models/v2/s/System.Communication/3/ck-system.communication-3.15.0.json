@@ -646,7 +646,7 @@
       "isAbstract": true,
       "associations": [
         {
-          "id": "System.Communication-3.15.0/Uses-1",
+          "id": "System.Communication-3.15.0/HelmRepository-1",
           "targetCkTypeId": "System.Communication-3.15.0/HelmRepositoryConfiguration-1"
         },
         {
@@ -1590,6 +1590,14 @@
       "inboundMultiplicity": "N",
       "outboundMultiplicity": "One",
       "description": "Links a pipeline execution record to the adapter that performed the execution."
+    },
+    {
+      "id": "HelmRepository-1",
+      "inboundName": "HelmRepositoryUsedBy",
+      "outboundName": "HelmRepository",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Links a deployable workload (Adapter / Application) to the Helm chart repository it pulls its chart from. Separate from the generic Uses role so the inverse view on HelmRepositoryConfiguration does not collide with Pipeline.Uses \u2014 keeping HelmRepositoryConfiguration as a regular SystemConfigurationInterface implementer in the generated GraphQL schema."
     },
     {
       "id": "Manages-1",
