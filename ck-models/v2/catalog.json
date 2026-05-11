@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-06T19:28:10.7458962Z",
+  "updatedAt": "2026-05-11T14:41:35.5994257Z",
   "models": [
     {
       "modelName": "Basic",
@@ -73,6 +73,10 @@
     {
       "modelName": "System.Reporting",
       "catalogPath": "ck-models/v2/s/System.Reporting/catalog.json"
+    },
+    {
+      "modelName": "System.StreamData",
+      "catalogPath": "ck-models/v2/s/System.StreamData/catalog.json"
     },
     {
       "modelName": "System.TestIdentity",
