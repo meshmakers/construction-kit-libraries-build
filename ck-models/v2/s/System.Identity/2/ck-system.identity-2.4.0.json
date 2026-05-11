@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "System-2.0.9"
+    "System-2.0.10"
   ],
   "types": [
     {
@@ -63,7 +63,7 @@
       "enableChangeStreamPreAndPostImages": false,
       "attributes": [
         {
-          "id": "System-2.0.9/TenantId-1",
+          "id": "System-2.0.10/TenantId-1",
           "name": "TenantId",
           "isOptional": false
         },
@@ -87,13 +87,13 @@
     {
       "isCollectionRoot": true,
       "typeId": "Client-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "attributes": [
         {
-          "id": "System-2.0.9/Enabled-1",
+          "id": "System-2.0.10/Enabled-1",
           "name": "Enabled",
           "isOptional": false
         },
@@ -118,12 +118,12 @@
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.0.10/Name-1",
           "name": "ClientName",
           "isOptional": true
         },
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -362,7 +362,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "EmailDomainGroupRule-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "indexes": [
@@ -391,7 +391,7 @@
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         }
@@ -400,7 +400,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "ExternalTenantUserMapping-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "indexes": [
@@ -484,7 +484,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "Group-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "indexes": [
@@ -540,28 +540,28 @@
     {
       "isCollectionRoot": true,
       "typeId": "IdentityProvider-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
       "attributes": [
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.0.10/Name-1",
           "name": "Name",
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/Enabled-1",
+          "id": "System-2.0.10/Enabled-1",
           "name": "IsEnabled",
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/DisplayName-1",
+          "id": "System-2.0.10/DisplayName-1",
           "name": "DisplayName",
           "isOptional": true
         },
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -600,7 +600,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "MailNotificationConfiguration-1",
-      "derivedFromCkTypeId": "System-2.0.9/Configuration-1",
+      "derivedFromCkTypeId": "System-2.0.10/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -726,7 +726,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "Permission-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -746,13 +746,13 @@
     {
       "isCollectionRoot": true,
       "typeId": "PermissionRole-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "attributes": [
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.0.10/Name-1",
           "name": "Name",
           "isOptional": false
         },
@@ -776,7 +776,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "PersistedGrant-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -807,7 +807,7 @@
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -836,28 +836,28 @@
     {
       "isCollectionRoot": true,
       "typeId": "Resource-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
       "attributes": [
         {
-          "id": "System-2.0.9/Enabled-1",
+          "id": "System-2.0.10/Enabled-1",
           "name": "Enabled",
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.0.10/Name-1",
           "name": "Name",
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/DisplayName-1",
+          "id": "System-2.0.10/DisplayName-1",
           "name": "DisplayName",
           "isOptional": true
         },
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -876,13 +876,13 @@
     {
       "isCollectionRoot": true,
       "typeId": "Role-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "attributes": [
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.0.10/Name-1",
           "name": "Name",
           "isOptional": false
         },
@@ -911,7 +911,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "User-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
       "isFinal": true,
       "isAbstract": false,
       "indexes": [
@@ -965,7 +965,7 @@
           "isOptional": true
         },
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -1174,7 +1174,7 @@
       "id": "AllowedScopes-1",
       "valueType": "StringArray",
       "defaultValues": [],
-      "description": "Specifies the api scopes that the client is allowed to request. If empty, the client can't access any scope"
+      "description": "Specifies the api scopes that the client is allowed to request. If empty, the client can\u0027t access any scope"
     },
     {
       "id": "AlwaysIncludeUserClaimsInIdToken-1",
@@ -1211,7 +1211,7 @@
       "defaultValues": [
         "true"
       ],
-      "description": "Specifies if the user's session id should be sent to the BackChannelLogoutUri. Defaults to true."
+      "description": "Specifies if the user\u0027s session id should be sent to the BackChannelLogoutUri. Defaults to true."
     },
     {
       "id": "BackChannelLogoutUri-1",
@@ -1280,7 +1280,7 @@
     {
       "id": "CoordinateLifetimeWithUserSession-1",
       "valueType": "Boolean",
-      "description": "When enabled, the client's token lifetimes (e.g. refresh tokens) will be tied to the user's session lifetime."
+      "description": "When enabled, the client\u0027s token lifetimes (e.g. refresh tokens) will be tied to the user\u0027s session lifetime."
     },
     {
       "id": "CreationDateTime-1",
@@ -1292,7 +1292,7 @@
       "defaultValues": [
         "00:05:00"
       ],
-      "description": "Clock skew used in validating the client's DPoP proof token 'iat' claim value. Defaults to 5 minutes."
+      "description": "Clock skew used in validating the client\u0027s DPoP proof token \u0027iat\u0027 claim value. Defaults to 5 minutes."
     },
     {
       "id": "DPoPValidationMode-1",
@@ -1335,7 +1335,7 @@
     {
       "id": "EmailDomainPattern-1",
       "valueType": "String",
-      "description": "Email domain pattern to match (e.g., \"meshmakers.com\"). Matched against the domain part of the user's email."
+      "description": "Email domain pattern to match (e.g., \u0022meshmakers.com\u0022). Matched against the domain part of the user\u0027s email."
     },
     {
       "id": "EnableEmailNotifications-1",
@@ -1368,7 +1368,7 @@
       "defaultValues": [
         "true"
       ],
-      "description": "Specifies if the user's session id should be sent to the FrontChannelLogoutUri. Defaults to true."
+      "description": "Specifies if the user\u0027s session id should be sent to the FrontChannelLogoutUri. Defaults to true."
     },
     {
       "id": "FrontChannelLogoutUri-1",
@@ -1386,7 +1386,7 @@
     {
       "id": "GroupDescription-1",
       "valueType": "String",
-      "description": "An optional description of the group's purpose."
+      "description": "An optional description of the group\u0027s purpose."
     },
     {
       "id": "GroupName-1",
@@ -1710,7 +1710,7 @@
     {
       "id": "SourceTenantId-1",
       "valueType": "String",
-      "description": "The tenant ID where the user's account resides."
+      "description": "The tenant ID where the user\u0027s account resides."
     },
     {
       "id": "SourceUserId-1",
@@ -1799,7 +1799,7 @@
     {
       "id": "UserSsoLifetime-1",
       "valueType": "Int",
-      "description": "Lifetime of user's single sign-on session (in seconds). Defaults to null (no expiration)."
+      "description": "Lifetime of user\u0027s single sign-on session (in seconds). Defaults to null (no expiration)."
     },
     {
       "id": "UserTokens-1",
@@ -1858,7 +1858,7 @@
       "isAbstract": false,
       "attributes": [
         {
-          "id": "System-2.0.9/Description-1",
+          "id": "System-2.0.10/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -1939,7 +1939,7 @@
           "isOptional": false
         },
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.0.10/Name-1",
           "name": "Name",
           "isOptional": false
         },
