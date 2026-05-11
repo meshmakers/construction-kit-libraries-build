@@ -1,0 +1,298 @@
+{
+  "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
+  "dependencies": [
+    "System-2.0.10"
+  ],
+  "types": [
+    {
+      "isCollectionRoot": true,
+      "typeId": "CkArchive-1",
+      "derivedFromCkTypeId": "System-2.0.10/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Defines an archive of time-series data points for a specific Construction Kit type. The archive\u0027s columns specify which attribute paths are captured. Once activated, the schema is frozen and the corresponding CrateDB table is created. Subtyped by CkRollupArchive for derived bucketed-aggregation archives.",
+      "attributes": [
+        {
+          "id": "System.StreamData-1.1.0/CkArchive.TargetCkTypeId-1",
+          "name": "TargetCkTypeId",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkArchive.Columns-1",
+          "name": "Columns",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkArchive.Status-1",
+          "name": "Status",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkArchive.RawRetentionMs-1",
+          "name": "RawRetentionMs",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "CkRollupArchive-1",
+      "derivedFromCkTypeId": "System.StreamData-1.1.0/CkArchive-1",
+      "isFinal": true,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Derived archive that stores time-bucketed aggregations of another CkArchive. Columns are generated from Aggregations[] at activation time and are immutable afterwards. Inserts happen exclusively through the rollup orchestrator. The inherited Columns attribute is populated automatically; direct edits are rejected by validation.",
+      "attributes": [
+        {
+          "id": "System.StreamData-1.1.0/CkRollupArchive.SourceArchiveRtId-1",
+          "name": "SourceArchiveRtId",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupArchive.BucketSizeMs-1",
+          "name": "BucketSizeMs",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupArchive.WatermarkLagMs-1",
+          "name": "WatermarkLagMs",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupArchive.LastAggregatedBucketEnd-1",
+          "name": "LastAggregatedBucketEnd",
+          "isOptional": true
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupArchive.Aggregations-1",
+          "name": "Aggregations",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupArchive.FrozenUntil-1",
+          "name": "FrozenUntil",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "associationRoles": [],
+  "attributes": [
+    {
+      "id": "CkArchive.Columns-1",
+      "valueType": "RecordArray",
+      "valueCkRecordId": "System.StreamData-1.1.0/CkArchiveColumn-1",
+      "description": "Set of columns (attribute paths) the archive captures. At least one column is required."
+    },
+    {
+      "id": "CkArchive.RawRetentionMs-1",
+      "valueType": "Int",
+      "description": "Retention window for raw data points in milliseconds. When set, the partition pruner may drop source partitions older than (now - RawRetentionMs), but never ahead of the slowest attached rollup\u0027s watermark. Null means keep forever."
+    },
+    {
+      "id": "CkArchive.Status-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "System.StreamData-1.1.0/CkArchiveStatus-1",
+      "defaultValues": [
+        "0"
+      ],
+      "description": "Lifecycle status of the archive. Defaults to Created."
+    },
+    {
+      "id": "CkArchive.TargetCkTypeId-1",
+      "valueType": "String",
+      "description": "Construction Kit type ID that this archive captures time-series data for."
+    },
+    {
+      "id": "CkArchiveColumn.Indexed-1",
+      "valueType": "Boolean",
+      "defaultValues": [
+        "true"
+      ],
+      "description": "When true (default), the generated CrateDB column is indexed by the standard rules; when false, the column is created with INDEX OFF. Disable only for columns that are read but never filtered."
+    },
+    {
+      "id": "CkArchiveColumn.Path-1",
+      "valueType": "String",
+      "description": "Attribute path captured by this column. Supports nested record traversal (e.g. \u0027sensor.reading.value\u0027) and array projection (e.g. \u0027readings[*].value\u0027)."
+    },
+    {
+      "id": "CkArchiveColumn.Required-1",
+      "valueType": "Boolean",
+      "description": "When true, every insert must supply a non-null value for this path; missing values cause an exception. When false, missing values are stored as NULL and preserved across upserts via COALESCE."
+    },
+    {
+      "id": "CkRollupAggregation.Function-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "System.StreamData-1.1.0/CkRollupFunction-1",
+      "description": "Aggregation function applied to SourcePath within each bucket."
+    },
+    {
+      "id": "CkRollupAggregation.SourcePath-1",
+      "valueType": "String",
+      "description": "Attribute path on the source archive (must exist in the source\u0027s Columns list at activation time). For chained rollups referencing a stored AVG, use the explicit _sum / _count column names."
+    },
+    {
+      "id": "CkRollupAggregation.TargetColumnName-1",
+      "valueType": "String",
+      "description": "Optional explicit storage column name. Default is \u0027{sourcePath}_{function}\u0027 lower-cased; for AVG, two columns are created with suffixes _sum and _count derived from this base name."
+    },
+    {
+      "id": "CkRollupArchive.Aggregations-1",
+      "valueType": "RecordArray",
+      "valueCkRecordId": "System.StreamData-1.1.0/CkRollupAggregation-1",
+      "description": "List of aggregation definitions. At least one entry is required at activation time. Immutable after activation; schema changes require creating a new rollup."
+    },
+    {
+      "id": "CkRollupArchive.BucketSizeMs-1",
+      "valueType": "Int",
+      "description": "Width of the aggregation bucket in milliseconds. Each output row covers the half-open interval [bucketEnd - BucketSizeMs, bucketEnd). Must be positive and a multiple of the source rollup\u0027s bucket size when chaining. Immutable after activation."
+    },
+    {
+      "id": "CkRollupArchive.FrozenUntil-1",
+      "valueType": "DateTime",
+      "description": "When set, the rollup is read-only up to this timestamp: the orchestrator will not produce new buckets whose bucketEnd is \u2264 FrozenUntil. Set automatically when the source archive is truncated for the covered range, so the already-aggregated history is preserved. Monotonic; can only move forward."
+    },
+    {
+      "id": "CkRollupArchive.LastAggregatedBucketEnd-1",
+      "valueType": "DateTime",
+      "description": "Exclusive end timestamp of the most recently committed bucket. Null before the first run. Maintained exclusively by the rollup orchestrator; manual edits go through the rewindRollupWatermark mutation."
+    },
+    {
+      "id": "CkRollupArchive.SourceArchiveRtId-1",
+      "valueType": "String",
+      "description": "Runtime id of the source CkArchive this rollup aggregates from. May reference another CkRollupArchive to form a chain (e.g. raw \u2192 1 min \u2192 1 h). Immutable after the rollup is activated."
+    },
+    {
+      "id": "CkRollupArchive.WatermarkLagMs-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "300000"
+      ],
+      "description": "Lower bound on how far behind real-time the orchestrator stays before closing a bucket, in milliseconds. Absorbs late-arriving source inserts. Default 300000 (five minutes). Mutable."
+    }
+  ],
+  "records": [
+    {
+      "recordId": "CkArchiveColumn-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "description": "Single column definition inside a CkArchive: the attribute path to capture and whether it is required and indexed.",
+      "attributes": [
+        {
+          "id": "System.StreamData-1.1.0/CkArchiveColumn.Path-1",
+          "name": "Path",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkArchiveColumn.Required-1",
+          "name": "Required",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkArchiveColumn.Indexed-1",
+          "name": "Indexed",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "recordId": "CkRollupAggregation-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "description": "Single aggregation definition for a CkRollupArchive. Maps a source archive column (SourcePath) to one or more storage columns via Function. AVG materialises as two stored columns (sum \u002B count); the other functions map 1:1.",
+      "attributes": [
+        {
+          "id": "System.StreamData-1.1.0/CkRollupAggregation.SourcePath-1",
+          "name": "SourcePath",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupAggregation.Function-1",
+          "name": "Function",
+          "isOptional": false
+        },
+        {
+          "id": "System.StreamData-1.1.0/CkRollupAggregation.TargetColumnName-1",
+          "name": "TargetColumnName",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "enumId": "CkArchiveStatus-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Created",
+          "description": "Archive definition exists, but no Crate table has been provisioned. Inserts and queries are rejected.",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Activated",
+          "description": "Crate table exists, schema is frozen, inserts and queries are accepted.",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Disabled",
+          "description": "Crate table exists, but inserts and queries are rejected. Data is preserved.",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Failed",
+          "description": "Activation failed; manual retry required. Inserts and queries are rejected.",
+          "isExtension": false
+        }
+      ],
+      "description": "Lifecycle status of a CkArchive instance."
+    },
+    {
+      "enumId": "CkRollupFunction-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Avg",
+          "description": "Arithmetic mean. Stored as sum and count columns; the average is computed on read.",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Min",
+          "description": "Minimum value in the bucket.",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Max",
+          "description": "Maximum value in the bucket.",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Sum",
+          "description": "Sum of values in the bucket.",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Count",
+          "description": "Number of non-null values in the bucket.",
+          "isExtension": false
+        }
+      ],
+      "description": "Aggregation function used by a CkRollupAggregation. AVG is stored as two columns (sum \u002B count) so chained rollups stay numerically correct."
+    }
+  ],
+  "modelId": "System.StreamData-1.1.0",
+  "description": "StreamData model. Defines CkArchive (per-CkType time-series archive definitions), CkRollupArchive (derived bucketed-aggregation archives), and supporting enum/record types. Loaded only when StreamData is enabled at the instance level."
+}
