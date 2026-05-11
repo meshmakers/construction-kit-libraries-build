@@ -497,8 +497,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "ApparentPower-1",
@@ -512,8 +511,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "Capacity-1",
@@ -529,8 +527,7 @@
           "value": "0173-1#02-BAA564#007",
           "description": ""
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "Confidence-1",
@@ -545,8 +542,7 @@
           "key": "Decimals",
           "value": "1"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "CostAmount-1",
@@ -561,8 +557,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "DCAmpere-1",
@@ -576,8 +571,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "DCVoltage-1",
@@ -591,8 +585,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "DemandResponseEndTime-1",
@@ -626,8 +619,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "ForecastAmount-1",
@@ -642,8 +634,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "ForecastModel-1",
@@ -662,8 +653,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "IndicatorUnit-1",
@@ -673,8 +663,7 @@
     {
       "id": "IndicatorValue-1",
       "valueType": "Double",
-      "description": "Current value of the energy performance indicator",
-      "isDataStream": true
+      "description": "Current value of the energy performance indicator"
     },
     {
       "id": "LoadPercent-1",
@@ -689,8 +678,7 @@
           "key": "Decimals",
           "value": "0"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "MaximumPower-1",
@@ -704,8 +692,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "NominalPower-1",
@@ -731,8 +718,7 @@
           "key": "Unit",
           "value": ""
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "NumOfModules-1",
@@ -750,8 +736,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "PhaseInfoL1-1",
@@ -781,8 +766,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "ReactivePower-1",
@@ -796,8 +780,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "ReductionKw-1",
@@ -817,8 +800,7 @@
     {
       "id": "ReferenceValue-1",
       "valueType": "Double",
-      "description": "Reference or baseline value for comparison",
-      "isDataStream": true
+      "description": "Reference or baseline value for comparison"
     },
     {
       "id": "Revenue-1",
@@ -844,8 +826,7 @@
           "key": "Unit",
           "value": "%"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "SoH-1",
@@ -856,8 +837,7 @@
           "key": "Unit",
           "value": "%"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "TariffType-1",
@@ -876,8 +856,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     }
   ],
   "records": [
