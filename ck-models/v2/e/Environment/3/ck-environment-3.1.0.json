@@ -388,8 +388,7 @@
           "key": "Decimals",
           "value": "2"
         }
-      ],
-      "isDataStream": true
+      ]
     },
     {
       "id": "EmissionSource-1",
