@@ -3,7 +3,7 @@
   "dependencies": [
     "Industry.Basic-2.1.0",
     "Basic-2.0.2",
-    "System-2.0.9"
+    "System-2.1.0"
   ],
   "types": [
     {
@@ -14,12 +14,11 @@
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.1.0/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "A demand response event representing participation in energy flexibility markets",
       "attributes": [
         {
@@ -61,7 +60,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Energy consuming equipment with nominal power and load tracking",
       "attributes": [
         {
@@ -89,7 +87,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "EnergyCost-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "indexes": [
@@ -118,12 +116,11 @@
       ],
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.1.0/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Time-series data for energy costs including actual and forecasted amounts",
       "attributes": [
         {
@@ -151,7 +148,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "EnergyForecast-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "indexes": [
@@ -168,12 +165,11 @@
       ],
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.1.0/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "AI-generated load forecast data for energy consumption prediction",
       "attributes": [
         {
@@ -205,7 +201,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "Industry.Energy-3.1.0/Voltage-1",
@@ -284,12 +279,11 @@
       ],
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.1.0/ParentChild-1",
           "targetCkTypeId": "Basic-2.0.2/TreeNode-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Energy Performance Indicator (EnPI) for tracking energy efficiency metrics like kWh/unit",
       "attributes": [
         {
@@ -321,7 +315,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "Industry.Energy-3.1.0/Voltage-1",
@@ -382,7 +375,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "Industry.Energy-3.1.0/DCVoltage-1",
@@ -437,8 +429,7 @@
       "derivedFromCkTypeId": "Basic-2.0.2/Asset-1",
       "isFinal": false,
       "isAbstract": false,
-      "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false
+      "enableChangeStreamPreAndPostImages": false
     },
     {
       "isCollectionRoot": false,
@@ -447,7 +438,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "Industry.Energy-3.1.0/PeakPower-1",
@@ -468,7 +458,6 @@
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "attributes": [
         {
           "id": "Industry.Energy-3.1.0/NumOfModules-1",
