@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Communication",
   "majorVersion": 3,
-  "latestVersion": "3.15.0",
+  "latestVersion": "3.16.0",
   "description": "Construction kit model for the OctoMesh Communication Controller. Defines adapters, pipelines, pools, triggers, configurations, and execution tracking for data ingress and egress.",
   "versions": [
     {
@@ -54,6 +54,12 @@
       "publishedAt": "2026-05-11T10:52:08.4557078Z"
     },
     {
+      "version": "3.16.0",
+      "fileName": "ck-system.communication-3.16.0.json",
+      "filePath": "ck-models/v2/s/System.Communication/3/ck-system.communication-3.16.0.json",
+      "publishedAt": "2026-05-14T07:47:08.7556368Z"
+    },
+    {
       "version": "3.2.0",
       "fileName": "ck-system.communication-3.2.0.json",
       "filePath": "ck-models/v2/s/System.Communication/3/ck-system.communication-3.2.0.json",
@@ -72,5 +78,5 @@
       "publishedAt": "2026-04-14T16:20:51.4706276Z"
     }
   ],
-  "updatedAt": "2026-05-11T10:52:08.4635806Z"
+  "updatedAt": "2026-05-14T07:47:08.7627359Z"
 }
