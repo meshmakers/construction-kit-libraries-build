@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "System-2.1.0",
+    "System-2.2.0",
     "System.Bot-3.1.1"
   ],
   "migrations": {
@@ -475,7 +475,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "AiConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -527,19 +527,19 @@
     {
       "isCollectionRoot": true,
       "typeId": "DataFlow-1",
-      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "description": "A logical grouping of pipelines and triggers that belong together. DataFlows organize the data integration logic within a tenant.",
       "attributes": [
         {
-          "id": "System-2.1.0/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": false
         },
         {
-          "id": "System-2.1.0/Description-1",
+          "id": "System-2.2.0/Description-1",
           "name": "Description",
           "isOptional": true
         }
@@ -548,29 +548,29 @@
     {
       "isCollectionRoot": true,
       "typeId": "DataPointMapping-1",
-      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
           "id": "System.Communication-3.16.0/MapsFrom-1",
-          "targetCkTypeId": "System-2.1.0/Entity-1"
+          "targetCkTypeId": "System-2.2.0/Entity-1"
         },
         {
           "id": "System.Communication-3.16.0/MapsTo-1",
-          "targetCkTypeId": "System-2.1.0/Entity-1"
+          "targetCkTypeId": "System-2.2.0/Entity-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
       "description": "Maps a source entity attribute to a target entity attribute with optional expression transformation",
       "attributes": [
         {
-          "id": "System-2.1.0/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": true
         },
         {
-          "id": "System-2.1.0/Enabled-1",
+          "id": "System-2.2.0/Enabled-1",
           "name": "Enabled",
           "isOptional": false
         },
@@ -594,7 +594,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "DeployableEntity-1",
-      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": true,
       "enableChangeStreamPreAndPostImages": false,
@@ -606,12 +606,12 @@
           "isOptional": false
         },
         {
-          "id": "System-2.1.0/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": true
         },
         {
-          "id": "System-2.1.0/Description-1",
+          "id": "System-2.2.0/Description-1",
           "name": "Description",
           "isOptional": true
         },
@@ -666,7 +666,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "DiscordConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -687,7 +687,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "EMailReceiverConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -728,7 +728,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "EMailSenderConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -769,7 +769,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "EdaConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -792,7 +792,7 @@
       "description": "Configuration for an energy community",
       "attributes": [
         {
-          "id": "System-2.1.0/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": true
         },
@@ -891,7 +891,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "FinApiConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -932,7 +932,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "GrafanaConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -973,7 +973,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "HelmRepositoryConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1004,7 +1004,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "LoxoneConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1050,7 +1050,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "MicrosoftGraphConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1081,7 +1081,7 @@
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.1.0/ParentChild-1",
+          "id": "System-2.2.0/ParentChild-1",
           "targetCkTypeId": "System.Communication-3.16.0/DataFlow-1"
         },
         {
@@ -1090,7 +1090,7 @@
         },
         {
           "id": "System.Communication-3.16.0/Uses-1",
-          "targetCkTypeId": "System-2.1.0/Configuration-1"
+          "targetCkTypeId": "System-2.2.0/Configuration-1"
         },
         {
           "id": "System.Communication-3.16.0/SendsDataTo-1",
@@ -1101,7 +1101,7 @@
       "description": "A data processing pipeline that defines a sequence of processing nodes. Pipelines are deployed to adapters for execution and can be organized within data flows.",
       "attributes": [
         {
-          "id": "System-2.1.0/Enabled-1",
+          "id": "System-2.2.0/Enabled-1",
           "name": "Enabled",
           "isOptional": true
         },
@@ -1120,7 +1120,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "PipelineExecution-1",
-      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "indexes": [
@@ -1208,7 +1208,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "PipelineStatistics-1",
-      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
@@ -1300,7 +1300,7 @@
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.1.0/ParentChild-1",
+          "id": "System-2.2.0/ParentChild-1",
           "targetCkTypeId": "System.Communication-3.16.0/DataFlow-1"
         },
         {
@@ -1312,7 +1312,7 @@
       "description": "A scheduled trigger that executes one or more pipelines based on a cron expression. Organized within data flows alongside the pipelines they trigger.",
       "attributes": [
         {
-          "id": "System-2.1.0/Enabled-1",
+          "id": "System-2.2.0/Enabled-1",
           "name": "Enabled",
           "isOptional": false
         },
@@ -1357,7 +1357,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "SapConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1428,7 +1428,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "ServiceAccountConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1450,7 +1450,7 @@
           "isOptional": false
         },
         {
-          "id": "System-2.1.0/TenantId-1",
+          "id": "System-2.2.0/TenantId-1",
           "name": "TenantId",
           "isOptional": false
         }
@@ -1459,7 +1459,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "SftpConfiguration-1",
-      "derivedFromCkTypeId": "System-2.1.0/Configuration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1505,13 +1505,13 @@
     {
       "isCollectionRoot": true,
       "typeId": "Tag-1",
-      "derivedFromCkTypeId": "System-2.1.0/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
           "id": "System.Communication-3.16.0/Tag-1",
-          "targetCkTypeId": "System-2.1.0/Entity-1"
+          "targetCkTypeId": "System-2.2.0/Entity-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
@@ -2316,7 +2316,7 @@
       "description": "Generic data point record for adapter data acquisition. Used in RecordArray attributes to store multiple named data points with their external identifiers and current values.",
       "attributes": [
         {
-          "id": "System-2.1.0/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": false
         },
@@ -2349,7 +2349,7 @@
           "isOptional": false
         },
         {
-          "id": "System-2.1.0/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": true
         },
