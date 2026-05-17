@@ -1,23 +1,22 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "System-2.0.9"
+    "System-2.2.0"
   ],
   "types": [
     {
       "isCollectionRoot": true,
       "typeId": "Message-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.2.0/ParentChild-1",
           "targetCkTypeId": "System.Ai-2.0.0/NodeContext-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a single message in a conversation with content, user flag, and timestamp",
       "attributes": [
         {
@@ -40,12 +39,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Node-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.2.0/ParentChild-1",
           "targetCkTypeId": "System.Ai-2.0.0/Workspace-1"
         },
         {
@@ -54,11 +53,10 @@
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a conversation node with navigation, interaction type, and optional metadata",
       "attributes": [
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": false
         },
@@ -82,17 +80,16 @@
     {
       "isCollectionRoot": true,
       "typeId": "NodeContext-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.0.9/ParentChild-1",
+          "id": "System-2.2.0/ParentChild-1",
           "targetCkTypeId": "System.Ai-2.0.0/Node-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents the context of a conversation node, containing associated messages",
       "attributes": [
         {
@@ -105,15 +102,14 @@
     {
       "isCollectionRoot": true,
       "typeId": "Workspace-1",
-      "derivedFromCkTypeId": "System-2.0.9/Entity-1",
+      "derivedFromCkTypeId": "System-2.2.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
-      "isStreamType": false,
       "description": "Represents a conversation workspace containing multiple interconnected nodes",
       "attributes": [
         {
-          "id": "System-2.0.9/Name-1",
+          "id": "System-2.2.0/Name-1",
           "name": "Name",
           "isOptional": false
         },
