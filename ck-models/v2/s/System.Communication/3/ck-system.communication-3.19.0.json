@@ -461,6 +461,16 @@
           "isOptional": false
         },
         {
+          "id": "System.Communication-3.19.0/LastConfigurationError-1",
+          "name": "LastConfigurationError",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.19.0/LastConfigurationErrorTimestamp-1",
+          "name": "LastConfigurationErrorTimestamp",
+          "isOptional": true
+        },
+        {
           "id": "System.Communication-3.19.0/AdapterConfiguration-1",
           "name": "Configuration",
           "isOptional": true
@@ -618,6 +628,16 @@
         {
           "id": "System.Communication-3.19.0/StatusMessage-1",
           "name": "StatusMessage",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.19.0/LastDeploymentError-1",
+          "name": "LastDeploymentError",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.19.0/LastDeploymentErrorTimestamp-1",
+          "name": "LastDeploymentErrorTimestamp",
           "isOptional": true
         }
       ]
@@ -1353,6 +1373,16 @@
           "isOptional": false
         },
         {
+          "id": "System.Communication-3.19.0/LastConfigurationError-1",
+          "name": "LastConfigurationError",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.19.0/LastConfigurationErrorTimestamp-1",
+          "name": "LastConfigurationErrorTimestamp",
+          "isOptional": true
+        },
+        {
           "id": "System.Communication-3.19.0/Environment-1",
           "name": "Environment",
           "isOptional": false
@@ -2006,6 +2036,26 @@
       "description": "Successful executions in the last 30 days"
     },
     {
+      "id": "LastConfigurationError-1",
+      "valueType": "String",
+      "description": "Last configuration error message. Set when ConfigurationState transitions to Error, cleared automatically when ConfigurationState transitions to Configured. Other state transitions (Pending, Unconfigured) leave this field untouched. Tracked separately from LastDeploymentError because configuration and deployment errors have independent root causes and must not mask each other."
+    },
+    {
+      "id": "LastConfigurationErrorTimestamp-1",
+      "valueType": "DateTime",
+      "description": "Timestamp of the LastConfigurationError. Set when LastConfigurationError is set, cleared when LastConfigurationError is cleared."
+    },
+    {
+      "id": "LastDeploymentError-1",
+      "valueType": "String",
+      "description": "Last deployment error message. Set when DeploymentState transitions to Error, cleared automatically when DeploymentState transitions to Deployed. Other state transitions (Pending, Undeployed) leave this field untouched so the user can see the most recent deployment failure cause until a successful deploy resolves it."
+    },
+    {
+      "id": "LastDeploymentErrorTimestamp-1",
+      "valueType": "DateTime",
+      "description": "Timestamp of the LastDeploymentError. Set when LastDeploymentError is set, cleared when LastDeploymentError is cleared."
+    },
+    {
       "id": "LastExecutionAt-1",
       "valueType": "DateTime",
       "description": "Timestamp of the most recent execution"
@@ -2241,7 +2291,7 @@
     {
       "id": "StatusMessage-1",
       "valueType": "String",
-      "description": "Human-readable status or error message from the last deployment or configuration attempt."
+      "description": "Human-readable status or error message from the last deployment or configuration attempt. Reflects the current/live status \u2014 overwritten on every state change including successful transitions. For persistent error history, use LastDeploymentError / LastConfigurationError."
     },
     {
       "id": "SystemId-1",
