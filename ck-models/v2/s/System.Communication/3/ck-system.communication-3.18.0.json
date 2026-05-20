@@ -469,11 +469,6 @@
           "id": "System.Communication-3.18.0/LastSyncedSequenceNumber-1",
           "name": "LastSyncedSequenceNumber",
           "isOptional": false
-        },
-        {
-          "id": "System.Communication-3.18.0/ReceivesClusterSecrets-1",
-          "name": "ReceivesClusterSecrets",
-          "isOptional": false
         }
       ]
     },
@@ -665,6 +660,11 @@
           "id": "System.Communication-3.18.0/Values-1",
           "name": "Values",
           "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.18.0/ReceivesClusterSecrets-1",
+          "name": "ReceivesClusterSecrets",
+          "isOptional": false
         }
       ]
     },
@@ -2168,7 +2168,7 @@
       "defaultValues": [
         "false"
       ],
-      "description": "When true, the Communication Operator injects cluster-internal credentials (MongoDB user/admin passwords, CrateDB password, RabbitMQ password) into the Adapter\u0027s Helm release as secret-flagged value overrides. Defaults to false so untrusted or edge adapters do not receive cluster credentials by accident; enable only for adapters that run in the same cluster as the OctoMesh core services and need to talk to them directly."
+      "description": "When true, the Communication Operator injects cluster-internal credentials (MongoDB user/admin passwords, CrateDB password) into the workload\u0027s Helm release as secret-flagged value overrides. Applies to Adapters and Applications (e.g. backend services that talk to the core MongoDB / CrateDB). Defaults to false so untrusted or edge workloads do not receive cluster credentials by accident; enable only for workloads that run in the same cluster as the OctoMesh core services and need to talk to them directly. The RabbitMQ broker password is NOT controlled by this flag \u2014 it is injected unconditionally because every workload needs the controller-to-workload command bus."
     },
     {
       "id": "RepositoryUrl-1",
