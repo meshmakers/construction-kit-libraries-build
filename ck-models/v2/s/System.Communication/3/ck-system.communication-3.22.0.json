@@ -1828,7 +1828,7 @@
     {
       "id": "CurrentValue-1",
       "valueType": "String",
-      "isRuntimeState": false,
+      "isRuntimeState": true,
       "description": "Current value of the data point as a string (numeric conversion happens during mapping evaluation)"
     },
     {
@@ -1996,7 +1996,7 @@
     {
       "id": "IsDebuggingEnabled-1",
       "valueType": "Boolean",
-      "isRuntimeState": false,
+      "isRuntimeState": true,
       "description": "Whether debugging is enabled for this pipeline"
     },
     {
@@ -2176,7 +2176,7 @@
     {
       "id": "LastUpdate-1",
       "valueType": "DateTime",
-      "isRuntimeState": false,
+      "isRuntimeState": true,
       "description": "Timestamp of the last value update for this data point"
     },
     {
