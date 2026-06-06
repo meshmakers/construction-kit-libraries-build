@@ -9,7 +9,11 @@
     {
       "majorVersion": 2,
       "catalogPath": "ck-models/v2/s/System.Ai/2/catalog.json"
+    },
+    {
+      "majorVersion": 3,
+      "catalogPath": "ck-models/v2/s/System.Ai/3/catalog.json"
     }
   ],
-  "updatedAt": "2026-01-15T14:59:47.3340209Z"
+  "updatedAt": "2026-06-06T16:43:30.6659226Z"
 }
