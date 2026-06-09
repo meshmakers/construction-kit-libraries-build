@@ -1074,6 +1074,47 @@
     },
     {
       "isCollectionRoot": false,
+      "typeId": "McpConfiguration-1",
+      "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
+      "isFinal": true,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Configuration for a Model Context Protocol (MCP) server connection. Stores transport, endpoint and (optional) authentication for a single MCP server. Referenced by LlmQuery@1 pipeline nodes via the McpConfigurationNames list field \u2014 one MCP server can be referenced by many pipelines, and a single pipeline can compose tools from multiple MCP servers.\n",
+      "attributes": [
+        {
+          "id": "System.Communication-3.20.0/Url-1",
+          "name": "Url",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.20.0/Transport-1",
+          "name": "Transport",
+          "isOptional": false
+        },
+        {
+          "id": "System.Communication-3.20.0/Command-1",
+          "name": "Command",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.20.0/Arguments-1",
+          "name": "Arguments",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.20.0/BearerToken-1",
+          "name": "BearerToken",
+          "isOptional": true
+        },
+        {
+          "id": "System.Communication-3.20.0/DefaultTimeoutSeconds-1",
+          "name": "DefaultTimeoutSeconds",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
       "typeId": "MicrosoftGraphConfiguration-1",
       "derivedFromCkTypeId": "System-2.2.0/Configuration-1",
       "isFinal": true,
@@ -1675,16 +1716,19 @@
     {
       "id": "AdapterConfiguration-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "JSON-serialized adapter-specific configuration that is deployed to the adapter."
     },
     {
       "id": "AdminPassword-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Grafana Server Admin password."
     },
     {
       "id": "AdminUser-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Grafana Server Admin username for organization management API."
     },
     {
@@ -1693,41 +1737,61 @@
       "defaultValues": [
         "claude-sonnet-4-20250514"
       ],
+      "isRuntimeState": false,
       "description": "AI model identifier to use (e.g. claude-sonnet-4-20250514, claude-haiku-4-5-20251001)."
     },
     {
       "id": "ApiKey-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "API key for authenticating with the AI service (e.g. Anthropic sk-ant-... key). Stored as configuration attribute, not exposed in pipeline data context."
     },
     {
       "id": "AppHeading-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Heading displayed in the application header bar"
     },
     {
       "id": "AppTitle-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Browser tab title of the web application"
+    },
+    {
+      "id": "Arguments-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Stdio transport only: command-line arguments for the spawned MCP server. One argument per line, or a JSON array. Ignored for Sse and Http."
     },
     {
       "id": "AzureTenantId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The Azure Active Directory tenant ID (GUID) for OAuth2 authentication."
     },
     {
       "id": "BackgroundColor-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Background color of the web application"
+    },
+    {
+      "id": "BearerToken-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Optional bearer token for HTTP-style MCP server authentication. Sent as the \u0060Authorization: Bearer {token}\u0060 header. Stored as a configuration attribute, not exposed in the pipeline data context."
     },
     {
       "id": "BillingReportName-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Name of the Telerik billing report template (e.g. SBEG_Billing.trdp)"
     },
     {
       "id": "BotToken-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The bot token used as the \u0060Authorization: Bot {token}\u0060 header when calling the Discord REST API."
     },
     {
@@ -1737,27 +1801,38 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Helm chart distribution channel (Dev or Release). Pure label for UI colour-coding; the operator does not derive behavior from it."
     },
     {
       "id": "ChartName-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Helm chart name within the repository (e.g. voest-app, octo-mesh-adapter)."
     },
     {
       "id": "ChartVersion-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Helm chart version (e.g. 1.2.3)."
     },
     {
       "id": "ClientId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "OAuth2 Client ID for authenticating with the external API."
     },
     {
       "id": "ClientSecret-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "OAuth2 Client Secret for authenticating with the external API."
+    },
+    {
+      "id": "Command-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Stdio transport only: command to spawn the MCP server subprocess (e.g. \u0022dotnet\u0022, \u0022npx\u0022, \u0022/usr/local/bin/my-mcp\u0022). Ignored for Sse and Http."
     },
     {
       "id": "CommunicationState-1",
@@ -1766,16 +1841,19 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Current SignalR connection state of the adapter or pool operator."
     },
     {
       "id": "CommunicationStateTimestamp-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp of the last communication state change (online/offline transition)."
     },
     {
       "id": "CompletedAt-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp when execution completed"
     },
     {
@@ -1785,11 +1863,13 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Current configuration deployment state of the adapter or pool."
     },
     {
       "id": "ConsumerPrice-1",
       "valueType": "Double",
+      "isRuntimeState": false,
       "description": "Price per kWh for consumers in the energy community"
     },
     {
@@ -1798,12 +1878,23 @@
       "defaultValues": [
         "5"
       ],
+      "isRuntimeState": false,
       "description": "Delay in days before automatic consumption record requests are sent"
     },
     {
       "id": "CurrentValue-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Current value of the data point as a string (numeric conversion happens during mapping evaluation)"
+    },
+    {
+      "id": "DefaultTimeoutSeconds-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "30"
+      ],
+      "isRuntimeState": false,
+      "description": "Default request timeout for tool calls against this MCP server, in seconds. The LlmQuery@1 node-level Timeout may override."
     },
     {
       "id": "DeploymentState-1",
@@ -1812,16 +1903,19 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Current deployment state of the entity (undeployed, pending, deployed, or error)."
     },
     {
       "id": "DurationMs-1",
       "valueType": "Int",
+      "isRuntimeState": false,
       "description": "Execution duration in milliseconds"
     },
     {
       "id": "EnergyCommunityId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "ID of the energy community"
     },
     {
@@ -1831,16 +1925,19 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Where the pool\u0027s adapter workloads are hosted. Edge (default) means an external operator installs and runs the pool; Cloud means the central Communication Operator auto-deploys it into the OctoMesh cluster."
     },
     {
       "id": "ErrorMessage-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Error message if execution failed"
     },
     {
       "id": "ExecutionId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Unique identifier (GUID) for this execution"
     },
     {
@@ -1850,11 +1947,13 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Current status of the pipeline execution (Running, Completed, Failed, Interrupted, Cancelled)."
     },
     {
       "id": "ExternalId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "External identifier of the data point (e.g. Loxone State UUID, MQTT Topic, OPC-UA NodeId, Modbus Register)"
     },
     {
@@ -1863,86 +1962,103 @@
       "defaultValues": [
         "13.0"
       ],
+      "isRuntimeState": false,
       "description": "Tax rate applied to farmers in the energy community"
     },
     {
       "id": "Favicon-1",
       "valueType": "BinaryLinked",
+      "isRuntimeState": false,
       "description": "Favicon icon for the web application"
     },
     {
       "id": "Folder-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The mailbox folder to monitor for incoming emails (e.g. INBOX)."
     },
     {
       "id": "FooterGradientEnd-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "End color of the footer gradient"
     },
     {
       "id": "FooterGradientStart-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Start color of the footer gradient"
     },
     {
       "id": "FooterLogo-1",
       "valueType": "BinaryLinked",
+      "isRuntimeState": false,
       "description": "Icon for the app footer"
     },
     {
       "id": "GrafanaUrl-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Base URL of the Grafana instance."
     },
     {
       "id": "GuildId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The Discord guild (server) snowflake ID. Reserved for future channel-name resolution; not read by the ToDiscord node in v1."
     },
     {
       "id": "HeaderGradientEnd-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "End color of the header gradient"
     },
     {
       "id": "HeaderGradientStart-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Start color of the header gradient"
     },
     {
       "id": "HeaderLogo-1",
       "valueType": "BinaryLinked",
+      "isRuntimeState": false,
       "description": "Icon for the app header"
     },
     {
       "id": "Host-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The host name is the name of the server on which the external system is running."
     },
     {
       "id": "Hostname-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Optional public hostname for an Application (e.g. energy.prod-1.octo-mesh.com). When set the operator may surface it; the actual ingress configuration is owned by the Helm chart."
     },
     {
       "id": "IdentityServerUrl-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "URL of the OctoMesh Identity Server for provisioned datasource OAuth configuration."
     },
     {
       "id": "InputData-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Optional input data (JSON) for debugging"
     },
     {
       "id": "IsDebuggingEnabled-1",
       "valueType": "Boolean",
+      "isRuntimeState": false,
       "description": "Whether debugging is enabled for this pipeline"
     },
     {
       "id": "IsSandbox-1",
       "valueType": "Boolean",
+      "isRuntimeState": false,
       "description": "If true, the adapter connects to the sandbox environment instead of production."
     },
     {
@@ -1951,16 +2067,19 @@
       "defaultValues": [
         "false"
       ],
+      "isRuntimeState": false,
       "description": "When true, the ValueOverride.Value is encrypted at rest in MongoDB and rendered as a Kubernetes Secret reference at deploy time."
     },
     {
       "id": "IsSslEnabled-1",
       "valueType": "Boolean",
+      "isRuntimeState": false,
       "description": "The Secure Sockets Layer (SSL) protocol is used to secure communication between a client and a server."
     },
     {
       "id": "IssuerUri-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "URI of the OAuth2/OpenID Connect authorization server (e.g. https://identity.example.com)"
     },
     {
@@ -1969,6 +2088,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Average execution duration in the last 12 hours (ms)"
     },
     {
@@ -1977,6 +2097,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Failed executions in the last 12 hours"
     },
     {
@@ -1985,6 +2106,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Successful executions in the last 12 hours"
     },
     {
@@ -1993,6 +2115,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Average execution duration in the last 24 hours (ms)"
     },
     {
@@ -2001,6 +2124,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Failed executions in the last 24 hours"
     },
     {
@@ -2009,6 +2133,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Successful executions in the last 24 hours"
     },
     {
@@ -2017,6 +2142,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Average execution duration in the last 30 days (ms)"
     },
     {
@@ -2025,6 +2151,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Failed executions in the last 30 days"
     },
     {
@@ -2033,31 +2160,37 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Successful executions in the last 30 days"
     },
     {
       "id": "LastConfigurationError-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Last configuration error message. Set when ConfigurationState transitions to Error, cleared automatically when ConfigurationState transitions to Configured. Other state transitions (Pending, Unconfigured) leave this field untouched. Tracked separately from LastDeploymentError because configuration and deployment errors have independent root causes and must not mask each other."
     },
     {
       "id": "LastConfigurationErrorTimestamp-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp of the LastConfigurationError. Set when LastConfigurationError is set, cleared when LastConfigurationError is cleared."
     },
     {
       "id": "LastDeploymentError-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Last deployment error message. Set when DeploymentState transitions to Error, cleared automatically when DeploymentState transitions to Deployed. Other state transitions (Pending, Undeployed) leave this field untouched so the user can see the most recent deployment failure cause until a successful deploy resolves it."
     },
     {
       "id": "LastDeploymentErrorTimestamp-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp of the LastDeploymentError. Set when LastDeploymentError is set, cleared when LastDeploymentError is cleared."
     },
     {
       "id": "LastExecutionAt-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp of the most recent execution"
     },
     {
@@ -2066,6 +2199,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Average execution duration in the last hour (ms)"
     },
     {
@@ -2074,6 +2208,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Failed executions in the last hour"
     },
     {
@@ -2082,6 +2217,7 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Successful executions in the last hour"
     },
     {
@@ -2090,32 +2226,38 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "Last synced sequence number for offline sync"
     },
     {
       "id": "LastUpdate-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp of the last value update for this data point"
     },
     {
       "id": "LastUpdatedAt-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "When statistics were last calculated"
     },
     {
       "id": "MappingExpression-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Optional mXparser expression to transform the source value. Variable value contains the source value."
     },
     {
       "id": "MappingTargets-1",
       "valueType": "RecordArray",
       "valueCkRecordId": "System.Communication-3.20.0/MappingTarget-1",
+      "isRuntimeState": false,
       "description": "Resolved mapping targets for data acquisition. Populated automatically by the BuildMappingTargets pipeline node from DataPointMappings."
     },
     {
       "id": "MaxConcurrentConnections-1",
       "valueType": "Int",
+      "isRuntimeState": false,
       "description": "The maximum number of concurrent connections is the maximum number of connections that can be established with an external system at the same time."
     },
     {
@@ -2124,51 +2266,61 @@
       "defaultValues": [
         "4000"
       ],
+      "isRuntimeState": false,
       "description": "Maximum number of tokens for the AI response."
     },
     {
       "id": "McpServerUrl-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "URL of the OctoMesh MCP server for AI tool use (e.g. https://localhost:5017). The tenant ID is appended automatically."
     },
     {
       "id": "Name-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Optional display name for the tag."
     },
     {
       "id": "NetworkPartnerId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "ID of the network partner (Marktpartner"
     },
     {
       "id": "NeutralColor-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The neutral color of the theme"
     },
     {
       "id": "OAuthClientId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "OAuth client ID for the Grafana datasource plugin."
     },
     {
       "id": "OctoMeshUrl-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "URL of the OctoMesh Asset Repository for provisioned datasource configuration."
     },
     {
       "id": "OutputData-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Optional output data (JSON) from pipeline execution result"
     },
     {
       "id": "Password-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The password is the secret that is used to authenticate with the external system."
     },
     {
       "id": "Path-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Dotted Helm values path for a ValueOverride entry (e.g. image.tag, service.port, oauth.clientId)."
     },
     {
@@ -2177,6 +2329,7 @@
       "defaultValues": [
         ""
       ],
+      "isRuntimeState": false,
       "description": "JSON-serialized pipeline node graph that defines the data processing logic."
     },
     {
@@ -2185,31 +2338,37 @@
       "defaultValues": [
         "30"
       ],
+      "isRuntimeState": false,
       "description": "Interval in seconds between polling cycles."
     },
     {
       "id": "Port-1",
       "valueType": "Int",
+      "isRuntimeState": false,
       "description": "The port number is the number of the port on which the external system is listening for incoming connections."
     },
     {
       "id": "PrimaryColor-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The primary color of the theme"
     },
     {
       "id": "PrivateKey-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The private key is a secret key that is used in asymmetric encryption to authenticate with the external system."
     },
     {
       "id": "PrivateKeyPassphrase-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The private key passphrase is a secret that is used to protect the private key."
     },
     {
       "id": "ProducerPrice-1",
       "valueType": "Double",
+      "isRuntimeState": false,
       "description": "Price per kWh for producers in the energy community"
     },
     {
@@ -2218,41 +2377,49 @@
       "defaultValues": [
         "false"
       ],
+      "isRuntimeState": false,
       "description": "When true, the Communication Operator injects cluster-internal credentials (MongoDB user/admin passwords, CrateDB password) into the workload\u0027s Helm release as secret-flagged value overrides. Applies to Adapters and Applications (e.g. backend services that talk to the core MongoDB / CrateDB). Defaults to false so untrusted or edge workloads do not receive cluster credentials by accident; enable only for workloads that run in the same cluster as the OctoMesh core services and need to talk to them directly. The RabbitMQ broker password is NOT controlled by this flag \u2014 it is injected unconditionally because every workload needs the controller-to-workload command bus."
     },
     {
       "id": "RepositoryUrl-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "HTTP(S) URL of a Helm repository index, e.g. https://meshmakers.github.io/octo-helm-core (public) or a private GitHub Pages site."
     },
     {
       "id": "SapClient-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "A client is a tenant instance in an SAP system. SAP is multi-tenant, which means that multiple organizations or departments can work on the same system without sharing data with each other."
     },
     {
       "id": "SapGatewayHost-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "An SAP gateway host is a server that provides communication services between SAP systems or between SAP systems and external applications."
     },
     {
       "id": "SapGatewayService-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "An SAP gateway service provides communication services that are used between SAP systems or between SAP systems and external applications."
     },
     {
       "id": "SapLanguage-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The language key is a two-character code that identifies the language in which the user interface is displayed."
     },
     {
       "id": "SapProgramId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "A program ID is a unique identifier that is used to register a program on an SAP gateway server."
     },
     {
       "id": "SapRegistrationCount-1",
       "valueType": "Int",
+      "isRuntimeState": false,
       "description": "The registration count is the number of times a program is registered on an SAP gateway server."
     },
     {
@@ -2261,56 +2428,67 @@
       "defaultValues": [
         "8"
       ],
+      "isRuntimeState": false,
       "description": "The trace level is a number that determines the amount of information that is logged during communication with the SAP system."
     },
     {
       "id": "SecondaryColor-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The secondary color of the theme"
     },
     {
       "id": "SenderEmail-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Email address used as the sender (From) for outgoing emails."
     },
     {
       "id": "SourceAttributePath-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Path to the source attribute to read (e.g., CurrentValue, or nested record.field). If not set, the adapter determines the default."
     },
     {
       "id": "SourceIdentifier-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Identifier of the source entity (e.g. Loxone Control UUID, MQTT device ID)"
     },
     {
       "id": "StartedAt-1",
       "valueType": "DateTime",
+      "isRuntimeState": false,
       "description": "Timestamp when execution started"
     },
     {
       "id": "StatusMessage-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Human-readable status or error message from the last deployment or configuration attempt. Reflects the current/live status \u2014 overwritten on every state change including successful transitions. For persistent error history, use LastDeploymentError / LastConfigurationError."
     },
     {
       "id": "SystemId-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The System ID (SID) is the unique technical name of an SAP system. It consists of three letters and uniquely identifies a system within a landscape."
     },
     {
       "id": "SystemNumber-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The system number is a two-digit number assigned to an SAP system during installation. It is used to identify the SAP service (e.g. Dispatcher) on a specific port."
     },
     {
       "id": "Tag-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The tag value used for categorization and filtering."
     },
     {
       "id": "TargetAttributePath-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Path to the target attribute to update on the mapped entity (e.g., Temperature, Humidity, or nested record.field)"
     },
     {
@@ -2319,6 +2497,7 @@
       "defaultValues": [
         "20.0"
       ],
+      "isRuntimeState": false,
       "description": "Tax rate applied to energy transactions in the community"
     },
     {
@@ -2327,12 +2506,21 @@
       "defaultValues": [
         "0.1"
       ],
+      "isRuntimeState": false,
       "description": "Temperature for AI response generation (0.0 = deterministic, 1.0 = creative)."
     },
     {
       "id": "TertiaryColor-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The tertiary color of the theme"
+    },
+    {
+      "id": "Transport-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "System.Communication-3.20.0/McpTransport-1",
+      "isRuntimeState": false,
+      "description": "MCP transport protocol: Stdio (local subprocess), Sse (Server-Sent Events over HTTPS) or Http (streamable HTTPS)."
     },
     {
       "id": "TriggerType-1",
@@ -2341,33 +2529,45 @@
       "defaultValues": [
         "0"
       ],
+      "isRuntimeState": false,
       "description": "How this pipeline execution was initiated (Manual, Scheduled, Event, or Startup)."
     },
     {
       "id": "UiThemeColors-1",
       "valueType": "Record",
       "valueCkRecordId": "System.Communication-3.20.0/UiThemeColors-1",
+      "isRuntimeState": false,
       "description": "Theme color configuration for an application"
+    },
+    {
+      "id": "Url-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Base URL of the MCP server. Used by the Sse and Http transports. For Stdio, leave empty and set Command \u002B Arguments instead. The LlmQuery@1 node may append the tenant id at resolution time if the URL contains a {tenantId} placeholder."
     },
     {
       "id": "Username-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "The username is the name of the user that is used to authenticate with the external system."
     },
     {
       "id": "Value-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "String value of a ValueOverride entry. Encrypted at rest when the entry is flagged IsSecret."
     },
     {
       "id": "Values-1",
       "valueType": "RecordArray",
       "valueCkRecordId": "System.Communication-3.20.0/ValueOverride-1",
+      "isRuntimeState": false,
       "description": "Structured Helm value overrides. Deep-merged on top of ValuesYaml during deploy. Entries flagged IsSecret are stored encrypted."
     },
     {
       "id": "ValuesYaml-1",
       "valueType": "String",
+      "isRuntimeState": false,
       "description": "Full values.yaml content as a YAML string. Edited in a code editor or uploaded as a file in the Studio. Acts as the base layer of Helm values; ValueOverrides are deep-merged on top."
     }
   ],
@@ -2595,6 +2795,32 @@
         }
       ],
       "description": "Distribution channel of a Helm chart repository. Used as a label so the UI can colour-code dev vs release sources; the operator does not derive behavior from this value."
+    },
+    {
+      "enumId": "McpTransport-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Stdio",
+          "description": "Local subprocess over stdin/stdout. Use together with Command \u002B Arguments; Url is ignored.",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Sse",
+          "description": "Server-Sent Events over HTTPS. Use together with Url; Command/Arguments are ignored.",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Http",
+          "description": "Streamable HTTPS. Use together with Url; Command/Arguments are ignored.",
+          "isExtension": false
+        }
+      ],
+      "description": "Transport protocols supported by the Model Context Protocol C# SDK (ModelContextProtocol NuGet, joint Microsoft \u002B Anthropic)."
     },
     {
       "enumId": "PipelineExecutionStatus-1",
