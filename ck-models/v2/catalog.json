@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-05-11T14:41:35.5994257Z",
+  "updatedAt": "2026-06-09T23:24:51.4546631Z",
   "models": [
     {
       "modelName": "Basic",
@@ -13,6 +13,10 @@
     {
       "modelName": "Basic.Energy",
       "catalogPath": "ck-models/v2/b/Basic.Energy/catalog.json"
+    },
+    {
+      "modelName": "Demo.Tickets",
+      "catalogPath": "ck-models/v2/d/Demo.Tickets/catalog.json"
     },
     {
       "modelName": "EnergyCommunity",
