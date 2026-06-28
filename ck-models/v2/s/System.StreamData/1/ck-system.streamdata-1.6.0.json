@@ -663,22 +663,22 @@
         {
           "id": "System.StreamData-1.6.0/CkArchiveColumn.Name-1",
           "name": "Name",
-          "isOptional": false
+          "isOptional": true
         },
         {
           "id": "System.StreamData-1.6.0/CkArchiveColumn.Formula-1",
           "name": "Formula",
-          "isOptional": false
+          "isOptional": true
         },
         {
           "id": "System.StreamData-1.6.0/CkArchiveColumn.ResultType-1",
           "name": "ResultType",
-          "isOptional": false
+          "isOptional": true
         },
         {
           "id": "System.StreamData-1.6.0/CkArchiveColumn.ComputedState-1",
           "name": "ComputedState",
-          "isOptional": false
+          "isOptional": true
         }
       ]
     },
