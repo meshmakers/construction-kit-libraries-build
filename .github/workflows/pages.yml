@@ -1,0 +1,48 @@
+name: Deploy Pages (serialized)
+
+# Custom GitHub Pages deployment for the CK-libraries catalog.
+#
+# Why this exists instead of the built-in "deploy from a branch" flow:
+# the ck-libraries release train publishes ~14 CK models with
+# `octo-ckc publish`, each doing its own commit+push in a burst. The
+# built-in pages-build-deployment fires once per push, and GitHub Pages
+# allows only one active deployment per site — so overlapping deploys were
+# cancelled or hard-failed server-side ("Deployment failed, try again
+# later"), spamming failure notifications on every train run.
+#
+# The concurrency group below with cancel-in-progress: false QUEUES the
+# per-push deployments and runs them one at a time to completion, so no run
+# is cancelled or fails. Last write still wins; the catalog ends identical.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact (repo root, served verbatim — no Jekyll)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
