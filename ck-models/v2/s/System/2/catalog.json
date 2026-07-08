@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System",
   "majorVersion": 2,
-  "latestVersion": "2.2.0",
+  "latestVersion": "2.2.1",
   "description": "Core system model library providing foundational types for entity management, multi-tenant configuration, auto-increment sequences, a comprehensive query system with support for filtering/sorting/aggregations/text-search, the System/TimeRange record used by stream-data archives, and per-tenant blueprint registry types (Installation/History/Backup) that track which blueprints have been applied.",
   "versions": [
     {
@@ -64,7 +64,13 @@
       "fileName": "ck-system-2.2.0.json",
       "filePath": "ck-models/v2/s/System/2/ck-system-2.2.0.json",
       "publishedAt": "2026-05-15T18:19:17.8835591Z"
+    },
+    {
+      "version": "2.2.1",
+      "fileName": "ck-system-2.2.1.json",
+      "filePath": "ck-models/v2/s/System/2/ck-system-2.2.1.json",
+      "publishedAt": "2026-07-08T15:03:12.0941951Z"
     }
   ],
-  "updatedAt": "2026-06-02T13:47:42.0694154Z"
+  "updatedAt": "2026-07-08T15:03:12.1087446Z"
 }
