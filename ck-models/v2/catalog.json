@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-06-09T23:24:51.4546631Z",
+  "updatedAt": "2026-07-11T13:32:41.4002051Z",
   "models": [
     {
       "modelName": "Basic",
@@ -37,6 +37,10 @@
     {
       "modelName": "Industry.Fluid",
       "catalogPath": "ck-models/v2/i/Industry.Fluid/catalog.json"
+    },
+    {
+      "modelName": "Industry.Logistics",
+      "catalogPath": "ck-models/v2/i/Industry.Logistics/catalog.json"
     },
     {
       "modelName": "Industry.Maintenance",
