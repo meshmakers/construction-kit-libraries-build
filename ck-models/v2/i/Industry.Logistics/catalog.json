@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Industry.Logistics",
+  "majorVersions": [
+    {
+      "majorVersion": 1,
+      "catalogPath": "ck-models/v2/i/Industry.Logistics/1/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-07-11T13:32:40.2712121Z"
+}
