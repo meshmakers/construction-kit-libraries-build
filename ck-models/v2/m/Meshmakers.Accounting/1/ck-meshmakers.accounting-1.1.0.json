@@ -1,0 +1,729 @@
+{
+  "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
+  "dependencies": [
+    "Basic-2.0.2",
+    "Basic.Accounting-1.3.0",
+    "System-2.2.2"
+  ],
+  "types": [
+    {
+      "isCollectionRoot": true,
+      "typeId": "AccountingDocument-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/TransactionToDocument-1",
+          "targetCkTypeId": "Basic.Accounting-1.3.0/BankTransaction-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "An accounting document (invoice, receipt, credit note, etc.).",
+      "attributes": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/DocumentNumber-1",
+          "name": "DocumentNumber",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/DocumentDate-1",
+          "name": "DocumentDate",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/DueDate-1",
+          "name": "DueDate",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/DocumentType-1",
+          "name": "DocumentType",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/DocumentState-1",
+          "name": "DocumentState",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Vendor-1",
+          "name": "Vendor",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Customer-1",
+          "name": "Customer",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/GrossTotal-1",
+          "name": "GrossTotal",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/NetTotal-1",
+          "name": "NetTotal",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/TaxTotal-1",
+          "name": "TaxTotal",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/TaxRate-1",
+          "name": "TaxRate",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/PaidAmount-1",
+          "name": "PaidAmount",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/DocumentPath-1",
+          "name": "DocumentPath",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/FileHash-1",
+          "name": "FileHash",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Comment-1",
+          "name": "Comment",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "CostCategory-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "Meshmakers.Accounting-1.1.0/FiscalYear-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "A cost category for classifying expenses (IT, Rent, Personnel, etc.).",
+      "attributes": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Name-1",
+          "name": "Name",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/CategoryType-1",
+          "name": "CategoryType",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/CategoryDescription-1",
+          "name": "CategoryDescription",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/BudgetAmount-1",
+          "name": "BudgetAmount",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Comment-1",
+          "name": "Comment",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "FiscalYear-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "A fiscal year for organizing cost categories and financial reporting.",
+      "attributes": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Name-1",
+          "name": "Name",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/StartDate-1",
+          "name": "StartDate",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/EndDate-1",
+          "name": "EndDate",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/IsClosed-1",
+          "name": "IsClosed",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Todo-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "A todo item for manual processing of documents or tasks that could not be automated.",
+      "attributes": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/TodoTitle-1",
+          "name": "Title",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/TodoDescription-1",
+          "name": "Description",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/TodoState-1",
+          "name": "State",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/Source-1",
+          "name": "Source",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/SourceFileName-1",
+          "name": "SourceFileName",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "UploadedDocument-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/UploadedToDocument-1",
+          "targetCkTypeId": "Meshmakers.Accounting-1.1.0/AccountingDocument-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "An uploaded document staged for asynchronous analysis. Upload stores the file and the SHA-256 hash (duplicate detection); the analysis pipeline picks up NEW documents, runs OCR \u002B AI extraction and links the resulting accounting document.",
+      "attributes": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/OriginalFileName-1",
+          "name": "OriginalFileName",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/FileRtId-1",
+          "name": "FileRtId",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/FileHash-1",
+          "name": "FileHash",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/UploadedAt-1",
+          "name": "UploadedAt",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/ProcessingState-1",
+          "name": "ProcessingState",
+          "isOptional": false
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/ProcessedAt-1",
+          "name": "ProcessedAt",
+          "isOptional": true
+        },
+        {
+          "id": "Meshmakers.Accounting-1.1.0/ProcessingError-1",
+          "name": "ProcessingError",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "associationRoles": [
+    {
+      "id": "DocumentToCategory-1",
+      "inboundName": "Documents",
+      "outboundName": "CostCategory",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Links an accounting document to a cost category for expense tracking."
+    },
+    {
+      "id": "TransactionToDocument-1",
+      "inboundName": "Documents",
+      "outboundName": "Transactions",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "N",
+      "description": "Links a bank transaction to an accounting document (invoice, receipt, etc.) for payment matching."
+    },
+    {
+      "id": "UploadedToDocument-1",
+      "inboundName": "UploadedDocument",
+      "outboundName": "ResultDocument",
+      "inboundMultiplicity": "ZeroOrOne",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Links an uploaded document (staging) to the accounting document created by the analysis."
+    }
+  ],
+  "attributes": [
+    {
+      "id": "BudgetAmount-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Annual budget for this category",
+      "metaData": [
+        {
+          "key": "Unit",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "CategoryDescription-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Detailed description of what belongs to this category"
+    },
+    {
+      "id": "CategoryName-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Display name of the category | Example: IT-Infrastruktur"
+    },
+    {
+      "id": "CategoryType-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "Meshmakers.Accounting-1.1.0/CostCategoryType-1",
+      "isRuntimeState": false,
+      "description": "Type of cost category"
+    },
+    {
+      "id": "Comment-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Optional comment or note"
+    },
+    {
+      "id": "Customer-1",
+      "valueType": "Record",
+      "valueCkRecordId": "Meshmakers.Accounting-1.1.0/AccountingContact-1",
+      "isRuntimeState": false,
+      "description": "Customer contact information"
+    },
+    {
+      "id": "DocumentDate-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Date of the document | Example: 2025-01-15"
+    },
+    {
+      "id": "DocumentNumber-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Unique document number | Example: RE-2025-001"
+    },
+    {
+      "id": "DocumentPath-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Path or URL to the document (PDF)"
+    },
+    {
+      "id": "DocumentState-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "Meshmakers.Accounting-1.1.0/DocumentState-1",
+      "isRuntimeState": false,
+      "description": "Current state of the document in the accounting workflow"
+    },
+    {
+      "id": "DocumentType-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "Meshmakers.Accounting-1.1.0/DocumentType-1",
+      "isRuntimeState": false,
+      "description": "Type of document (INCOMING or OUTGOING)"
+    },
+    {
+      "id": "DueDate-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Payment due date | Example: 2025-02-15"
+    },
+    {
+      "id": "EndDate-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "End date of the fiscal year"
+    },
+    {
+      "id": "FileHash-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "SHA-256 hash of the original document file for deduplication"
+    },
+    {
+      "id": "FileRtId-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "RtId of the stored System.Reporting/FileSystemItem holding the uploaded file (denormalized for the analysis pipeline; the System/Related association carries the same link for navigation)."
+    },
+    {
+      "id": "GrossTotal-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "The gross total amount, typically representing the total monetary value before deductions.",
+      "metaData": [
+        {
+          "key": "Unit",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "IBAN-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "IBAN of the contact (vendor or customer)"
+    },
+    {
+      "id": "IsClosed-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Whether the fiscal year is closed"
+    },
+    {
+      "id": "Name-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Name of the entity"
+    },
+    {
+      "id": "NetTotal-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "The net total amount, usually indicating the monetary value after deductions such as taxes or discounts.",
+      "metaData": [
+        {
+          "key": "Unit",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "OriginalFileName-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "The original file name of the uploaded document."
+    },
+    {
+      "id": "PaidAmount-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Amount already paid on this document",
+      "metaData": [
+        {
+          "key": "Unit",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "ProcessedAt-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "The date and time the analysis of the document finished."
+    },
+    {
+      "id": "ProcessingError-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "The error message when the analysis of the document failed."
+    },
+    {
+      "id": "ProcessingState-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "Meshmakers.Accounting-1.1.0/ProcessingState-1",
+      "isRuntimeState": false,
+      "description": "The processing state of the uploaded document (NEW until picked up by the analysis pipeline)."
+    },
+    {
+      "id": "Source-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Origin of the todo item (e.g. email, teams, csv-import)"
+    },
+    {
+      "id": "SourceFileName-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Original file name if the todo was created from a file upload"
+    },
+    {
+      "id": "StartDate-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Start date of the fiscal year"
+    },
+    {
+      "id": "TaxRate-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Tax rate in percent | Example: 20.0"
+    },
+    {
+      "id": "TaxTotal-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "The total tax amount, representing the cumulative value of all applicable taxes on the gross total.",
+      "metaData": [
+        {
+          "key": "Unit",
+          "value": "EUR"
+        }
+      ]
+    },
+    {
+      "id": "TodoDescription-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Detailed description of what needs to be done"
+    },
+    {
+      "id": "TodoState-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "Meshmakers.Accounting-1.1.0/TodoState-1",
+      "isRuntimeState": false,
+      "description": "Current state of the todo item"
+    },
+    {
+      "id": "TodoTitle-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Short title describing the todo item"
+    },
+    {
+      "id": "UploadedAt-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "The date and time the document was uploaded."
+    },
+    {
+      "id": "Vendor-1",
+      "valueType": "Record",
+      "valueCkRecordId": "Meshmakers.Accounting-1.1.0/AccountingContact-1",
+      "isRuntimeState": false,
+      "description": "Vendor/supplier contact information"
+    }
+  ],
+  "records": [
+    {
+      "recordId": "AccountingContact-1",
+      "derivedFromCkRecordId": "Basic-2.0.2/Contact-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "description": "Extended contact for accounting documents, adds IBAN",
+      "attributes": [
+        {
+          "id": "Meshmakers.Accounting-1.1.0/IBAN-1",
+          "name": "IBAN",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "enums": [
+    {
+      "enumId": "CostCategoryType-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "IT",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "RENT",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "PERSONNEL",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "TRAVEL",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "OFFICE",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "MARKETING",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "CONSULTING",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "INSURANCE",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "OTHER",
+          "isExtension": false
+        }
+      ],
+      "description": "Type of cost category for expense tracking"
+    },
+    {
+      "enumId": "CurrencyEnum-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "EUR",
+          "isExtension": false
+        }
+      ]
+    },
+    {
+      "enumId": "DocumentState-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "OPEN",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "PAID",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "PARTIALLYPAID",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "CANCELLED",
+          "isExtension": false
+        }
+      ],
+      "description": "State of a document in the accounting workflow"
+    },
+    {
+      "enumId": "DocumentType-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "INCOMING",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "OUTGOING",
+          "isExtension": false
+        }
+      ],
+      "description": "Type of accounting document"
+    },
+    {
+      "enumId": "ProcessingState-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "NEW",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "PROCESSING",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "COMPLETED",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "INCOMPLETE",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "FAILED",
+          "isExtension": false
+        }
+      ],
+      "description": "Processing state of an uploaded document in the analysis workflow"
+    },
+    {
+      "enumId": "TodoState-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "OPEN",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "INPROGRESS",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "DONE",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "CANCELLED",
+          "isExtension": false
+        }
+      ],
+      "description": "State of a todo item"
+    }
+  ],
+  "modelId": "Meshmakers.Accounting-1.1.0"
+}
