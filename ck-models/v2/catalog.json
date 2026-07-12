@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-07-11T13:32:41.4002051Z",
+  "updatedAt": "2026-07-12T17:40:02.492162Z",
   "models": [
     {
       "modelName": "Basic",
@@ -49,6 +49,10 @@
     {
       "modelName": "Industry.Manufacturing",
       "catalogPath": "ck-models/v2/i/Industry.Manufacturing/catalog.json"
+    },
+    {
+      "modelName": "Meshmakers.Accounting",
+      "catalogPath": "ck-models/v2/m/Meshmakers.Accounting/catalog.json"
     },
     {
       "modelName": "OctoSdkDemo",
