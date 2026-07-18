@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Meshmakers.Accounting",
   "majorVersion": 1,
-  "latestVersion": "1.1.0",
+  "latestVersion": "1.4.13",
   "description": null,
   "versions": [
     {
@@ -16,7 +16,13 @@
       "fileName": "ck-meshmakers.accounting-1.1.0.json",
       "filePath": "ck-models/v2/m/Meshmakers.Accounting/1/ck-meshmakers.accounting-1.1.0.json",
       "publishedAt": "2026-07-12T20:52:13.852988Z"
+    },
+    {
+      "version": "1.4.13",
+      "fileName": "ck-meshmakers.accounting-1.4.13.json",
+      "filePath": "ck-models/v2/m/Meshmakers.Accounting/1/ck-meshmakers.accounting-1.4.13.json",
+      "publishedAt": "2026-07-18T16:58:11.840622Z"
     }
   ],
-  "updatedAt": "2026-07-12T20:52:13.853565Z"
+  "updatedAt": "2026-07-18T16:58:11.841339Z"
 }
