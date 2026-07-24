@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Basic.Accounting",
   "majorVersion": 1,
-  "latestVersion": "1.5.0",
+  "latestVersion": "1.5.1",
   "description": null,
   "versions": [
     {
@@ -28,7 +28,13 @@
       "fileName": "ck-basic.accounting-1.5.0.json",
       "filePath": "ck-models/v2/b/Basic.Accounting/1/ck-basic.accounting-1.5.0.json",
       "publishedAt": "2026-07-14T17:29:23.2038512Z"
+    },
+    {
+      "version": "1.5.1",
+      "fileName": "ck-basic.accounting-1.5.1.json",
+      "filePath": "ck-models/v2/b/Basic.Accounting/1/ck-basic.accounting-1.5.1.json",
+      "publishedAt": "2026-07-24T07:56:49.1931129Z"
     }
   ],
-  "updatedAt": "2026-07-14T17:29:23.2054725Z"
+  "updatedAt": "2026-07-24T07:56:49.1957785Z"
 }
