@@ -164,7 +164,7 @@
       "description": "A consumer metering point participating in an energy community",
       "attributes": [
         {
-          "id": "EnergyCommunity-4.0.0/PartitionFactor-1",
+          "id": "Basic.Energy-1.2.0/PartitionFactor-1",
           "name": "PartitionFactor",
           "isOptional": true
         },
@@ -181,6 +181,12 @@
       "derivedFromCkTypeId": "System-2.2.2/Entity-1",
       "isFinal": false,
       "isAbstract": false,
+      "associations": [
+        {
+          "id": "EnergyCommunity-4.0.0/AssociatedFacilities-1",
+          "targetCkTypeId": "Basic.Energy-1.2.0/OperatingFacility-1"
+        }
+      ],
       "enableChangeStreamPreAndPostImages": false,
       "description": "Represents a customer of an energy community",
       "attributes": [
@@ -228,22 +234,6 @@
       ]
     },
     {
-      "isCollectionRoot": false,
-      "typeId": "EdaMeteringPoint-1",
-      "derivedFromCkTypeId": "Basic.Energy-1.2.0/EdaMeteringPoint-1",
-      "isFinal": false,
-      "isAbstract": false,
-      "enableChangeStreamPreAndPostImages": false,
-      "description": "Metering point from EDA import with energy-community specific attributes",
-      "attributes": [
-        {
-          "id": "EnergyCommunity-4.0.0/PartitionFactor-1",
-          "name": "PartitionFactor",
-          "isOptional": true
-        }
-      ]
-    },
-    {
       "isCollectionRoot": true,
       "typeId": "EnergyPrice-1",
       "derivedFromCkTypeId": "System-2.2.2/Entity-1",
@@ -263,21 +253,6 @@
           "isOptional": false
         }
       ]
-    },
-    {
-      "isCollectionRoot": false,
-      "typeId": "OperatingFacility-1",
-      "derivedFromCkTypeId": "Basic.Energy-1.2.0/OperatingFacility-1",
-      "isFinal": false,
-      "isAbstract": false,
-      "associations": [
-        {
-          "id": "EnergyCommunity-4.0.0/AssociatedCustomer-1",
-          "targetCkTypeId": "EnergyCommunity-4.0.0/Customer-1"
-        }
-      ],
-      "enableChangeStreamPreAndPostImages": false,
-      "description": "An operating facility owned by an energy community customer"
     },
     {
       "isCollectionRoot": true,
@@ -311,7 +286,7 @@
       "description": "A producer metering point participating in an energy community",
       "attributes": [
         {
-          "id": "EnergyCommunity-4.0.0/PartitionFactor-1",
+          "id": "Basic.Energy-1.2.0/PartitionFactor-1",
           "name": "PartitionFactor",
           "isOptional": true
         },
@@ -333,12 +308,12 @@
       "description": "A billing document or line item associated with data source."
     },
     {
-      "id": "AssociatedCustomer-1",
-      "inboundName": "Facilities",
-      "outboundName": "Customer",
-      "inboundMultiplicity": "N",
-      "outboundMultiplicity": "One",
-      "description": "The customer associated with the operating facilities."
+      "id": "AssociatedFacilities-1",
+      "inboundName": "Customer",
+      "outboundName": "Facilities",
+      "inboundMultiplicity": "One",
+      "outboundMultiplicity": "N",
+      "description": "The operating facilities associated with a customer."
     },
     {
       "id": "BilledMeteringPoint-1",
@@ -471,12 +446,6 @@
       "valueType": "Double",
       "isRuntimeState": false,
       "description": "The net amount of the billing document"
-    },
-    {
-      "id": "PartitionFactor-1",
-      "valueType": "Int",
-      "isRuntimeState": false,
-      "description": "Partition factor for the metering point to a specific energy community"
     },
     {
       "id": "Price-1",
