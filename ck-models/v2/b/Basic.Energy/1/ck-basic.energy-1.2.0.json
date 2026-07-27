@@ -190,6 +190,11 @@
           "isOptional": false
         },
         {
+          "id": "Basic.Energy-1.2.0/PartitionFactor-1",
+          "name": "PartitionFactor",
+          "isOptional": true
+        },
+        {
           "id": "Basic.Energy-1.2.0/ProductionType-1",
           "name": "ProductionType",
           "isOptional": true
@@ -744,6 +749,12 @@
       "valueType": "String",
       "isRuntimeState": false,
       "description": "The OBIS code associated with the energy measurement"
+    },
+    {
+      "id": "PartitionFactor-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Partition factor of the metering point within an energy community (percentage share, EDA process EC_PRTFACT_CHANGE)"
     },
     {
       "id": "ProductionType-1",
