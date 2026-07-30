@@ -1,0 +1,3450 @@
+{
+  "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
+  "dependencies": [
+    "Basic-2.0.2",
+    "System-2.2.2"
+  ],
+  "types": [
+    {
+      "isCollectionRoot": true,
+      "typeId": "Ausfahrt-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Befischung-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Eine Ausfahrt (Erhebungstag/Methode) innerhalb einer Befischung",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/MethodeSee-1",
+          "name": "Methode",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/AusfahrtBeginn-1",
+          "name": "AusfahrtBeginn",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Wetter-1",
+          "name": "Wetter",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/WetterVorBefischung-1",
+          "name": "WetterVorBefischung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/GesamteNetzflaeche-1",
+          "name": "GesamteNetzflaeche",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/AnzahlNetze-1",
+          "name": "AnzahlNetze",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Befischung-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/See-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Eine Befischung eines Sees in einem Zeitraum",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/BefischungBeginn-1",
+          "name": "BefischungBeginn",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/BefischungEnde-1",
+          "name": "BefischungEnde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Probenherkunft-1",
+          "name": "Probenherkunft",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Datenherkunft-1",
+          "name": "Datenherkunft",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NetzeGesamt-1",
+          "name": "NetzeGesamt",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/AbundanzGesamt-1",
+          "name": "AbundanzGesamt",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/BiomasseGesamt-1",
+          "name": "BiomasseGesamt",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Bewirtschaftung-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/See-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/BewirtschaftungSpecies-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/FischArt-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/BewirtschaftungKontakt-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Kontakt-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Bewirtschaftung (Besatz/Ausfang/Ertrag) - im Altbestand leer",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Datum-1",
+          "name": "Datum",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Ausfang-1",
+          "name": "Ausfang",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/AusfangStk-1",
+          "name": "AusfangStk",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Ertrag-1",
+          "name": "Ertrag",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/ErtragStk-1",
+          "name": "ErtragStk",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Besatz-1",
+          "name": "Besatz",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/BesatzStk-1",
+          "name": "BesatzStk",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Fisch-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Ausfahrt-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/FischNetz-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Netz-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/FischStelle-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Stelle-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/FischSpecies-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/FischArt-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Ein vermessener Einzelfisch (oder Sammelposten)",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/FischNr-1",
+          "name": "FischNr",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Anzahl-1",
+          "name": "Anzahl",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Gesamtlaenge-1",
+          "name": "Gesamtlaenge",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Gesamtgewicht-1",
+          "name": "Gesamtgewicht",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LaengeBerechnet-1",
+          "name": "LaengeBerechnet",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/GewichtBerechnet-1",
+          "name": "GewichtBerechnet",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Leergewicht-1",
+          "name": "Leergewicht",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Gonadengewicht-1",
+          "name": "Gonadengewicht",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/MittlererFultonKF-1",
+          "name": "MittlererFultonKF",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Maschenweite-1",
+          "name": "Maschenweite",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/AnzahlEier-1",
+          "name": "AnzahlEier",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Fischalter-1",
+          "name": "Fischalter",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Geschlecht-1",
+          "name": "Geschlecht",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Reifegrad-1",
+          "name": "Reifegrad",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Verletzungen-1",
+          "name": "Verletzungen",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "FischArt-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "indexes": [
+        {
+          "indexType": "UniqueNotDeleted",
+          "fields": [
+            {
+              "attributePaths": [
+                "ArtCode"
+              ]
+            }
+          ]
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Fischarten-Katalog (fachlicher Schluessel ArtCode)",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/ArtCode-1",
+          "name": "ArtCode",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/WissName-1",
+          "name": "WissName",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Genus-1",
+          "name": "Genus",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NameDt-1",
+          "name": "NameDt",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/HistNamenDt-1",
+          "name": "HistNamenDt",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NameEngl-1",
+          "name": "NameEngl",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/WeitereNamen-1",
+          "name": "WeitereNamen",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Fischregionsindex-1",
+          "name": "Fischregionsindex",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/SpeciesCode-1",
+          "name": "SpeciesCode",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/NameKottelat-1",
+          "name": "NameKottelat",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NameFAME-1",
+          "name": "NameFAME",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NameFIA-1",
+          "name": "NameFIA",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/FFH-1",
+          "name": "FFH",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Neozoa-1",
+          "name": "Neozoa",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/WissFamilie-1",
+          "name": "WissFamilie",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Stroemungsgilde-1",
+          "name": "Stroemungsgilde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Nahrungsgilde-1",
+          "name": "Nahrungsgilde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Laichgilde-1",
+          "name": "Laichgilde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LaichgildeFIA-1",
+          "name": "LaichgildeFIA",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Toleranz-1",
+          "name": "Toleranz",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/HistGefaehrdung-1",
+          "name": "HistGefaehrdung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/AktGefaehrdung-1",
+          "name": "AktGefaehrdung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Iucn-1",
+          "name": "Iucn",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Kontakt-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Ein Kontakt (Person/Institution) - Bewirtschafter, Auftraggeber, Bearbeiter",
+      "attributes": [
+        {
+          "id": "Basic-2.0.2/Contact-1",
+          "name": "Contact",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Mobil-1",
+          "name": "Mobil",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/TelefonSekundaer-1",
+          "name": "TelefonSekundaer",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Fax-1",
+          "name": "Fax",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/EmailSekundaer-1",
+          "name": "EmailSekundaer",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyUniqueId-1",
+          "name": "LegacyUniqueId",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/IstFBerechtigter-1",
+          "name": "IstFBerechtigter",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/IstFAusuebungsBer-1",
+          "name": "IstFAusuebungsBer",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/IstUrheber-1",
+          "name": "IstUrheber",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/IstAuftraggeber-1",
+          "name": "IstAuftraggeber",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/IstProjektBearbeiter-1",
+          "name": "IstProjektBearbeiter",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Netz-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Ausfahrt-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Ein gesetztes Kiemennetz einer Ausfahrt",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/NetzNr-1",
+          "name": "NetzNr",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Setzart-1",
+          "name": "Setzart",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NetzTyp-1",
+          "name": "NetzTyp",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/XKoord-1",
+          "name": "XKoord",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/YKoord-1",
+          "name": "YKoord",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/GPS-1",
+          "name": "GPS",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/BefischungstiefeMin-1",
+          "name": "BefischungstiefeMin",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/BefischungstiefeMax-1",
+          "name": "BefischungstiefeMax",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/TmspBeginn-1",
+          "name": "TmspBeginn",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/TmspEnde-1",
+          "name": "TmspEnde",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Expositionszeit-1",
+          "name": "Expositionszeit",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/ProbenSonstige-1",
+          "name": "ProbenSonstige",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/FangNull-1",
+          "name": "FangNull",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Berechnet-1",
+          "name": "Berechnet",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "NetzAuswertung-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Netz-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/NetzAuswertungSpecies-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/FischArt-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Berechnete Abundanz/Biomasse je Netz und Fischart",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Abundanz-1",
+          "name": "Abundanz",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Biomasse-1",
+          "name": "Biomasse",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Nutzung-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/See-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/NutzungKontakt-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Kontakt-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Nutzung (Erlaubniskarten) - im Altbestand leer",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Datum-1",
+          "name": "Datum",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/ErlaubnisKategorie-1",
+          "name": "ErlaubnisKategorie",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Anzahl-1",
+          "name": "Anzahl",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "PhChMessung-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "FdaSeen-1.0.0/MessungProbennahme-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Probennahme-1"
+        },
+        {
+          "id": "FdaSeen-1.0.0/MessungProbeZufluss-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/ProbeZufluss-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Ein physiko-chemischer Messwert in einer Tiefe eines Tiefenprofils",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/ProbenummerT-1",
+          "name": "ProbenummerT",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Tiefe-1",
+          "name": "Tiefe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Temp-1",
+          "name": "Temp",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/O2-1",
+          "name": "O2",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/O2Saettigung-1",
+          "name": "O2Saettigung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/O2Zehrung-1",
+          "name": "O2Zehrung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/O2ZehrungProz-1",
+          "name": "O2ZehrungProz",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/O2FNr-1",
+          "name": "O2FNr",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/WPRFNr-1",
+          "name": "WPRFNr",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/PH-1",
+          "name": "PH",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LF-1",
+          "name": "LF",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/SBV-1",
+          "name": "SBV",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/PO43P-1",
+          "name": "PO43P",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/PGesamtRoh-1",
+          "name": "PGesamtRoh",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/PGesamtFilt-1",
+          "name": "PGesamtFilt",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NH4N-1",
+          "name": "NH4N",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NO3N-1",
+          "name": "NO3N",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/NO2N-1",
+          "name": "NO2N",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Cl-1",
+          "name": "Cl",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Cla-1",
+          "name": "Cla",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Fe-1",
+          "name": "Fe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/SiO2-1",
+          "name": "SiO2",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/KMnO4-1",
+          "name": "KMnO4",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Truebe-1",
+          "name": "Truebe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Probeneingangsbuch-1",
+          "name": "Probeneingangsbuch",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Anmerkung-1",
+          "name": "Anmerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "ProbeZufluss-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Zufluss-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Probennahme an einem Zufluss - im Altbestand leer",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Datum-1",
+          "name": "Datum",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Pegelstand-1",
+          "name": "Pegelstand",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Durchfluss-1",
+          "name": "Durchfluss",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Probennahme-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/See-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Eine physikalisch-chemische Probennahme an einem See",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Datum-1",
+          "name": "Datum",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Turnus-1",
+          "name": "Turnus",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Probenummer-1",
+          "name": "Probenummer",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Uhrzeit-1",
+          "name": "Uhrzeit",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Probestelle-1",
+          "name": "Probestelle",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Windstaerke-1",
+          "name": "Windstaerke",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Winterdecke-1",
+          "name": "Winterdecke",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/ExtinktKoeff-1",
+          "name": "ExtinktKoeff",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Lichttiefe-1",
+          "name": "Lichttiefe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Sichttiefe-1",
+          "name": "Sichttiefe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Seefarbe-1",
+          "name": "Seefarbe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Seegrund-1",
+          "name": "Seegrund",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Witterung-1",
+          "name": "Witterung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Lufttemperatur-1",
+          "name": "Lufttemperatur",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Chlorophyll-1",
+          "name": "Chlorophyll",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Datenherkunft-1",
+          "name": "Datenherkunft",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Probenherkunft-1",
+          "name": "Probenherkunft",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "See-1",
+      "derivedFromCkTypeId": "Basic-2.0.2/NamedEntity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "FdaSeen-1.0.0/SeeZitat-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Zitat-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Ein See (Aggregatwurzel der FDA-Seen-Domaene)",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Synonym-1",
+          "name": "Synonym",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Kuerzel-1",
+          "name": "Kuerzel",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bezirk-1",
+          "name": "Bezirk",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Planungsraum-1",
+          "name": "Planungsraum",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Seehoehe-1",
+          "name": "Seehoehe",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Flaeche-1",
+          "name": "Flaeche",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/MaxTiefe-1",
+          "name": "MaxTiefe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/MittlereTiefe-1",
+          "name": "MittlereTiefe",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Volumen-1",
+          "name": "Volumen",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Laengengrad-1",
+          "name": "Laengengrad",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Breitengrad-1",
+          "name": "Breitengrad",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/ErneuerungszeitJahre-1",
+          "name": "ErneuerungszeitJahre",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/ErneuerungszeitMonate-1",
+          "name": "ErneuerungszeitMonate",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Staat-1",
+          "name": "Staat",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bundesland-1",
+          "name": "Bundesland",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/SeeTyp-1",
+          "name": "SeeTyp",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "SeeVolumen-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/See-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Schichtvolumen eines Sees je Tiefe (aus tsVolumen/tsVolumen1m)",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/TiefeText-1",
+          "name": "TiefeText",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/TiefeMeter-1",
+          "name": "TiefeMeter",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/VolumenWert-1",
+          "name": "VolumenWert",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Aufloesung-1",
+          "name": "Aufloesung",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Stelle-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/Ausfahrt-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Eine Elektrobefischungs-Stelle (Uferstrecke) einer Ausfahrt",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/StelleNr-1",
+          "name": "StelleNr",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/XKoordBeginn-1",
+          "name": "XKoordBeginn",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/YKoordBeginn-1",
+          "name": "YKoordBeginn",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/XKoordEnde-1",
+          "name": "XKoordEnde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/YKoordEnde-1",
+          "name": "YKoordEnde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Laenge-1",
+          "name": "Laenge",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Dauer-1",
+          "name": "Dauer",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/TmspBeginn-1",
+          "name": "TmspBeginn",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/TmspEnde-1",
+          "name": "TmspEnde",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Habitat-1",
+          "name": "Habitat",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Uferverbauung-1",
+          "name": "Uferverbauung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Leitfaehigkeit-1",
+          "name": "Leitfaehigkeit",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/FangNull-1",
+          "name": "FangNull",
+          "isOptional": false
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "Zitat-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Literaturzitat",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Autoren-1",
+          "name": "Autoren",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Jahreszahl-1",
+          "name": "Jahreszahl",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Titel-1",
+          "name": "Titel",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/ZeitschriftVerlag-1",
+          "name": "ZeitschriftVerlag",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Band-1",
+          "name": "Band",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Seiten-1",
+          "name": "Seiten",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/Bemerkung-1",
+          "name": "Bemerkung",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": false,
+      "typeId": "Zufluss-1",
+      "derivedFromCkTypeId": "Basic-2.0.2/NamedEntity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "System-2.2.2/ParentChild-1",
+          "targetCkTypeId": "FdaSeen-1.0.0/See-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "Ein Zufluss eines Sees - im Altbestand leer",
+      "attributes": [
+        {
+          "id": "FdaSeen-1.0.0/Synonym-1",
+          "name": "Synonym",
+          "isOptional": true
+        },
+        {
+          "id": "FdaSeen-1.0.0/LegacyId-1",
+          "name": "LegacyId",
+          "isOptional": true
+        }
+      ]
+    }
+  ],
+  "associationRoles": [
+    {
+      "id": "BewirtschaftungKontakt-1",
+      "inboundName": "Bewirtschaftungen",
+      "outboundName": "Bewirtschafter",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Bewirtschafter (Kontakt) der Massnahme"
+    },
+    {
+      "id": "BewirtschaftungSpecies-1",
+      "inboundName": "Bewirtschaftungen",
+      "outboundName": "Art",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "One",
+      "description": "Bewirtschaftungsmassnahme betrifft eine Fischart"
+    },
+    {
+      "id": "FischNetz-1",
+      "inboundName": "GefangeneFische",
+      "outboundName": "Netz",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Fisch wurde in einem Netz gefangen"
+    },
+    {
+      "id": "FischSpecies-1",
+      "inboundName": "Fische",
+      "outboundName": "Art",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "One",
+      "description": "Fisch gehoert zu einer Fischart"
+    },
+    {
+      "id": "FischStelle-1",
+      "inboundName": "GefangeneFische",
+      "outboundName": "Stelle",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Fisch wurde an einer Elektrobefischungs-Stelle gefangen"
+    },
+    {
+      "id": "MessungProbeZufluss-1",
+      "inboundName": "Messungen",
+      "outboundName": "ProbeZufluss",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Physiko-chemische Messung gehoert zu einer Zufluss-Probennahme"
+    },
+    {
+      "id": "MessungProbennahme-1",
+      "inboundName": "Messungen",
+      "outboundName": "Probennahme",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Physiko-chemische Messung gehoert zu einer See-Probennahme"
+    },
+    {
+      "id": "NetzAuswertungSpecies-1",
+      "inboundName": "NetzAuswertungen",
+      "outboundName": "Art",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "One",
+      "description": "Netzauswertung je Fischart"
+    },
+    {
+      "id": "NutzungKontakt-1",
+      "inboundName": "Nutzungen",
+      "outboundName": "Fischereiverein",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "ZeroOrOne",
+      "description": "Fischereiverein (Kontakt) der Nutzung"
+    },
+    {
+      "id": "SeeZitat-1",
+      "inboundName": "Seen",
+      "outboundName": "Zitate",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "N",
+      "description": "Zitate/Literatur zu einem See (n:m)"
+    }
+  ],
+  "attributes": [
+    {
+      "id": "Abundanz-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Abundanz je Netz und Art"
+    },
+    {
+      "id": "AbundanzGesamt-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Berechnete Gesamt-Abundanz"
+    },
+    {
+      "id": "AktGefaehrdung-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/AktGefaehrdung-1",
+      "isRuntimeState": false,
+      "description": "Aktuelle Gefaehrdung"
+    },
+    {
+      "id": "Anmerkung-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Anmerkung"
+    },
+    {
+      "id": "Anzahl-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Anzahl"
+    },
+    {
+      "id": "AnzahlEier-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Anzahl Eier"
+    },
+    {
+      "id": "AnzahlNetze-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Anzahl Netze der Ausfahrt"
+    },
+    {
+      "id": "ArtCode-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Artcode (7-stellig, fachlicher Schluessel)"
+    },
+    {
+      "id": "Aufloesung-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/VolumenAufloesung-1",
+      "isRuntimeState": false,
+      "description": "Aufloesung der Volumenangabe"
+    },
+    {
+      "id": "AusfahrtBeginn-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Beginn der Ausfahrt"
+    },
+    {
+      "id": "Ausfang-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Ausfang in kg"
+    },
+    {
+      "id": "AusfangStk-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Ausfang in Stueck"
+    },
+    {
+      "id": "Autoren-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Autoren"
+    },
+    {
+      "id": "Band-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Band"
+    },
+    {
+      "id": "BefischungBeginn-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Beginn der Befischung"
+    },
+    {
+      "id": "BefischungEnde-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Ende der Befischung"
+    },
+    {
+      "id": "BefischungstiefeMax-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Maximale Befischungstiefe"
+    },
+    {
+      "id": "BefischungstiefeMin-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Minimale Befischungstiefe"
+    },
+    {
+      "id": "Bemerkung-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Freitext-Bemerkung"
+    },
+    {
+      "id": "Berechnet-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Auswertung berechnet"
+    },
+    {
+      "id": "Besatz-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Besatz in kg"
+    },
+    {
+      "id": "BesatzStk-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Besatz in Stueck"
+    },
+    {
+      "id": "Bezirk-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Politischer Bezirk"
+    },
+    {
+      "id": "Biomasse-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Biomasse je Netz und Art"
+    },
+    {
+      "id": "BiomasseGesamt-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Berechnete Gesamt-Biomasse"
+    },
+    {
+      "id": "Breitengrad-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Breitengrad WGS84 (Seemitte, legacy YMitte)"
+    },
+    {
+      "id": "Bundesland-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Bundesland-1",
+      "isRuntimeState": false,
+      "description": "Bundesland"
+    },
+    {
+      "id": "Chlorophyll-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Chlorophyll-a (integral)"
+    },
+    {
+      "id": "Cl-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Chlorid"
+    },
+    {
+      "id": "Cla-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Chlorophyll-a"
+    },
+    {
+      "id": "Datenherkunft-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Datenherkunft"
+    },
+    {
+      "id": "Datum-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Datum"
+    },
+    {
+      "id": "Dauer-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Dauer in s"
+    },
+    {
+      "id": "Durchfluss-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Durchfluss des Zuflusses"
+    },
+    {
+      "id": "EmailSekundaer-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Zweite E-Mail-Adresse"
+    },
+    {
+      "id": "ErlaubnisKategorie-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/ErlaubnisKategorie-1",
+      "isRuntimeState": false,
+      "description": "Erlaubniskartenkategorie"
+    },
+    {
+      "id": "ErneuerungszeitJahre-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Wassererneuerungszeit (Jahre)"
+    },
+    {
+      "id": "ErneuerungszeitMonate-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Wassererneuerungszeit (Monate)"
+    },
+    {
+      "id": "Ertrag-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Ertrag in kg"
+    },
+    {
+      "id": "ErtragStk-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Ertrag in Stueck"
+    },
+    {
+      "id": "Expositionszeit-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Expositionszeit in Minuten"
+    },
+    {
+      "id": "ExtinktKoeff-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Extinktionskoeffizient"
+    },
+    {
+      "id": "FFH-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "FFH-Richtlinie Anhang"
+    },
+    {
+      "id": "FangNull-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Nullfang (kein Fang)"
+    },
+    {
+      "id": "Fax-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Faxnummer"
+    },
+    {
+      "id": "Fe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Eisen"
+    },
+    {
+      "id": "FischNr-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Laufende Fischnummer"
+    },
+    {
+      "id": "Fischalter-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Fischalter in Jahren"
+    },
+    {
+      "id": "Fischregionsindex-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Fischregionsindex"
+    },
+    {
+      "id": "Flaeche-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Seeflaeche"
+    },
+    {
+      "id": "GPS-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "GPS-Angabe (roh)"
+    },
+    {
+      "id": "Genus-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Gattung"
+    },
+    {
+      "id": "GesamteNetzflaeche-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Gesamte Netzflaeche"
+    },
+    {
+      "id": "Gesamtgewicht-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Gesamtgewicht in g"
+    },
+    {
+      "id": "Gesamtlaenge-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Gesamtlaenge in cm"
+    },
+    {
+      "id": "Geschlecht-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Geschlecht-1",
+      "isRuntimeState": false,
+      "description": "Geschlecht"
+    },
+    {
+      "id": "GewichtBerechnet-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Gewicht wurde per Regression berechnet"
+    },
+    {
+      "id": "Gonadengewicht-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Gonadengewicht in g"
+    },
+    {
+      "id": "Habitat-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/HabitatSeen-1",
+      "isRuntimeState": false,
+      "description": "Uferhabitat"
+    },
+    {
+      "id": "HistGefaehrdung-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/HistGefaehrdung-1",
+      "isRuntimeState": false,
+      "description": "Historische Gefaehrdung"
+    },
+    {
+      "id": "HistNamenDt-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Historische deutsche Namen"
+    },
+    {
+      "id": "IstAuftraggeber-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Ist Auftraggeber"
+    },
+    {
+      "id": "IstFAusuebungsBer-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Ist Fischereiausuebungsberechtigter"
+    },
+    {
+      "id": "IstFBerechtigter-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Ist Fischereiberechtigter"
+    },
+    {
+      "id": "IstProjektBearbeiter-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Ist Projektbearbeiter"
+    },
+    {
+      "id": "IstUrheber-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Ist Urheber"
+    },
+    {
+      "id": "Iucn-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/AktGefaehrdung-1",
+      "isRuntimeState": false,
+      "description": "IUCN-Kategorie (nutzt AktGefaehrdung-Enum)"
+    },
+    {
+      "id": "Jahreszahl-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Jahreszahl"
+    },
+    {
+      "id": "KMnO4-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Kaliumpermanganat-Verbrauch"
+    },
+    {
+      "id": "Kuerzel-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Kuerzel des Sees (3 Zeichen)"
+    },
+    {
+      "id": "LF-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Leitfaehigkeit"
+    },
+    {
+      "id": "Laenge-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Befischte Uferlaenge in m"
+    },
+    {
+      "id": "LaengeBerechnet-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Laenge wurde per Regression berechnet"
+    },
+    {
+      "id": "Laengengrad-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Laengengrad WGS84 (Seemitte, legacy XMitte)"
+    },
+    {
+      "id": "Laichgilde-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Laichgilde-1",
+      "isRuntimeState": false,
+      "description": "Laichgilde"
+    },
+    {
+      "id": "LaichgildeFIA-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/LaichgildeFIA-1",
+      "isRuntimeState": false,
+      "description": "Laichgilde FIA"
+    },
+    {
+      "id": "Leergewicht-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Leergewicht in g"
+    },
+    {
+      "id": "LegacyId-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Original integer primary key from the legacy FDA Seen SQL database"
+    },
+    {
+      "id": "LegacyUniqueId-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Legacy UniqueID (GUID) des Kontakts"
+    },
+    {
+      "id": "Leitfaehigkeit-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Elektrische Leitfaehigkeit"
+    },
+    {
+      "id": "Lichttiefe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Lichttiefe"
+    },
+    {
+      "id": "Lufttemperatur-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Lufttemperatur"
+    },
+    {
+      "id": "Maschenweite-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Maschenweite des Fanggeraets"
+    },
+    {
+      "id": "MaxTiefe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Maximale Tiefe"
+    },
+    {
+      "id": "MethodeSee-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/MethodeSee-1",
+      "isRuntimeState": false,
+      "description": "Erhebungsmethode"
+    },
+    {
+      "id": "MittlereTiefe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Mittlere Tiefe"
+    },
+    {
+      "id": "MittlererFultonKF-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Fulton-Konditionsfaktor = Gewicht*100/Laenge^3"
+    },
+    {
+      "id": "Mobil-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Mobiltelefon"
+    },
+    {
+      "id": "NH4N-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Ammonium-Stickstoff"
+    },
+    {
+      "id": "NO2N-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Nitrit-Stickstoff"
+    },
+    {
+      "id": "NO3N-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Nitrat-Stickstoff"
+    },
+    {
+      "id": "Nahrungsgilde-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Nahrungsgilde-1",
+      "isRuntimeState": false,
+      "description": "Nahrungsgilde"
+    },
+    {
+      "id": "NameDt-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Deutscher Name"
+    },
+    {
+      "id": "NameEngl-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Englischer Name"
+    },
+    {
+      "id": "NameFAME-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Name FAME"
+    },
+    {
+      "id": "NameFIA-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Name FIA"
+    },
+    {
+      "id": "NameKottelat-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Name nach Kottelat"
+    },
+    {
+      "id": "Neozoa-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Neozoa-Status"
+    },
+    {
+      "id": "NetzNr-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Netznummer"
+    },
+    {
+      "id": "NetzTyp-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/NetzTyp-1",
+      "isRuntimeState": false,
+      "description": "Netztyp"
+    },
+    {
+      "id": "NetzeGesamt-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Gesamtzahl der Netze"
+    },
+    {
+      "id": "O2-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Geloester Sauerstoff mg/l"
+    },
+    {
+      "id": "O2FNr-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "O2 Flaschennummer"
+    },
+    {
+      "id": "O2Saettigung-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Sauerstoffsaettigung %"
+    },
+    {
+      "id": "O2Zehrung-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Sauerstoffzehrung"
+    },
+    {
+      "id": "O2ZehrungProz-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Sauerstoffzehrung %"
+    },
+    {
+      "id": "PGesamtFilt-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Gesamt-Phosphor (filtriert)"
+    },
+    {
+      "id": "PGesamtRoh-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Gesamt-Phosphor (roh)"
+    },
+    {
+      "id": "PH-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "pH-Wert"
+    },
+    {
+      "id": "PO43P-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Ortho-Phosphat-P"
+    },
+    {
+      "id": "Pegelstand-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Pegelstand des Zuflusses"
+    },
+    {
+      "id": "Planungsraum-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Planungsraum"
+    },
+    {
+      "id": "ProbenSonstige-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Sonstige Proben"
+    },
+    {
+      "id": "Probeneingangsbuch-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Probeneingangsbuch-Nr"
+    },
+    {
+      "id": "Probenherkunft-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Probenherkunft"
+    },
+    {
+      "id": "Probenummer-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Probenummer"
+    },
+    {
+      "id": "ProbenummerT-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Probenummer (Tiefenprobe)"
+    },
+    {
+      "id": "Probestelle-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Probenahmestelle am See"
+    },
+    {
+      "id": "Reifegrad-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Reifegrad-1",
+      "isRuntimeState": false,
+      "description": "Gonaden-Reifegrad"
+    },
+    {
+      "id": "SBV-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Saeurebindungsvermoegen"
+    },
+    {
+      "id": "SeeTyp-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/SeenTyp-1",
+      "isRuntimeState": false,
+      "description": "Seentyp"
+    },
+    {
+      "id": "Seefarbe-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Seefarbe"
+    },
+    {
+      "id": "Seegrund-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Seegrundtiefe an der Stelle"
+    },
+    {
+      "id": "Seehoehe-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Seehoehe in m ue.A."
+    },
+    {
+      "id": "Seiten-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Seiten"
+    },
+    {
+      "id": "Setzart-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Setzart-1",
+      "isRuntimeState": false,
+      "description": "Setzart des Netzes"
+    },
+    {
+      "id": "SiO2-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Silikat"
+    },
+    {
+      "id": "Sichttiefe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Sichttiefe (Secchi)"
+    },
+    {
+      "id": "SpeciesCode-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Species-Code"
+    },
+    {
+      "id": "Staat-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Staat-1",
+      "isRuntimeState": false,
+      "description": "Staat"
+    },
+    {
+      "id": "StelleNr-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Stellennummer"
+    },
+    {
+      "id": "Stroemungsgilde-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Stroemungsgilde-1",
+      "isRuntimeState": false,
+      "description": "Stroemungsgilde"
+    },
+    {
+      "id": "Synonym-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Synonym / alternativer Name"
+    },
+    {
+      "id": "TelefonSekundaer-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Zweite Telefonnummer"
+    },
+    {
+      "id": "Temp-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Wassertemperatur in Grad C"
+    },
+    {
+      "id": "Tiefe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Messtiefe in m"
+    },
+    {
+      "id": "TiefeMeter-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Tiefe in ganzen Metern (legacy tsVolumen1m.Tiefe)"
+    },
+    {
+      "id": "TiefeText-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Tiefenangabe als Text (legacy tsVolumen.Tiefe)"
+    },
+    {
+      "id": "Titel-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Titel"
+    },
+    {
+      "id": "TmspBeginn-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Zeitstempel Beginn (Exposition)"
+    },
+    {
+      "id": "TmspEnde-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Zeitstempel Ende (Exposition)"
+    },
+    {
+      "id": "Toleranz-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Toleranz-1",
+      "isRuntimeState": false,
+      "description": "Toleranz"
+    },
+    {
+      "id": "Truebe-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Truebung"
+    },
+    {
+      "id": "Turnus-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Turnus"
+    },
+    {
+      "id": "Uferverbauung-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/Uferverbauung-1",
+      "isRuntimeState": false,
+      "description": "Uferverbauung"
+    },
+    {
+      "id": "Uhrzeit-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Uhrzeit der Probennahme"
+    },
+    {
+      "id": "Verletzungen-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Verletzungen"
+    },
+    {
+      "id": "Volumen-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Seevolumen (gesamt)"
+    },
+    {
+      "id": "VolumenWert-1",
+      "valueType": "Int",
+      "isRuntimeState": false,
+      "description": "Schichtvolumen"
+    },
+    {
+      "id": "WPRFNr-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "WPR Flaschennummer"
+    },
+    {
+      "id": "WeitereNamen-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Weitere Namen"
+    },
+    {
+      "id": "Wetter-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Wetter waehrend der Ausfahrt"
+    },
+    {
+      "id": "WetterVorBefischung-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Wetter vor der Befischung"
+    },
+    {
+      "id": "Windstaerke-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Windstaerke"
+    },
+    {
+      "id": "Winterdecke-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Eisdicke Winterdecke"
+    },
+    {
+      "id": "WissFamilie-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "FdaSeen-1.0.0/WissFamilie-1",
+      "isRuntimeState": false,
+      "description": "Wissenschaftliche Familie"
+    },
+    {
+      "id": "WissName-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Wissenschaftlicher Name"
+    },
+    {
+      "id": "Witterung-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Witterung"
+    },
+    {
+      "id": "XKoord-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "X-Koordinate (Laengengrad WGS84)"
+    },
+    {
+      "id": "XKoordBeginn-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "X-Koordinate Beginn (Laengengrad)"
+    },
+    {
+      "id": "XKoordEnde-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "X-Koordinate Ende (Laengengrad)"
+    },
+    {
+      "id": "YKoord-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Y-Koordinate (Breitengrad WGS84)"
+    },
+    {
+      "id": "YKoordBeginn-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Y-Koordinate Beginn (Breitengrad)"
+    },
+    {
+      "id": "YKoordEnde-1",
+      "valueType": "Double",
+      "isRuntimeState": false,
+      "description": "Y-Koordinate Ende (Breitengrad)"
+    },
+    {
+      "id": "ZeitschriftVerlag-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Zeitschrift / Verlag"
+    }
+  ],
+  "records": [],
+  "enums": [
+    {
+      "enumId": "AktGefaehrdung-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "CriticallyEndangered",
+          "description": "Vom Aussterben bedroht (Critically Endangered)",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "DataDeficient",
+          "description": "Datenlage ungenuegend (Data Deficient)",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Endangered",
+          "description": "Stark gefaehrdet (Endangered)",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Extinct",
+          "description": "weltweit ausgestorben (Extinct)",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "LeastConcern",
+          "description": "Nicht gefaehrdet (Least Concern)",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "NotEvaluated",
+          "description": "Nicht eingestuft (Not Evaluated)",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "NearThreatened",
+          "description": "Gefaehrdung droht (Near Threatened)",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "RegionallyExtinct",
+          "description": "regional ausgestorben oder verschollen (Regionally Extinct)",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "Vulnerable",
+          "description": "Gefaehrdet (Vulnerable)",
+          "isExtension": false
+        }
+      ],
+      "description": "Aktuelle Gefaehrdung / IUCN-Kategorie (lkpAktGefaehrdung)"
+    },
+    {
+      "enumId": "Bundesland-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Unbestimmt",
+          "description": "unbestimmt",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Burgenland",
+          "description": "Burgenland",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "GzuevBundesmessstelle",
+          "description": "GZUEV-Bundesmessstelle",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Kaernten",
+          "description": "Kaernten",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Niederoesterreich",
+          "description": "Niederoesterreich",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Oberoesterreich",
+          "description": "Oberoesterreich",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Salzburg",
+          "description": "Salzburg",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "Steiermark",
+          "description": "Steiermark",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "Tirol",
+          "description": "Tirol",
+          "isExtension": false
+        },
+        {
+          "key": 9,
+          "name": "Vorarlberg",
+          "description": "Vorarlberg",
+          "isExtension": false
+        },
+        {
+          "key": 10,
+          "name": "Wien",
+          "description": "Wien",
+          "isExtension": false
+        }
+      ],
+      "description": "Bundesland (lkpBundesland)"
+    },
+    {
+      "enumId": "ErlaubnisKategorie-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Tageskarte",
+          "description": "Tageskarte",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Wochenkarte",
+          "description": "Wochenkarte",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Monatskarte",
+          "description": "Monatskarte",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Jahreskarte",
+          "description": "Jahreskarte",
+          "isExtension": false
+        }
+      ],
+      "description": "Erlaubniskartenkategorie (lkpErlaubnisKategorie)"
+    },
+    {
+      "enumId": "Geschlecht-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Juvenil",
+          "description": "juvenil",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Milchner",
+          "description": "Milchner",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Rogner",
+          "description": "Rogner",
+          "isExtension": false
+        }
+      ],
+      "description": "Geschlecht (lkpGeschlecht; Original-Code j/m/w)"
+    },
+    {
+      "enumId": "HabitatSeen-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Schilf",
+          "description": "Schilf",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Blockwurf",
+          "description": "Blockwurf",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Flussmuendung",
+          "description": "Flussmuendung",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "BlockwurfVerfugt",
+          "description": "Blockwurf verfugt",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "StegeBootshaeuser",
+          "description": "Stege/Bootshaeuser",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Ufermauer",
+          "description": "Ufermauer",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "Kies",
+          "description": "Kies",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "Sand",
+          "description": "Sand",
+          "isExtension": false
+        },
+        {
+          "key": 9,
+          "name": "Schlamm",
+          "description": "Schlamm",
+          "isExtension": false
+        },
+        {
+          "key": 10,
+          "name": "Fels",
+          "description": "Fels",
+          "isExtension": false
+        },
+        {
+          "key": 11,
+          "name": "Wasserpflanzen",
+          "description": "Wasserpflanzen",
+          "isExtension": false
+        },
+        {
+          "key": 12,
+          "name": "SeggenHorste",
+          "description": "Seggen Horste",
+          "isExtension": false
+        },
+        {
+          "key": 13,
+          "name": "UeberhaengendesUfergehoelz",
+          "description": "Ueberhaengendes Ufergehoelz",
+          "isExtension": false
+        },
+        {
+          "key": 14,
+          "name": "Seeausrinn",
+          "description": "Seeausrinn",
+          "isExtension": false
+        }
+      ],
+      "description": "Uferhabitat (lkpHabitatSeen)"
+    },
+    {
+      "enumId": "HistGefaehrdung-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "AusgestorbenVerschollen",
+          "description": "ausgestorben, verschollen",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "VomAussterbenBedroht",
+          "description": "vom Aussterben bedroht",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "StarkGefaehrdet",
+          "description": "stark gefaehrdet",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Gefaehrdet",
+          "description": "gefaehrdet",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "PotentiellGefaehrdet",
+          "description": "potentiell gefaehrdet",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "NichtGenauBekannt",
+          "description": "Gefaehrdungsgrad nicht genau bekannt",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "NichtGefaehrdet",
+          "description": "nicht gefaehrdet",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "Besatzabhaengig",
+          "description": "besatzabhaengig",
+          "isExtension": false
+        }
+      ],
+      "description": "Historische Gefaehrdung Rote Liste AT (lkpHistGefaehrdung)"
+    },
+    {
+      "enumId": "Laichgilde-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Bearers",
+          "description": "Bearers",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "GuardersNestAriadnophil",
+          "description": "Guarders - nest spawners - ariadnophil",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "GuardersNestPhytophil",
+          "description": "Guarders - nest spawners - phytophil",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "GuardersNestSpeleophil",
+          "description": "Guarders - nest spawners - speleophil",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "GuardersSubstrateLithophil",
+          "description": "Guarders - substrate choosers - lithophil",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "GuardersSubstratePhytophil",
+          "description": "Guarders - substrate choosers - phytophil",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "NonGuardersBroodLithophil",
+          "description": "Non-guarders - brood hiders - lithophil",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "NonGuardersBroodOstracophil",
+          "description": "Non-guarders - brood hiders - ostracophil",
+          "isExtension": false
+        },
+        {
+          "key": 9,
+          "name": "NonGuardersOpenLithopelagophil",
+          "description": "Non-guarders - open substrate spawner - lithopelagophil",
+          "isExtension": false
+        },
+        {
+          "key": 10,
+          "name": "NonGuardersOpenLithophil",
+          "description": "Non-guarders - open substrate spawner - lithophil",
+          "isExtension": false
+        },
+        {
+          "key": 11,
+          "name": "NonGuardersOpenPelagophil",
+          "description": "Non-guarders - open substrate spawner - pelagophil",
+          "isExtension": false
+        },
+        {
+          "key": 12,
+          "name": "NonGuardersOpenPhytolithophil",
+          "description": "Non-guarders - open substrate spawner - phytolithophil",
+          "isExtension": false
+        },
+        {
+          "key": 13,
+          "name": "NonGuardersOpenPhytophil",
+          "description": "Non-guarders - open substrate spawner - phytophil",
+          "isExtension": false
+        },
+        {
+          "key": 14,
+          "name": "NonGuardersOpenPsammophil",
+          "description": "Non-guarders - open substrate spawner - psammophil",
+          "isExtension": false
+        }
+      ],
+      "description": "Laichgilde nach Balon (lkpLaichgilde)"
+    },
+    {
+      "enumId": "LaichgildeFIA-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "LithoPelagophil",
+          "description": "litho/pelagophil",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Lithophil",
+          "description": "lithophil",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Ostracophil",
+          "description": "ostracophil",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Pelagophil",
+          "description": "pelagophil",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "PhytoLithophil",
+          "description": "phyto/lithophil",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Phytophil",
+          "description": "phytophil",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "Psammophil",
+          "description": "psammophil",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "Speleophil",
+          "description": "speleophil",
+          "isExtension": false
+        }
+      ],
+      "description": "Laichgilde FIA (lkpLaichgildeFIA)"
+    },
+    {
+      "enumId": "MethodeSee-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Unbestimmt",
+          "description": "unbestimmt",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Echolotung",
+          "description": "Echolotung",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Elektrofischen",
+          "description": "Elektrofischen",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Kiemennetz",
+          "description": "Kiemennetz",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Reuse",
+          "description": "Reuse",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Ringwade",
+          "description": "Ringwade",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Schleppnetz",
+          "description": "Schleppnetz",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "Uferzugnetz",
+          "description": "Uferzugnetz",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "Zugnetz",
+          "description": "Zugnetz",
+          "isExtension": false
+        }
+      ],
+      "description": "Erhebungsmethode (lkpMethodeSee)"
+    },
+    {
+      "enumId": "Nahrungsgilde-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Benthivor",
+          "description": "benthivor",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Herbivor",
+          "description": "herbivor",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Insektivor",
+          "description": "insektivor",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Omnivor",
+          "description": "omnivor",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Piscivor",
+          "description": "piscivor",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Planktivor",
+          "description": "planktivor",
+          "isExtension": false
+        }
+      ],
+      "description": "Nahrungsgilde (lkpNahrungsgilde)"
+    },
+    {
+      "enumId": "NetzTyp-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Unbestimmt",
+          "description": "unbestimmt",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Monomaschennetz",
+          "description": "Monomaschennetz",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Nordic",
+          "description": "Nordic",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "AnderesMultimaschennetz",
+          "description": "anderes Multimaschennetz",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Renkensatz",
+          "description": "Renkensatz",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Spiegelnetz",
+          "description": "Spiegelnetz",
+          "isExtension": false
+        }
+      ],
+      "description": "Netztyp (lkpNetzTyp)"
+    },
+    {
+      "enumId": "Reifegrad-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Unreif",
+          "description": "I - unreif",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Ansatzphase",
+          "description": "II - Ansatzphase",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Reifend",
+          "description": "III - reifend",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Reif",
+          "description": "IV - reif",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Reproduktiv",
+          "description": "V - reproduktiv, rinnend",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Abgelaicht",
+          "description": "VI - abgelaicht",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "PostLaichphase",
+          "description": "VII - Post-Laichphase",
+          "isExtension": false
+        }
+      ],
+      "description": "Gonaden-Reifegrad (lkpReifegrad)"
+    },
+    {
+      "enumId": "SeenTyp-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "SeesaiblingSee",
+          "description": "Seesaibling-See",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "ElritzenSee",
+          "description": "Elritzen-See",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "LaubenSee",
+          "description": "Lauben-See",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "ZanderSee",
+          "description": "Zander-See",
+          "isExtension": false
+        }
+      ],
+      "description": "Seentyp nach Leitfischart (lkpSeenTyp)"
+    },
+    {
+      "enumId": "Setzart-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Unbestimmt",
+          "description": "unbestimmt",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Freiwassernetz",
+          "description": "Freiwassernetz",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Bodennetz",
+          "description": "Bodennetz",
+          "isExtension": false
+        }
+      ],
+      "description": "Setzart des Netzes (lkpNetzSetzart)"
+    },
+    {
+      "enumId": "Staat-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Oesterreich",
+          "description": "Oesterreich",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Schweiz",
+          "description": "Schweiz",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Deutschland",
+          "description": "Deutschland",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Ungarn",
+          "description": "Ungarn",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Italien",
+          "description": "Italien",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Slowenien",
+          "description": "Slowenien",
+          "isExtension": false
+        }
+      ],
+      "description": "Staat (lkpStaat; Original-Code A/CH/D/H/I/SLO)"
+    },
+    {
+      "enumId": "Stroemungsgilde-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 10,
+          "name": "RheophilA",
+          "description": "rheophil A",
+          "isExtension": false
+        },
+        {
+          "key": 20,
+          "name": "RheophilB",
+          "description": "rheophil B",
+          "isExtension": false
+        },
+        {
+          "key": 30,
+          "name": "Rhithral",
+          "description": "rhithral",
+          "isExtension": false
+        },
+        {
+          "key": 40,
+          "name": "Eurytop",
+          "description": "eurytop",
+          "isExtension": false
+        },
+        {
+          "key": 50,
+          "name": "Stagnophil",
+          "description": "stagnophil",
+          "isExtension": false
+        },
+        {
+          "key": 60,
+          "name": "Katadrom",
+          "description": "katadrom",
+          "isExtension": false
+        },
+        {
+          "key": 70,
+          "name": "Anadrom",
+          "description": "anadrom",
+          "isExtension": false
+        }
+      ],
+      "description": "Stroemungsgilde (lkpStroemungsgilde; Original-Codes 10-70)"
+    },
+    {
+      "enumId": "Toleranz-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Tolerant",
+          "description": "tolerant",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Intolerant",
+          "description": "intolerant",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Intermediate",
+          "description": "intermediate",
+          "isExtension": false
+        }
+      ],
+      "description": "Toleranz (lkpToleranz)"
+    },
+    {
+      "enumId": "Uferverbauung-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Natuerlich",
+          "description": "Natuerlich",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Naturnah",
+          "description": "Naturnah",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "LeichtVerbaut",
+          "description": "Leicht Verbaut",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "HartVerbaut",
+          "description": "Hart Verbaut",
+          "isExtension": false
+        }
+      ],
+      "description": "Uferverbauung (lkpUferverbauung)"
+    },
+    {
+      "enumId": "VolumenAufloesung-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Schicht",
+          "description": "Schichtvolumen (tsVolumen)",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Meter1",
+          "description": "1-Meter-Aufloesung (tsVolumen1m)",
+          "isExtension": false
+        }
+      ],
+      "description": "Aufloesung der Schichtvolumen-Angabe (tsVolumen vs tsVolumen1m)"
+    },
+    {
+      "enumId": "WissFamilie-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 1,
+          "name": "Acipenseridae",
+          "description": "Acipenseridae",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Anguillidae",
+          "description": "Anguillidae",
+          "isExtension": false
+        },
+        {
+          "key": 3,
+          "name": "Balitoridae",
+          "description": "Balitoridae",
+          "isExtension": false
+        },
+        {
+          "key": 4,
+          "name": "Centrarchidae",
+          "description": "Centrarchidae",
+          "isExtension": false
+        },
+        {
+          "key": 5,
+          "name": "Cobitidae",
+          "description": "Cobitidae",
+          "isExtension": false
+        },
+        {
+          "key": 6,
+          "name": "Coregonidae",
+          "description": "Coregonidae",
+          "isExtension": false
+        },
+        {
+          "key": 7,
+          "name": "Cottidae",
+          "description": "Cottidae",
+          "isExtension": false
+        },
+        {
+          "key": 8,
+          "name": "Cyprinidae",
+          "description": "Cyprinidae",
+          "isExtension": false
+        },
+        {
+          "key": 9,
+          "name": "Esocidae",
+          "description": "Esocidae",
+          "isExtension": false
+        },
+        {
+          "key": 10,
+          "name": "Gadidae",
+          "description": "Gadidae",
+          "isExtension": false
+        },
+        {
+          "key": 11,
+          "name": "Gasterosteidae",
+          "description": "Gasterosteidae",
+          "isExtension": false
+        },
+        {
+          "key": 12,
+          "name": "Gobiidae",
+          "description": "Gobiidae",
+          "isExtension": false
+        },
+        {
+          "key": 13,
+          "name": "Ictaluridae",
+          "description": "Ictaluridae",
+          "isExtension": false
+        },
+        {
+          "key": 14,
+          "name": "Percidae",
+          "description": "Percidae",
+          "isExtension": false
+        },
+        {
+          "key": 15,
+          "name": "Petromyzontidae",
+          "description": "Petromyzontidae",
+          "isExtension": false
+        },
+        {
+          "key": 16,
+          "name": "Salmonidae",
+          "description": "Salmonidae",
+          "isExtension": false
+        },
+        {
+          "key": 17,
+          "name": "Siluridae",
+          "description": "Siluridae",
+          "isExtension": false
+        },
+        {
+          "key": 18,
+          "name": "Thymallidae",
+          "description": "Thymallidae",
+          "isExtension": false
+        },
+        {
+          "key": 19,
+          "name": "Umbridae",
+          "description": "Umbridae",
+          "isExtension": false
+        }
+      ],
+      "description": "Wissenschaftliche Familie (lkpWissFamilie)"
+    }
+  ],
+  "modelId": "FdaSeen-1.0.0"
+}
