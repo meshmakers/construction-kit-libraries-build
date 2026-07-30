@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "FdaSeen",
+  "majorVersions": [
+    {
+      "majorVersion": 1,
+      "catalogPath": "ck-models/v2/f/FdaSeen/1/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-07-30T09:40:53.8657576Z"
+}
