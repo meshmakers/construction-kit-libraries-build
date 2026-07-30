@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "FdaSeen",
+  "majorVersion": 1,
+  "latestVersion": "1.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "fileName": "ck-fdaseen-1.0.0.json",
+      "filePath": "ck-models/v2/f/FdaSeen/1/ck-fdaseen-1.0.0.json",
+      "publishedAt": "2026-07-30T09:40:52.6281634Z"
+    }
+  ],
+  "updatedAt": "2026-07-30T09:40:52.6293081Z"
+}
