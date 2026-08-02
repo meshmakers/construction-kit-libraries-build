@@ -2,7 +2,7 @@
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
     "Basic-2.0.2",
-    "Basic.Accounting-1.5.1",
+    "Basic.Accounting-1.6.0",
     "System-2.2.2"
   ],
   "types": [
@@ -27,7 +27,7 @@
       "associations": [
         {
           "id": "Meshmakers.Accounting-1.14.0/TransactionToDocument-1",
-          "targetCkTypeId": "Basic.Accounting-1.5.1/BankTransaction-1"
+          "targetCkTypeId": "Basic.Accounting-1.6.0/BankTransaction-1"
         },
         {
           "id": "Meshmakers.Accounting-1.14.0/DocumentToFiscalYear-1",
@@ -361,7 +361,7 @@
         },
         {
           "id": "Meshmakers.Accounting-1.14.0/TransactionToCategory-1",
-          "targetCkTypeId": "Basic.Accounting-1.5.1/BankTransaction-1"
+          "targetCkTypeId": "Basic.Accounting-1.6.0/BankTransaction-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
@@ -454,7 +454,7 @@
       "associations": [
         {
           "id": "Meshmakers.Accounting-1.14.0/TransactionToFiscalYear-1",
-          "targetCkTypeId": "Basic.Accounting-1.5.1/BankTransaction-1"
+          "targetCkTypeId": "Basic.Accounting-1.6.0/BankTransaction-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
@@ -522,7 +522,7 @@
         },
         {
           "id": "Meshmakers.Accounting-1.14.0/TodoToTransaction-1",
-          "targetCkTypeId": "Basic.Accounting-1.5.1/BankTransaction-1"
+          "targetCkTypeId": "Basic.Accounting-1.6.0/BankTransaction-1"
         },
         {
           "id": "Meshmakers.Accounting-1.14.0/TodoToUploadedDocument-1",
