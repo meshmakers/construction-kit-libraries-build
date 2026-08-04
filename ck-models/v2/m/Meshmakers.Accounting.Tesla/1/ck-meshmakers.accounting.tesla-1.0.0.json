@@ -82,7 +82,7 @@
       "id": "TokenUrl-1",
       "valueType": "String",
       "isRuntimeState": false,
-      "description": "OAuth token endpoint (https://auth.tesla.com/oauth2/v3/token)."
+      "description": "OAuth token endpoint for server-to-server calls (https://fleet-auth.prd.vn.cloud.tesla.com/oauth2/v3/token)."
     }
   ],
   "records": [],
