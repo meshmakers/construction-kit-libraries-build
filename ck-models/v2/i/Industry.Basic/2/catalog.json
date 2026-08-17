@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Industry.Basic",
   "majorVersion": 2,
-  "latestVersion": "2.1.3",
+  "latestVersion": "2.2.0",
   "description": null,
   "versions": [
     {
@@ -22,7 +22,13 @@
       "fileName": "ck-industry.basic-2.1.3.json",
       "filePath": "ck-models/v2/i/Industry.Basic/2/ck-industry.basic-2.1.3.json",
       "publishedAt": "2026-07-20T07:38:42.3165218Z"
+    },
+    {
+      "version": "2.2.0",
+      "fileName": "ck-industry.basic-2.2.0.json",
+      "filePath": "ck-models/v2/i/Industry.Basic/2/ck-industry.basic-2.2.0.json",
+      "publishedAt": "2026-08-17T11:26:29.6137744Z"
     }
   ],
-  "updatedAt": "2026-07-20T07:38:42.3166032Z"
+  "updatedAt": "2026-08-17T11:26:29.6242104Z"
 }
