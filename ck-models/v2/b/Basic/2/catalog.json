@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Basic",
   "majorVersion": 2,
-  "latestVersion": "2.0.2",
+  "latestVersion": "2.0.3",
   "description": null,
   "versions": [
     {
@@ -10,7 +10,13 @@
       "fileName": "ck-basic-2.0.2.json",
       "filePath": "ck-models/v2/b/Basic/2/ck-basic-2.0.2.json",
       "publishedAt": "2026-04-04T14:30:00.3133396Z"
+    },
+    {
+      "version": "2.0.3",
+      "fileName": "ck-basic-2.0.3.json",
+      "filePath": "ck-models/v2/b/Basic/2/ck-basic-2.0.3.json",
+      "publishedAt": "2026-08-17T11:23:08.3609666Z"
     }
   ],
-  "updatedAt": "2026-04-04T14:30:00.3149207Z"
+  "updatedAt": "2026-08-17T11:23:08.3652125Z"
 }
