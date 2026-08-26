@@ -5,7 +5,11 @@
     {
       "majorVersion": 1,
       "catalogPath": "ck-models/v2/i/Industry.Logistics/1/catalog.json"
+    },
+    {
+      "majorVersion": 2,
+      "catalogPath": "ck-models/v2/i/Industry.Logistics/2/catalog.json"
     }
   ],
-  "updatedAt": "2026-07-11T13:32:40.2712121Z"
+  "updatedAt": "2026-08-26T11:40:14.1871462Z"
 }
