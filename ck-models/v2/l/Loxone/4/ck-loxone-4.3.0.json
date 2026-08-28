@@ -1,8 +1,8 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "Basic-2.0.2",
-    "System.Communication-3.27.0",
+    "Basic-2.0.3",
+    "System.Communication-3.28.0",
     "System-2.2.2",
     "System.Bot-3.1.1"
   ],
@@ -10,7 +10,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "Category-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/TreeNode-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/TreeNode-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -41,7 +41,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "Control-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/TreeNode-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/TreeNode-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -82,7 +82,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "Miniserver-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/Tree-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/Tree-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -133,7 +133,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "Room-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/TreeNode-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/TreeNode-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -159,7 +159,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "SubControl-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/TreeNode-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/TreeNode-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -326,7 +326,7 @@
     {
       "id": "States-1",
       "valueType": "RecordArray",
-      "valueCkRecordId": "System.Communication-3.27.0/DataPoint-1",
+      "valueCkRecordId": "System.Communication-3.28.0/DataPoint-1",
       "isRuntimeState": false,
       "description": "Array of data points for this control (each with Name, ExternalId, CurrentValue, LastUpdate)"
     },
