@@ -1,7 +1,7 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "Basic-2.0.2",
+    "Basic-2.0.3",
     "System-2.2.2"
   ],
   "types": [
@@ -451,7 +451,7 @@
       "description": "Ein Kontakt (Person/Institution) - Bewirtschafter, Auftraggeber, Bearbeiter",
       "attributes": [
         {
-          "id": "Basic-2.0.2/Contact-1",
+          "id": "Basic-2.0.3/Contact-1",
           "name": "Contact",
           "isOptional": true
         },
@@ -994,7 +994,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "See-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/NamedEntity-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/NamedEntity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
@@ -1281,7 +1281,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "Zufluss-1",
-      "derivedFromCkTypeId": "Basic-2.0.2/NamedEntity-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/NamedEntity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
