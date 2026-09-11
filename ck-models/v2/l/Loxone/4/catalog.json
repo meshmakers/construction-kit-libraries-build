@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Loxone",
   "majorVersion": 4,
-  "latestVersion": "4.4.0",
+  "latestVersion": "4.5.0",
   "description": null,
   "versions": [
     {
@@ -22,7 +22,13 @@
       "fileName": "ck-loxone-4.4.0.json",
       "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.4.0.json",
       "publishedAt": "2026-09-11T05:32:14.8174303Z"
+    },
+    {
+      "version": "4.5.0",
+      "fileName": "ck-loxone-4.5.0.json",
+      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.5.0.json",
+      "publishedAt": "2026-09-11T20:07:24.4354658Z"
     }
   ],
-  "updatedAt": "2026-09-11T08:00:38.125717Z"
+  "updatedAt": "2026-09-11T20:07:24.4400035Z"
 }
