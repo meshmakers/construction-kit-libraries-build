@@ -12,11 +12,17 @@
       "publishedAt": "2026-08-04T13:02:16.4446604Z"
     },
     {
+      "version": "4.3.1",
+      "fileName": "ck-loxone-4.3.1.json",
+      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.3.1.json",
+      "publishedAt": "2026-09-11T08:00:38.123218Z"
+    },
+    {
       "version": "4.4.0",
       "fileName": "ck-loxone-4.4.0.json",
       "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.4.0.json",
       "publishedAt": "2026-09-11T05:32:14.8174303Z"
     }
   ],
-  "updatedAt": "2026-09-11T05:32:14.8206315Z"
+  "updatedAt": "2026-09-11T08:00:38.125717Z"
 }
