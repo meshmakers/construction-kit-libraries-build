@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-08-04T13:02:18.912479Z",
+  "updatedAt": "2026-09-14T11:30:36.1360194Z",
   "models": [
     {
       "modelName": "Basic",
@@ -73,6 +73,10 @@
     {
       "modelName": "Meshmakers.Accounting.Tesla",
       "catalogPath": "ck-models/v2/m/Meshmakers.Accounting.Tesla/catalog.json"
+    },
+    {
+      "modelName": "Monitoring",
+      "catalogPath": "ck-models/v2/m/Monitoring/catalog.json"
     },
     {
       "modelName": "OctoSdkDemo",
