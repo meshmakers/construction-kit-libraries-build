@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-09-14T11:30:36.1360194Z",
+  "updatedAt": "2026-09-15T04:12:08.9993286Z",
   "models": [
     {
       "modelName": "Basic",
@@ -81,6 +81,10 @@
     {
       "modelName": "OctoSdkDemo",
       "catalogPath": "ck-models/v2/o/OctoSdkDemo/catalog.json"
+    },
+    {
+      "modelName": "SmartMeterInsights",
+      "catalogPath": "ck-models/v2/s/SmartMeterInsights/catalog.json"
     },
     {
       "modelName": "System",
