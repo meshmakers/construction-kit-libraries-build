@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "SmartMeterInsights",
+  "majorVersions": [
+    {
+      "majorVersion": 1,
+      "catalogPath": "ck-models/v2/s/SmartMeterInsights/1/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-09-15T04:12:07.8167223Z"
+}
