@@ -1,0 +1,457 @@
+{
+  "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
+  "dependencies": [
+    "Basic-2.0.3",
+    "Basic.Energy-1.4.0",
+    "System-2.2.2"
+  ],
+  "types": [
+    {
+      "isCollectionRoot": false,
+      "typeId": "Customer-1",
+      "derivedFromCkTypeId": "Basic-2.0.3/NamedEntity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "associations": [
+        {
+          "id": "SmartMeterInsights-1.0.0/AssociatedFacilities-1",
+          "targetCkTypeId": "Basic.Energy-1.4.0/OperatingFacility-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "An end customer of the consulting firm. End customers are runtime entities inside the firm tenant, never tenants (AB#4059).",
+      "attributes": [
+        {
+          "id": "Basic-2.0.3/Contact-1",
+          "name": "Contact",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/Notes-1",
+          "name": "Notes",
+          "isOptional": true
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "ImportSession-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "indexes": [
+        {
+          "indexType": "Ascending",
+          "fields": [
+            {
+              "attributePaths": [
+                "PeriodFrom"
+              ]
+            }
+          ]
+        },
+        {
+          "indexType": "Ascending",
+          "fields": [
+            {
+              "attributePaths": [
+                "PeriodFrom",
+                "PeriodTo"
+              ]
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "id": "SmartMeterInsights-1.0.0/ImportedMeteringPoint-1",
+          "targetCkTypeId": "Basic.Energy-1.4.0/MeteringPoint-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "One CSV import of normalized 15-minute smart-meter readings, with quality counts and gap diagnostics (AB#5213).",
+      "attributes": [
+        {
+          "id": "SmartMeterInsights-1.0.0/FileName-1",
+          "name": "FileName",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/DetectedFormat-1",
+          "name": "DetectedFormat",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/PeriodFrom-1",
+          "name": "PeriodFrom",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/PeriodTo-1",
+          "name": "PeriodTo",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ValueCount-1",
+          "name": "ValueCount",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/DuplicateCount-1",
+          "name": "DuplicateCount",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/CountL1-1",
+          "name": "CountL1",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/CountL2-1",
+          "name": "CountL2",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/CountL3-1",
+          "name": "CountL3",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/CountMissing-1",
+          "name": "CountMissing",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/GapList-1",
+          "name": "GapList",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/State-1",
+          "name": "State",
+          "isOptional": false
+        }
+      ]
+    },
+    {
+      "isCollectionRoot": true,
+      "typeId": "ShareLink-1",
+      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "isFinal": false,
+      "isAbstract": false,
+      "indexes": [
+        {
+          "indexType": "UniqueNotDeleted",
+          "fields": [
+            {
+              "attributePaths": [
+                "Token"
+              ]
+            }
+          ]
+        }
+      ],
+      "associations": [
+        {
+          "id": "SmartMeterInsights-1.0.0/SharedCustomer-1",
+          "targetCkTypeId": "SmartMeterInsights-1.0.0/Customer-1"
+        }
+      ],
+      "enableChangeStreamPreAndPostImages": false,
+      "description": "A revocable, optionally expiring token that exposes a customer\u0027s dashboard read-only via the public /v/:token route.",
+      "attributes": [
+        {
+          "id": "SmartMeterInsights-1.0.0/Token-1",
+          "name": "Token",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/CreatedBy-1",
+          "name": "CreatedBy",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ExpiresAt-1",
+          "name": "ExpiresAt",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/RevokedAt-1",
+          "name": "RevokedAt",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/Message-1",
+          "name": "Message",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/AccessCount-1",
+          "name": "AccessCount",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/LastAccessAt-1",
+          "name": "LastAccessAt",
+          "isOptional": true
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ShowDashboard-1",
+          "name": "ShowDashboard",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ShowRecommendations-1",
+          "name": "ShowRecommendations",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ShowQualityDetails-1",
+          "name": "ShowQualityDetails",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ShowDevices-1",
+          "name": "ShowDevices",
+          "isOptional": false
+        },
+        {
+          "id": "SmartMeterInsights-1.0.0/ShowRawExport-1",
+          "name": "ShowRawExport",
+          "isOptional": false
+        }
+      ]
+    }
+  ],
+  "associationRoles": [
+    {
+      "id": "AssociatedFacilities-1",
+      "inboundName": "Customer",
+      "outboundName": "Facilities",
+      "inboundMultiplicity": "ZeroOrOne",
+      "outboundMultiplicity": "N",
+      "description": "The operating facilities associated with a customer. Optional: facilities may exist without a customer (same shape as EnergyCommunity 4.x AssociatedFacilities)."
+    },
+    {
+      "id": "ImportedMeteringPoint-1",
+      "inboundName": "ImportSessions",
+      "outboundName": "MeteringPoint",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "One",
+      "description": "The metering point an import session persisted readings for. Every session references exactly one metering point; a metering point accumulates many sessions."
+    },
+    {
+      "id": "SharedCustomer-1",
+      "inboundName": "ShareLinks",
+      "outboundName": "Customer",
+      "inboundMultiplicity": "N",
+      "outboundMultiplicity": "One",
+      "description": "The customer whose data a share link exposes. Every link belongs to exactly one customer; a customer may have many links."
+    }
+  ],
+  "attributes": [
+    {
+      "id": "AccessCount-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of successful reads through this link"
+    },
+    {
+      "id": "CountL1-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of readings with data quality L1 (measured)"
+    },
+    {
+      "id": "CountL2-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of readings with data quality L2 (interpolated)"
+    },
+    {
+      "id": "CountL3-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of readings with data quality L3 (estimated)"
+    },
+    {
+      "id": "CountMissing-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of 15-minute slots missing in the covered period (gaps)"
+    },
+    {
+      "id": "CreatedBy-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Display name or subject id of the consultant who created the link"
+    },
+    {
+      "id": "DetectedFormat-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "The CSV dialect / grid-operator format the frontend parser detected"
+    },
+    {
+      "id": "DuplicateCount-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of duplicate readings the frontend removed before upload"
+    },
+    {
+      "id": "ExpiresAt-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "UTC instant after which the link is rejected (unset = never expires)"
+    },
+    {
+      "id": "FileName-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Name of the uploaded CSV file the readings were parsed from"
+    },
+    {
+      "id": "GapList-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "JSON array of gap ranges [{\u0022from\u0022:\u0022...\u0022,\u0022to\u0022:\u0022...\u0022}] detected by the frontend parser"
+    },
+    {
+      "id": "LastAccessAt-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "UTC instant of the most recent successful read"
+    },
+    {
+      "id": "Message-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Personal message shown to the customer on the shared dashboard"
+    },
+    {
+      "id": "Notes-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Free-form consultant notes about the customer"
+    },
+    {
+      "id": "PeriodFrom-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "Start (UTC) of the time range covered by the imported readings"
+    },
+    {
+      "id": "PeriodTo-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "End (UTC) of the time range covered by the imported readings"
+    },
+    {
+      "id": "RevokedAt-1",
+      "valueType": "DateTime",
+      "isRuntimeState": false,
+      "description": "UTC instant the link was revoked (unset = active)"
+    },
+    {
+      "id": "ShowDashboard-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Section flag: consumption dashboard visible on the shared view"
+    },
+    {
+      "id": "ShowDevices-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Section flag: device breakdown visible on the shared view"
+    },
+    {
+      "id": "ShowQualityDetails-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Section flag: data-quality details visible on the shared view"
+    },
+    {
+      "id": "ShowRawExport-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Section flag: raw data export available on the shared view"
+    },
+    {
+      "id": "ShowRecommendations-1",
+      "valueType": "Boolean",
+      "isRuntimeState": false,
+      "description": "Section flag: recommendations visible on the shared view"
+    },
+    {
+      "id": "State-1",
+      "valueType": "Enum",
+      "valueCkEnumId": "SmartMeterInsights-1.0.0/ImportState-1",
+      "isRuntimeState": false,
+      "description": "Lifecycle state of the import session"
+    },
+    {
+      "id": "Token-1",
+      "valueType": "String",
+      "isRuntimeState": false,
+      "description": "Opaque URL token of the share link (unique per tenant)"
+    },
+    {
+      "id": "ValueCount-1",
+      "valueType": "Int",
+      "defaultValues": [
+        "0"
+      ],
+      "isRuntimeState": false,
+      "description": "Number of 15-minute readings persisted by this import"
+    }
+  ],
+  "records": [],
+  "enums": [
+    {
+      "enumId": "ImportState-1",
+      "useFlags": false,
+      "isExtensible": false,
+      "values": [
+        {
+          "key": 0,
+          "name": "Pending",
+          "description": "The import has been created but not all values are persisted yet",
+          "isExtension": false
+        },
+        {
+          "key": 1,
+          "name": "Completed",
+          "description": "All readings of the import were persisted successfully",
+          "isExtension": false
+        },
+        {
+          "key": 2,
+          "name": "Failed",
+          "description": "The import was aborted; the session exists for diagnostics only",
+          "isExtension": false
+        }
+      ],
+      "description": "State of a smart-meter CSV import session"
+    }
+  ],
+  "modelId": "SmartMeterInsights-1.0.0",
+  "description": "Smart Meter Insights domain model (Epic AB#4059): end customers of an energy consulting firm, CSV import sessions for 15-minute smart-meter readings, and revocable share links for the public read-only dashboard. Time-series values reuse Basic.Energy/EnergyMeasurement (one anchor per metering point and OBIS code, slots in the stream-data archive)."
+}
