@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "EnergyCommunity",
   "majorVersion": 4,
-  "latestVersion": "4.3.0",
+  "latestVersion": "4.4.0",
   "description": null,
   "versions": [
     {
@@ -28,7 +28,13 @@
       "fileName": "ck-energycommunity-4.3.0.json",
       "filePath": "ck-models/v2/e/EnergyCommunity/4/ck-energycommunity-4.3.0.json",
       "publishedAt": "2026-08-17T18:56:39.8525236Z"
+    },
+    {
+      "version": "4.4.0",
+      "fileName": "ck-energycommunity-4.4.0.json",
+      "filePath": "ck-models/v2/e/EnergyCommunity/4/ck-energycommunity-4.4.0.json",
+      "publishedAt": "2026-09-22T14:03:56.6825479Z"
     }
   ],
-  "updatedAt": "2026-08-17T18:56:39.8525671Z"
+  "updatedAt": "2026-09-22T14:03:56.6826028Z"
 }
