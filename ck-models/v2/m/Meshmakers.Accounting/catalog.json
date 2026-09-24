@@ -5,7 +5,11 @@
     {
       "majorVersion": 1,
       "catalogPath": "ck-models/v2/m/Meshmakers.Accounting/1/catalog.json"
+    },
+    {
+      "majorVersion": 2,
+      "catalogPath": "ck-models/v2/m/Meshmakers.Accounting/2/catalog.json"
     }
   ],
-  "updatedAt": "2026-07-12T17:40:01.369232Z"
+  "updatedAt": "2026-09-24T11:21:10.1311385Z"
 }
