@@ -2,15 +2,21 @@
   "version": "1.0",
   "modelId": "Monitoring",
   "majorVersion": 2,
-  "latestVersion": "2.0.0",
-  "description": "Platform monitoring model. Holds configuration entities for operational watchdog pipelines (currently CK model health monitoring, reporting to Dash0; designed to grow with further monitors).",
+  "latestVersion": "2.1.0",
+  "description": "Platform monitoring model. Holds configuration entities for operational watchdog pipelines (CK model health and blueprint installation health, both reporting to Dash0; designed to grow with further monitors).",
   "versions": [
     {
       "version": "2.0.0",
       "fileName": "ck-monitoring-2.0.0.json",
       "filePath": "ck-models/v2/m/Monitoring/2/ck-monitoring-2.0.0.json",
       "publishedAt": "2026-09-29T15:03:55.9389347Z"
+    },
+    {
+      "version": "2.1.0",
+      "fileName": "ck-monitoring-2.1.0.json",
+      "filePath": "ck-models/v2/m/Monitoring/2/ck-monitoring-2.1.0.json",
+      "publishedAt": "2026-09-29T18:30:54.195253Z"
     }
   ],
-  "updatedAt": "2026-09-29T15:03:55.9400816Z"
+  "updatedAt": "2026-09-29T18:30:54.19535Z"
 }
