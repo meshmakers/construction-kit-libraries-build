@@ -1,19 +1,19 @@
 {
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
-    "Basic-2.0.3",
-    "System-2.2.2"
+    "Basic-2.1.0",
+    "System-2.3.0"
   ],
   "types": [
     {
       "isCollectionRoot": true,
       "typeId": "Ausfahrt-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/Befischung-1"
         }
       ],
@@ -65,12 +65,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Befischung-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/See-1"
         }
       ],
@@ -127,12 +127,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Bewirtschaftung-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/See-1"
         },
         {
@@ -192,12 +192,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Fisch-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/Ausfahrt-1"
         },
         {
@@ -306,7 +306,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "FischArt-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "indexes": [
@@ -444,14 +444,14 @@
     {
       "isCollectionRoot": true,
       "typeId": "Kontakt-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
       "description": "Ein Kontakt (Person/Institution) - Bewirtschafter, Auftraggeber, Bearbeiter",
       "attributes": [
         {
-          "id": "Basic-2.0.3/Contact-1",
+          "id": "Basic-2.1.0/Contact-1",
           "name": "Contact",
           "isOptional": true
         },
@@ -515,12 +515,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Netz-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/Ausfahrt-1"
         }
       ],
@@ -612,12 +612,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "NetzAuswertung-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/Netz-1"
         },
         {
@@ -643,12 +643,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Nutzung-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/See-1"
         },
         {
@@ -689,7 +689,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "PhChMessung-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
@@ -845,12 +845,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "ProbeZufluss-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/Zufluss-1"
         }
       ],
@@ -882,12 +882,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Probennahme-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/See-1"
         }
       ],
@@ -994,7 +994,7 @@
     {
       "isCollectionRoot": false,
       "typeId": "See-1",
-      "derivedFromCkTypeId": "Basic-2.0.3/NamedEntity-1",
+      "derivedFromCkTypeId": "Basic-2.1.0/NamedEntity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
@@ -1096,12 +1096,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "SeeVolumen-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/See-1"
         }
       ],
@@ -1138,12 +1138,12 @@
     {
       "isCollectionRoot": true,
       "typeId": "Stelle-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/Ausfahrt-1"
         }
       ],
@@ -1230,7 +1230,7 @@
     {
       "isCollectionRoot": true,
       "typeId": "Zitat-1",
-      "derivedFromCkTypeId": "System-2.2.2/Entity-1",
+      "derivedFromCkTypeId": "System-2.3.0/Entity-1",
       "isFinal": false,
       "isAbstract": false,
       "enableChangeStreamPreAndPostImages": false,
@@ -1281,12 +1281,12 @@
     {
       "isCollectionRoot": false,
       "typeId": "Zufluss-1",
-      "derivedFromCkTypeId": "Basic-2.0.3/NamedEntity-1",
+      "derivedFromCkTypeId": "Basic-2.1.0/NamedEntity-1",
       "isFinal": false,
       "isAbstract": false,
       "associations": [
         {
-          "id": "System-2.2.2/ParentChild-1",
+          "id": "System-2.3.0/ParentChild-1",
           "targetCkTypeId": "FdaSeen-1.0.0/See-1"
         }
       ],
