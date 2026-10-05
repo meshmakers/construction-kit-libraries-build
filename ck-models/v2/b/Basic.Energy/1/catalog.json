@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Basic.Energy",
   "majorVersion": 1,
-  "latestVersion": "1.7.0",
+  "latestVersion": "1.8.0",
   "description": null,
   "versions": [
     {
@@ -76,7 +76,13 @@
       "fileName": "ck-basic.energy-1.7.0.json",
       "filePath": "ck-models/v2/b/Basic.Energy/1/ck-basic.energy-1.7.0.json",
       "publishedAt": "2026-10-01T08:57:38.3776345Z"
+    },
+    {
+      "version": "1.8.0",
+      "fileName": "ck-basic.energy-1.8.0.json",
+      "filePath": "ck-models/v2/b/Basic.Energy/1/ck-basic.energy-1.8.0.json",
+      "publishedAt": "2026-10-05T12:25:13.643796Z"
     }
   ],
-  "updatedAt": "2026-10-01T08:57:38.3777027Z"
+  "updatedAt": "2026-10-05T12:25:13.6470841Z"
 }
