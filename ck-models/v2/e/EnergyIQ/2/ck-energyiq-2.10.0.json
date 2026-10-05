@@ -2,7 +2,7 @@
   "$schema": "https://schemas.meshmakers.cloud/construction-kit-compiled.schema.json",
   "dependencies": [
     "Basic-2.1.0",
-    "Basic.Energy-1.6.0",
+    "Basic.Energy-1.7.0",
     "System-2.3.0"
   ],
   "types": [
@@ -776,7 +776,7 @@
       "associations": [
         {
           "id": "EnergyIQ-2.10.0/FormalMeteringPoint-1",
-          "targetCkTypeId": "Basic.Energy-1.6.0/MeteringPoint-1"
+          "targetCkTypeId": "Basic.Energy-1.7.0/MeteringPoint-1"
         }
       ],
       "enableChangeStreamPreAndPostImages": false,
