@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Ai",
   "majorVersion": 3,
-  "latestVersion": "3.9.0",
+  "latestVersion": "3.10.0",
   "description": "Construction kit model for the OctoMesh AI Adapter. Defines configuration, runtime, stream and ephemeral types that back the agent-based engineering features. All AI Adapter persistence flows through these CK types - no ad-hoc MongoDB collections. Major version 3 replaces the deprecated 2.x prototype types with the agent-engineering schema documented in docs/concepts/octo-ai-adapter.md.",
   "versions": [
     {
@@ -16,6 +16,12 @@
       "fileName": "ck-system.ai-3.1.2.json",
       "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.1.2.json",
       "publishedAt": "2026-06-14T07:53:53.6639248Z"
+    },
+    {
+      "version": "3.10.0",
+      "fileName": "ck-system.ai-3.10.0.json",
+      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.10.0.json",
+      "publishedAt": "2026-10-05T05:22:56.6269902Z"
     },
     {
       "version": "3.2.0",
@@ -72,5 +78,5 @@
       "publishedAt": "2026-09-30T06:17:39.9374907Z"
     }
   ],
-  "updatedAt": "2026-09-30T06:17:39.9402453Z"
+  "updatedAt": "2026-10-05T05:22:56.6314086Z"
 }
