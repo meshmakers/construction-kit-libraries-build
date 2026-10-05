@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Demo.Tickets",
   "majorVersion": 1,
-  "latestVersion": "1.0.0",
+  "latestVersion": "1.0.1",
   "description": "One-time secret tickets for the OctoMesh capability demo.",
   "versions": [
     {
@@ -10,7 +10,13 @@
       "fileName": "ck-demo.tickets-1.0.0.json",
       "filePath": "ck-models/v2/d/Demo.Tickets/1/ck-demo.tickets-1.0.0.json",
       "publishedAt": "2026-06-09T23:24:49.386543Z"
+    },
+    {
+      "version": "1.0.1",
+      "fileName": "ck-demo.tickets-1.0.1.json",
+      "filePath": "ck-models/v2/d/Demo.Tickets/1/ck-demo.tickets-1.0.1.json",
+      "publishedAt": "2026-10-05T09:19:29.8471524Z"
     }
   ],
-  "updatedAt": "2026-06-09T23:24:49.3880863Z"
+  "updatedAt": "2026-10-05T09:19:29.9301725Z"
 }
