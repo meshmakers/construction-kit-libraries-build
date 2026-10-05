@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "EnergyIQ",
   "majorVersion": 2,
-  "latestVersion": "2.10.0",
+  "latestVersion": "2.11.0",
   "description": null,
   "versions": [
     {
@@ -10,7 +10,13 @@
       "fileName": "ck-energyiq-2.10.0.json",
       "filePath": "ck-models/v2/e/EnergyIQ/2/ck-energyiq-2.10.0.json",
       "publishedAt": "2026-09-30T14:54:17.2789523Z"
+    },
+    {
+      "version": "2.11.0",
+      "fileName": "ck-energyiq-2.11.0.json",
+      "filePath": "ck-models/v2/e/EnergyIQ/2/ck-energyiq-2.11.0.json",
+      "publishedAt": "2026-10-05T13:50:51.0619484Z"
     }
   ],
-  "updatedAt": "2026-09-30T14:54:17.2803986Z"
+  "updatedAt": "2026-10-05T13:50:51.0676958Z"
 }
