@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Notification",
   "majorVersion": 2,
-  "latestVersion": "2.2.0",
+  "latestVersion": "2.3.0",
   "description": null,
   "versions": [
     {
@@ -22,7 +22,13 @@
       "fileName": "ck-system.notification-2.2.0.json",
       "filePath": "ck-models/v2/s/System.Notification/2/ck-system.notification-2.2.0.json",
       "publishedAt": "2026-09-30T05:53:38.712576Z"
+    },
+    {
+      "version": "2.3.0",
+      "fileName": "ck-system.notification-2.3.0.json",
+      "filePath": "ck-models/v2/s/System.Notification/2/ck-system.notification-2.3.0.json",
+      "publishedAt": "2026-10-05T10:57:24.8808522Z"
     }
   ],
-  "updatedAt": "2026-09-30T05:53:38.7193989Z"
+  "updatedAt": "2026-10-05T10:57:24.8859384Z"
 }
