@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "FdaSeen",
   "majorVersion": 1,
-  "latestVersion": "1.0.1",
+  "latestVersion": "1.1.0",
   "description": null,
   "versions": [
     {
@@ -16,7 +16,13 @@
       "fileName": "ck-fdaseen-1.0.1.json",
       "filePath": "ck-models/v2/f/FdaSeen/1/ck-fdaseen-1.0.1.json",
       "publishedAt": "2026-10-05T15:33:53.4660964Z"
+    },
+    {
+      "version": "1.1.0",
+      "fileName": "ck-fdaseen-1.1.0.json",
+      "filePath": "ck-models/v2/f/FdaSeen/1/ck-fdaseen-1.1.0.json",
+      "publishedAt": "2026-10-06T22:01:40.062168Z"
     }
   ],
-  "updatedAt": "2026-10-05T15:33:53.4680097Z"
+  "updatedAt": "2026-10-06T22:01:40.0660673Z"
 }
