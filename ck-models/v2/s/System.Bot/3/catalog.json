@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Bot",
   "majorVersion": 3,
-  "latestVersion": "3.3.0",
+  "latestVersion": "3.4.0",
   "description": null,
   "versions": [
     {
@@ -34,7 +34,13 @@
       "fileName": "ck-system.bot-3.3.0.json",
       "filePath": "ck-models/v2/s/System.Bot/3/ck-system.bot-3.3.0.json",
       "publishedAt": "2026-10-05T12:52:11.1295372Z"
+    },
+    {
+      "version": "3.4.0",
+      "fileName": "ck-system.bot-3.4.0.json",
+      "filePath": "ck-models/v2/s/System.Bot/3/ck-system.bot-3.4.0.json",
+      "publishedAt": "2026-10-06T21:29:38.1794355Z"
     }
   ],
-  "updatedAt": "2026-10-05T12:52:11.1394444Z"
+  "updatedAt": "2026-10-06T21:29:38.1844017Z"
 }
