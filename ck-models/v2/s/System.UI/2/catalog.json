@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.UI",
   "majorVersion": 2,
-  "latestVersion": "2.6.0",
+  "latestVersion": "2.7.0",
   "description": null,
   "versions": [
     {
@@ -52,7 +52,13 @@
       "fileName": "ck-system.ui-2.6.0.json",
       "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.6.0.json",
       "publishedAt": "2026-10-05T12:51:40.4082154Z"
+    },
+    {
+      "version": "2.7.0",
+      "fileName": "ck-system.ui-2.7.0.json",
+      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.7.0.json",
+      "publishedAt": "2026-10-06T21:38:08.3047319Z"
     }
   ],
-  "updatedAt": "2026-10-05T12:51:40.4203263Z"
+  "updatedAt": "2026-10-06T21:38:08.310367Z"
 }
