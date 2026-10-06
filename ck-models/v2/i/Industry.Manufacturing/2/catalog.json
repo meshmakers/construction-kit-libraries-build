@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Industry.Manufacturing",
   "majorVersion": 2,
-  "latestVersion": "2.4.0",
+  "latestVersion": "2.5.0",
   "description": null,
   "versions": [
     {
@@ -46,7 +46,13 @@
       "fileName": "ck-industry.manufacturing-2.4.0.json",
       "filePath": "ck-models/v2/i/Industry.Manufacturing/2/ck-industry.manufacturing-2.4.0.json",
       "publishedAt": "2026-10-05T12:26:31.5936966Z"
+    },
+    {
+      "version": "2.5.0",
+      "fileName": "ck-industry.manufacturing-2.5.0.json",
+      "filePath": "ck-models/v2/i/Industry.Manufacturing/2/ck-industry.manufacturing-2.5.0.json",
+      "publishedAt": "2026-10-06T21:52:52.4232091Z"
     }
   ],
-  "updatedAt": "2026-10-05T12:26:31.5937412Z"
+  "updatedAt": "2026-10-06T21:52:52.4358721Z"
 }
