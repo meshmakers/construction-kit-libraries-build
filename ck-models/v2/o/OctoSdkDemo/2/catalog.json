@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "OctoSdkDemo",
   "majorVersion": 2,
-  "latestVersion": "2.3.0",
+  "latestVersion": "2.4.0",
   "description": null,
   "versions": [
     {
@@ -28,7 +28,13 @@
       "fileName": "ck-octosdkdemo-2.3.0.json",
       "filePath": "ck-models/v2/o/OctoSdkDemo/2/ck-octosdkdemo-2.3.0.json",
       "publishedAt": "2026-10-05T12:25:16.9387733Z"
+    },
+    {
+      "version": "2.4.0",
+      "fileName": "ck-octosdkdemo-2.4.0.json",
+      "filePath": "ck-models/v2/o/OctoSdkDemo/2/ck-octosdkdemo-2.4.0.json",
+      "publishedAt": "2026-10-06T21:51:22.7458553Z"
     }
   ],
-  "updatedAt": "2026-10-05T12:25:16.9508907Z"
+  "updatedAt": "2026-10-06T21:51:22.7584846Z"
 }
