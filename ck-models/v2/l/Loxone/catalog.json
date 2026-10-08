@@ -5,7 +5,11 @@
     {
       "majorVersion": 4,
       "catalogPath": "ck-models/v2/l/Loxone/4/catalog.json"
+    },
+    {
+      "majorVersion": 5,
+      "catalogPath": "ck-models/v2/l/Loxone/5/catalog.json"
     }
   ],
-  "updatedAt": "2026-08-04T13:02:17.7184356Z"
+  "updatedAt": "2026-10-08T18:51:55.2203897Z"
 }
