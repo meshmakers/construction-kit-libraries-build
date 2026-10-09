@@ -12,18 +12,6 @@
       "publishedAt": "2025-12-23T08:06:36.7565232Z"
     },
     {
-      "version": "2.0.1",
-      "fileName": "ck-system.ui-2.0.1.json",
-      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.0.1.json",
-      "publishedAt": "2026-01-22T14:09:50.4029422Z"
-    },
-    {
-      "version": "2.1.0",
-      "fileName": "ck-system.ui-2.1.0.json",
-      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.1.0.json",
-      "publishedAt": "2026-04-27T12:23:11.5259128Z"
-    },
-    {
       "version": "2.10.0",
       "fileName": "ck-system.ui-2.10.0.json",
       "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.10.0.json",
@@ -36,34 +24,10 @@
       "publishedAt": "2026-06-30T06:26:41.9579466Z"
     },
     {
-      "version": "2.3.0",
-      "fileName": "ck-system.ui-2.3.0.json",
-      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.3.0.json",
-      "publishedAt": "2026-07-02T04:37:39.6469218Z"
-    },
-    {
       "version": "2.4.0",
       "fileName": "ck-system.ui-2.4.0.json",
       "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.4.0.json",
       "publishedAt": "2026-07-04T18:39:26.6508298Z"
-    },
-    {
-      "version": "2.5.0",
-      "fileName": "ck-system.ui-2.5.0.json",
-      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.5.0.json",
-      "publishedAt": "2026-09-30T05:53:17.0696234Z"
-    },
-    {
-      "version": "2.6.0",
-      "fileName": "ck-system.ui-2.6.0.json",
-      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.6.0.json",
-      "publishedAt": "2026-10-05T12:51:40.4082154Z"
-    },
-    {
-      "version": "2.7.0",
-      "fileName": "ck-system.ui-2.7.0.json",
-      "filePath": "ck-models/v2/s/System.UI/2/ck-system.ui-2.7.0.json",
-      "publishedAt": "2026-10-06T21:38:08.3047319Z"
     },
     {
       "version": "2.9.0",
@@ -72,5 +36,5 @@
       "publishedAt": "2026-10-07T13:20:47.7970238Z"
     }
   ],
-  "updatedAt": "2026-10-08T21:54:29.4377827Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

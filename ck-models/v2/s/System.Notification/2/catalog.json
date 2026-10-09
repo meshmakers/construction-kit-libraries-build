@@ -6,28 +6,10 @@
   "description": null,
   "versions": [
     {
-      "version": "2.0.0",
-      "fileName": "ck-system.notification-2.0.0.json",
-      "filePath": "ck-models/v2/s/System.Notification/2/ck-system.notification-2.0.0.json",
-      "publishedAt": "2025-12-23T07:01:14.9917268Z"
-    },
-    {
       "version": "2.1.0",
       "fileName": "ck-system.notification-2.1.0.json",
       "filePath": "ck-models/v2/s/System.Notification/2/ck-system.notification-2.1.0.json",
       "publishedAt": "2026-06-15T06:59:01.4919871Z"
-    },
-    {
-      "version": "2.2.0",
-      "fileName": "ck-system.notification-2.2.0.json",
-      "filePath": "ck-models/v2/s/System.Notification/2/ck-system.notification-2.2.0.json",
-      "publishedAt": "2026-09-30T05:53:38.712576Z"
-    },
-    {
-      "version": "2.3.0",
-      "fileName": "ck-system.notification-2.3.0.json",
-      "filePath": "ck-models/v2/s/System.Notification/2/ck-system.notification-2.3.0.json",
-      "publishedAt": "2026-10-05T10:57:24.8808522Z"
     },
     {
       "version": "2.4.0",
@@ -36,5 +18,5 @@
       "publishedAt": "2026-10-06T21:22:51.0340205Z"
     }
   ],
-  "updatedAt": "2026-10-06T21:22:51.0371579Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

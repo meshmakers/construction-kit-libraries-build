@@ -6,95 +6,17 @@
   "description": "Construction kit model for the OctoMesh AI Adapter. Defines configuration, runtime, stream and ephemeral types that back the agent-based engineering features. All AI Adapter persistence flows through these CK types - no ad-hoc MongoDB collections. Major version 3 replaces the deprecated 2.x prototype types with the agent-engineering schema documented in docs/concepts/octo-ai-adapter.md.",
   "versions": [
     {
-      "version": "3.0.0",
-      "fileName": "ck-system.ai-3.0.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.0.0.json",
-      "publishedAt": "2026-06-06T16:43:29.6499795Z"
-    },
-    {
       "version": "3.1.2",
       "fileName": "ck-system.ai-3.1.2.json",
       "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.1.2.json",
       "publishedAt": "2026-06-14T07:53:53.6639248Z"
     },
     {
-      "version": "3.10.0",
-      "fileName": "ck-system.ai-3.10.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.10.0.json",
-      "publishedAt": "2026-10-05T05:22:56.6269902Z"
-    },
-    {
-      "version": "3.11.0",
-      "fileName": "ck-system.ai-3.11.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.11.0.json",
-      "publishedAt": "2026-10-05T06:12:01.1391147Z"
-    },
-    {
-      "version": "3.12.0",
-      "fileName": "ck-system.ai-3.12.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.12.0.json",
-      "publishedAt": "2026-10-05T13:36:51.0346341Z"
-    },
-    {
       "version": "3.13.0",
       "fileName": "ck-system.ai-3.13.0.json",
       "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.13.0.json",
       "publishedAt": "2026-10-06T22:05:36.2789042Z"
-    },
-    {
-      "version": "3.2.0",
-      "fileName": "ck-system.ai-3.2.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.2.0.json",
-      "publishedAt": "2026-08-04T13:19:36.5209051Z"
-    },
-    {
-      "version": "3.3.0",
-      "fileName": "ck-system.ai-3.3.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.3.0.json",
-      "publishedAt": "2026-08-05T12:28:52.8380053Z"
-    },
-    {
-      "version": "3.4.0",
-      "fileName": "ck-system.ai-3.4.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.4.0.json",
-      "publishedAt": "2026-08-30T05:57:51.880467Z"
-    },
-    {
-      "version": "3.4.1",
-      "fileName": "ck-system.ai-3.4.1.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.4.1.json",
-      "publishedAt": "2026-09-02T05:03:37.286395Z"
-    },
-    {
-      "version": "3.5.0",
-      "fileName": "ck-system.ai-3.5.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.5.0.json",
-      "publishedAt": "2026-09-07T17:20:49.2710827Z"
-    },
-    {
-      "version": "3.6.0",
-      "fileName": "ck-system.ai-3.6.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.6.0.json",
-      "publishedAt": "2026-09-11T05:19:15.9693539Z"
-    },
-    {
-      "version": "3.7.0",
-      "fileName": "ck-system.ai-3.7.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.7.0.json",
-      "publishedAt": "2026-09-12T06:38:10.9274277Z"
-    },
-    {
-      "version": "3.8.0",
-      "fileName": "ck-system.ai-3.8.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.8.0.json",
-      "publishedAt": "2026-09-22T15:05:15.8122672Z"
-    },
-    {
-      "version": "3.9.0",
-      "fileName": "ck-system.ai-3.9.0.json",
-      "filePath": "ck-models/v2/s/System.Ai/3/ck-system.ai-3.9.0.json",
-      "publishedAt": "2026-09-30T06:17:39.9374907Z"
     }
   ],
-  "updatedAt": "2026-10-06T22:05:36.2830444Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

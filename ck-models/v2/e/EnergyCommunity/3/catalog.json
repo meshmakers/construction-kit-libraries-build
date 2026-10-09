@@ -12,17 +12,11 @@
       "publishedAt": "2026-04-06T19:24:30.0338222Z"
     },
     {
-      "version": "3.1.1",
-      "fileName": "ck-energycommunity-3.1.1.json",
-      "filePath": "ck-models/v2/e/EnergyCommunity/3/ck-energycommunity-3.1.1.json",
-      "publishedAt": "2026-06-12T12:37:08.7570916Z"
-    },
-    {
       "version": "3.2.0",
       "fileName": "ck-energycommunity-3.2.0.json",
       "filePath": "ck-models/v2/e/EnergyCommunity/3/ck-energycommunity-3.2.0.json",
       "publishedAt": "2026-07-22T09:17:26.4834413Z"
     }
   ],
-  "updatedAt": "2026-07-22T09:17:26.4936591Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

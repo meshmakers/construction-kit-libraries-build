@@ -6,12 +6,6 @@
   "description": null,
   "versions": [
     {
-      "version": "2.1.0",
-      "fileName": "ck-industry.basic-2.1.0.json",
-      "filePath": "ck-models/v2/i/Industry.Basic/2/ck-industry.basic-2.1.0.json",
-      "publishedAt": "2026-04-05T07:46:32.9532618Z"
-    },
-    {
       "version": "2.1.1",
       "fileName": "ck-industry.basic-2.1.1.json",
       "filePath": "ck-models/v2/i/Industry.Basic/2/ck-industry.basic-2.1.1.json",
@@ -48,5 +42,5 @@
       "publishedAt": "2026-10-06T21:51:26.9275813Z"
     }
   ],
-  "updatedAt": "2026-10-06T21:51:26.9315833Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

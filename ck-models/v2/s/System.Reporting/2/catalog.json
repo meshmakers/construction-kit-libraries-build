@@ -12,23 +12,11 @@
       "publishedAt": "2025-12-23T13:05:53.6610222Z"
     },
     {
-      "version": "2.1.0",
-      "fileName": "ck-system.reporting-2.1.0.json",
-      "filePath": "ck-models/v2/s/System.Reporting/2/ck-system.reporting-2.1.0.json",
-      "publishedAt": "2026-09-30T05:53:11.8137985Z"
-    },
-    {
-      "version": "2.2.0",
-      "fileName": "ck-system.reporting-2.2.0.json",
-      "filePath": "ck-models/v2/s/System.Reporting/2/ck-system.reporting-2.2.0.json",
-      "publishedAt": "2026-10-05T12:52:01.52354Z"
-    },
-    {
       "version": "2.3.0",
       "fileName": "ck-system.reporting-2.3.0.json",
       "filePath": "ck-models/v2/s/System.Reporting/2/ck-system.reporting-2.3.0.json",
       "publishedAt": "2026-10-06T19:41:22.6121586Z"
     }
   ],
-  "updatedAt": "2026-10-06T19:41:22.6158267Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

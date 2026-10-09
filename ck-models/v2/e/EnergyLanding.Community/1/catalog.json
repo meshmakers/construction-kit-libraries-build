@@ -3,20 +3,8 @@
   "modelId": "EnergyLanding.Community",
   "majorVersion": 1,
   "latestVersion": "1.2.0",
-  "description": "Energy-communities landing page \u2014 interest pre-registrations (contact and consent data).",
+  "description": "Energy-communities landing page — interest pre-registrations (contact and consent data).",
   "versions": [
-    {
-      "version": "1.0.0",
-      "fileName": "ck-energylanding.community-1.0.0.json",
-      "filePath": "ck-models/v2/e/EnergyLanding.Community/1/ck-energylanding.community-1.0.0.json",
-      "publishedAt": "2026-07-14T10:00:58.6087058Z"
-    },
-    {
-      "version": "1.1.0",
-      "fileName": "ck-energylanding.community-1.1.0.json",
-      "filePath": "ck-models/v2/e/EnergyLanding.Community/1/ck-energylanding.community-1.1.0.json",
-      "publishedAt": "2026-10-05T13:47:09.2105036Z"
-    },
     {
       "version": "1.2.0",
       "fileName": "ck-energylanding.community-1.2.0.json",
@@ -24,5 +12,5 @@
       "publishedAt": "2026-10-09T04:28:53.2084298Z"
     }
   ],
-  "updatedAt": "2026-10-09T04:28:53.2115501Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

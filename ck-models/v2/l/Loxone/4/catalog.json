@@ -16,55 +16,7 @@
       "fileName": "ck-loxone-4.11.0.json",
       "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.11.0.json",
       "publishedAt": "2026-10-08T16:08:58.1217097Z"
-    },
-    {
-      "version": "4.3.0",
-      "fileName": "ck-loxone-4.3.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.3.0.json",
-      "publishedAt": "2026-08-04T13:02:16.4446604Z"
-    },
-    {
-      "version": "4.3.1",
-      "fileName": "ck-loxone-4.3.1.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.3.1.json",
-      "publishedAt": "2026-09-11T08:00:38.123218Z"
-    },
-    {
-      "version": "4.4.0",
-      "fileName": "ck-loxone-4.4.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.4.0.json",
-      "publishedAt": "2026-09-11T05:32:14.8174303Z"
-    },
-    {
-      "version": "4.5.0",
-      "fileName": "ck-loxone-4.5.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.5.0.json",
-      "publishedAt": "2026-09-11T20:07:24.4354658Z"
-    },
-    {
-      "version": "4.6.0",
-      "fileName": "ck-loxone-4.6.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.6.0.json",
-      "publishedAt": "2026-09-13T14:40:29.6770965Z"
-    },
-    {
-      "version": "4.7.0",
-      "fileName": "ck-loxone-4.7.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.7.0.json",
-      "publishedAt": "2026-09-30T14:26:39.795068Z"
-    },
-    {
-      "version": "4.8.0",
-      "fileName": "ck-loxone-4.8.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.8.0.json",
-      "publishedAt": "2026-10-05T05:23:04.4877487Z"
-    },
-    {
-      "version": "4.9.0",
-      "fileName": "ck-loxone-4.9.0.json",
-      "filePath": "ck-models/v2/l/Loxone/4/ck-loxone-4.9.0.json",
-      "publishedAt": "2026-10-05T13:36:54.4741018Z"
     }
   ],
-  "updatedAt": "2026-10-08T16:08:58.1263799Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }

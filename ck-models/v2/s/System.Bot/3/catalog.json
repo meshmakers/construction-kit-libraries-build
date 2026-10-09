@@ -24,23 +24,11 @@
       "publishedAt": "2026-04-20T07:02:09.5624832Z"
     },
     {
-      "version": "3.2.0",
-      "fileName": "ck-system.bot-3.2.0.json",
-      "filePath": "ck-models/v2/s/System.Bot/3/ck-system.bot-3.2.0.json",
-      "publishedAt": "2026-09-30T05:53:08.0585902Z"
-    },
-    {
-      "version": "3.3.0",
-      "fileName": "ck-system.bot-3.3.0.json",
-      "filePath": "ck-models/v2/s/System.Bot/3/ck-system.bot-3.3.0.json",
-      "publishedAt": "2026-10-05T12:52:11.1295372Z"
-    },
-    {
       "version": "3.4.0",
       "fileName": "ck-system.bot-3.4.0.json",
       "filePath": "ck-models/v2/s/System.Bot/3/ck-system.bot-3.4.0.json",
       "publishedAt": "2026-10-06T21:29:38.1794355Z"
     }
   ],
-  "updatedAt": "2026-10-06T21:29:38.1844017Z"
+  "updatedAt": "2026-10-09T05:08:11.5244050Z"
 }
