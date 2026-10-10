@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-09T05:08:11.5244050Z",
+  "updatedAt": "2026-10-10T21:21:21.6097018Z",
   "models": [
     {
       "modelName": "Basic",
@@ -109,6 +109,10 @@
     {
       "modelName": "System.Communication",
       "catalogPath": "ck-models/v2/s/System.Communication/catalog.json"
+    },
+    {
+      "modelName": "System.Files",
+      "catalogPath": "ck-models/v2/s/System.Files/catalog.json"
     },
     {
       "modelName": "System.Identity",
