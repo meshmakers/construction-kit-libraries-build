@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "Smoke.CkV2",
+  "majorVersion": 1,
+  "latestVersion": "1.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "1.0.0",
+      "fileName": "ck-smoke.ckv2-1.0.0.json",
+      "filePath": "ck-models/v3/s/Smoke.CkV2/1/ck-smoke.ckv2-1.0.0.json",
+      "publishedAt": "2026-10-13T20:48:30.763003Z"
+    }
+  ],
+  "updatedAt": "2026-10-13T20:48:30.763419Z"
+}
