@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "System.Bot",
+  "majorVersion": 3,
+  "latestVersion": "3.5.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "3.5.0",
+      "fileName": "ck-system.bot-3.5.0.json",
+      "filePath": "ck-models/v3/s/System.Bot/3/ck-system.bot-3.5.0.json",
+      "publishedAt": "2026-10-14T18:47:23.8429739Z"
+    }
+  ],
+  "updatedAt": "2026-10-14T18:47:23.8433798Z"
+}
