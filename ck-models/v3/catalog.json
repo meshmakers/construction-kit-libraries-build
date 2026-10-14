@@ -1,7 +1,11 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T18:56:05.2664277Z",
+  "updatedAt": "2026-10-14T20:09:08.0058011Z",
   "models": [
+    {
+      "modelName": "Basic",
+      "catalogPath": "ck-models/v3/b/Basic/catalog.json"
+    },
     {
       "modelName": "Smoke.CkV2",
       "catalogPath": "ck-models/v3/s/Smoke.CkV2/catalog.json"
