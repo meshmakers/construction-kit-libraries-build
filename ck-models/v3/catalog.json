@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T18:47:11.8389782Z",
+  "updatedAt": "2026-10-14T18:47:18.5507704Z",
   "models": [
     {
       "modelName": "Smoke.CkV2",
@@ -9,6 +9,10 @@
     {
       "modelName": "System.Files",
       "catalogPath": "ck-models/v3/s/System.Files/catalog.json"
+    },
+    {
+      "modelName": "System.Notification",
+      "catalogPath": "ck-models/v3/s/System.Notification/catalog.json"
     },
     {
       "modelName": "System.Reporting",
