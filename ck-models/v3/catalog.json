@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T21:03:42.4544006Z",
+  "updatedAt": "2026-10-14T21:04:00.7192137Z",
   "models": [
     {
       "modelName": "Basic",
@@ -41,6 +41,10 @@
     {
       "modelName": "Industry.Manufacturing",
       "catalogPath": "ck-models/v3/i/Industry.Manufacturing/catalog.json"
+    },
+    {
+      "modelName": "OctoSdkDemo",
+      "catalogPath": "ck-models/v3/o/OctoSdkDemo/catalog.json"
     },
     {
       "modelName": "Smoke.CkV2",
