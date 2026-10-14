@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T21:01:49.2802542Z",
+  "updatedAt": "2026-10-14T21:02:07.5399669Z",
   "models": [
     {
       "modelName": "Basic",
@@ -17,6 +17,10 @@
     {
       "modelName": "Environment",
       "catalogPath": "ck-models/v3/e/Environment/catalog.json"
+    },
+    {
+      "modelName": "Industry.Basic",
+      "catalogPath": "ck-models/v3/i/Industry.Basic/catalog.json"
     },
     {
       "modelName": "Smoke.CkV2",
