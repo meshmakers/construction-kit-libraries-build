@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T21:04:00.7192137Z",
+  "updatedAt": "2026-10-14T21:14:44.8486338Z",
   "models": [
     {
       "modelName": "Basic",
@@ -73,6 +73,10 @@
     {
       "modelName": "System.StreamData",
       "catalogPath": "ck-models/v3/s/System.StreamData/catalog.json"
+    },
+    {
+      "modelName": "System.UI",
+      "catalogPath": "ck-models/v3/s/System.UI/catalog.json"
     }
   ]
 }
