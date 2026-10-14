@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T21:01:31.4634858Z",
+  "updatedAt": "2026-10-14T21:01:49.2802542Z",
   "models": [
     {
       "modelName": "Basic",
@@ -13,6 +13,10 @@
     {
       "modelName": "EnergyCommunity",
       "catalogPath": "ck-models/v3/e/EnergyCommunity/catalog.json"
+    },
+    {
+      "modelName": "Environment",
+      "catalogPath": "ck-models/v3/e/Environment/catalog.json"
     },
     {
       "modelName": "Smoke.CkV2",
