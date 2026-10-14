@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T21:14:44.8486338Z",
+  "updatedAt": "2026-10-14T21:53:43.5537634Z",
   "models": [
     {
       "modelName": "Basic",
@@ -53,6 +53,10 @@
     {
       "modelName": "System.Bot",
       "catalogPath": "ck-models/v3/s/System.Bot/catalog.json"
+    },
+    {
+      "modelName": "System.Communication",
+      "catalogPath": "ck-models/v3/s/System.Communication/catalog.json"
     },
     {
       "modelName": "System.Files",
