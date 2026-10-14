@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T17:24:20.7914404Z",
+  "updatedAt": "2026-10-14T18:47:11.8389782Z",
   "models": [
     {
       "modelName": "Smoke.CkV2",
@@ -9,6 +9,10 @@
     {
       "modelName": "System.Files",
       "catalogPath": "ck-models/v3/s/System.Files/catalog.json"
+    },
+    {
+      "modelName": "System.Reporting",
+      "catalogPath": "ck-models/v3/s/System.Reporting/catalog.json"
     },
     {
       "modelName": "System.StreamData",
