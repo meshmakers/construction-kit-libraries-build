@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T21:03:04.8144025Z",
+  "updatedAt": "2026-10-14T21:03:22.5145973Z",
   "models": [
     {
       "modelName": "Basic",
@@ -33,6 +33,10 @@
     {
       "modelName": "Industry.Logistics",
       "catalogPath": "ck-models/v3/i/Industry.Logistics/catalog.json"
+    },
+    {
+      "modelName": "Industry.Maintenance",
+      "catalogPath": "ck-models/v3/i/Industry.Maintenance/catalog.json"
     },
     {
       "modelName": "Smoke.CkV2",
