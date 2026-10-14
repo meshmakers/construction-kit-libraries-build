@@ -1,10 +1,14 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T18:47:18.5507704Z",
+  "updatedAt": "2026-10-14T18:47:27.8087147Z",
   "models": [
     {
       "modelName": "Smoke.CkV2",
       "catalogPath": "ck-models/v3/s/Smoke.CkV2/catalog.json"
+    },
+    {
+      "modelName": "System.Bot",
+      "catalogPath": "ck-models/v3/s/System.Bot/catalog.json"
     },
     {
       "modelName": "System.Files",
