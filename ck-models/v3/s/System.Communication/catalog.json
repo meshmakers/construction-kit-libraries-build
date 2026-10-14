@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "System.Communication",
+  "majorVersions": [
+    {
+      "majorVersion": 4,
+      "catalogPath": "ck-models/v3/s/System.Communication/4/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-10-14T21:53:41.8775327Z"
+}
