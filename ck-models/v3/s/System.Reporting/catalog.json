@@ -5,7 +5,11 @@
     {
       "majorVersion": 2,
       "catalogPath": "ck-models/v3/s/System.Reporting/2/catalog.json"
+    },
+    {
+      "majorVersion": 3,
+      "catalogPath": "ck-models/v3/s/System.Reporting/3/catalog.json"
     }
   ],
-  "updatedAt": "2026-10-14T18:47:09.4768134Z"
+  "updatedAt": "2026-10-15T17:40:31.7794123Z"
 }
