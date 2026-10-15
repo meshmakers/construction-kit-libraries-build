@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "modelId": "Loxone",
+  "majorVersions": [
+    {
+      "majorVersion": 5,
+      "catalogPath": "ck-models/v3/l/Loxone/5/catalog.json"
+    }
+  ],
+  "updatedAt": "2026-10-15T05:52:46.8367521Z"
+}
