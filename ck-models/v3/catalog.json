@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T22:10:39.0684309Z",
+  "updatedAt": "2026-10-15T05:52:48.3039925Z",
   "models": [
     {
       "modelName": "Basic",
@@ -41,6 +41,10 @@
     {
       "modelName": "Industry.Manufacturing",
       "catalogPath": "ck-models/v3/i/Industry.Manufacturing/catalog.json"
+    },
+    {
+      "modelName": "Loxone",
+      "catalogPath": "ck-models/v3/l/Loxone/catalog.json"
     },
     {
       "modelName": "OctoSdkDemo",
