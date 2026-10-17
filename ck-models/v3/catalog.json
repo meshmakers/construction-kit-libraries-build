@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-15T07:34:45.4040588Z",
+  "updatedAt": "2026-10-17T07:51:29.7129973Z",
   "models": [
     {
       "modelName": "Basic",
@@ -13,6 +13,10 @@
     {
       "modelName": "EnergyCommunity",
       "catalogPath": "ck-models/v3/e/EnergyCommunity/catalog.json"
+    },
+    {
+      "modelName": "EnergyCommunity.Registration",
+      "catalogPath": "ck-models/v3/e/EnergyCommunity.Registration/catalog.json"
     },
     {
       "modelName": "EnergyIQ",
