@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-23T14:11:23.6505347Z",
+  "updatedAt": "2026-10-23T18:37:38.0974579Z",
   "models": [
     {
       "modelName": "Basic",
@@ -61,6 +61,10 @@
     {
       "modelName": "Loxone",
       "catalogPath": "ck-models/v3/l/Loxone/catalog.json"
+    },
+    {
+      "modelName": "Meshmakers.Accounting",
+      "catalogPath": "ck-models/v3/m/Meshmakers.Accounting/catalog.json"
     },
     {
       "modelName": "OctoSdkDemo",
