@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-21T14:06:36.1283794Z",
+  "updatedAt": "2026-10-23T09:02:47.2855322Z",
   "models": [
     {
       "modelName": "Basic",
@@ -65,6 +65,10 @@
     {
       "modelName": "Smoke.CkV2",
       "catalogPath": "ck-models/v3/s/Smoke.CkV2/catalog.json"
+    },
+    {
+      "modelName": "System",
+      "catalogPath": "ck-models/v3/s/System/catalog.json"
     },
     {
       "modelName": "System.Ai",
