@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-23T18:37:57.0370607Z",
+  "updatedAt": "2026-10-23T20:07:25.2049399Z",
   "models": [
     {
       "modelName": "Basic",
@@ -33,6 +33,10 @@
     {
       "modelName": "Environment",
       "catalogPath": "ck-models/v3/e/Environment/catalog.json"
+    },
+    {
+      "modelName": "FdaSeen",
+      "catalogPath": "ck-models/v3/f/FdaSeen/catalog.json"
     },
     {
       "modelName": "Industry.Basic",
