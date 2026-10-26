@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-26T20:30:59.5637456Z",
+  "updatedAt": "2026-10-26T21:09:54.8780648Z",
   "models": [
     {
       "modelName": "Basic",
@@ -81,6 +81,10 @@
     {
       "modelName": "Meshmakers.Accounting.Tesla",
       "catalogPath": "ck-models/v3/m/Meshmakers.Accounting.Tesla/catalog.json"
+    },
+    {
+      "modelName": "MqttEdgeSample",
+      "catalogPath": "ck-models/v3/m/MqttEdgeSample/catalog.json"
     },
     {
       "modelName": "OctoSdkDemo",
