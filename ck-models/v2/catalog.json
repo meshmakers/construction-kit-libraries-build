@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-10T21:21:21.6097018Z",
+  "updatedAt": "2026-10-26T18:38:29.6609091Z",
   "models": [
     {
       "modelName": "Basic",
@@ -85,6 +85,10 @@
     {
       "modelName": "Monitoring",
       "catalogPath": "ck-models/v2/m/Monitoring/catalog.json"
+    },
+    {
+      "modelName": "MqttEdgeSample",
+      "catalogPath": "ck-models/v2/m/MqttEdgeSample/catalog.json"
     },
     {
       "modelName": "OctoSdkDemo",
