@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-26T18:38:29.6609091Z",
+  "updatedAt": "2026-10-28T06:58:09.936554Z",
   "models": [
     {
       "modelName": "Basic",
@@ -81,10 +81,6 @@
     {
       "modelName": "Meshmakers.Accounting.Tesla",
       "catalogPath": "ck-models/v2/m/Meshmakers.Accounting.Tesla/catalog.json"
-    },
-    {
-      "modelName": "Monitoring",
-      "catalogPath": "ck-models/v2/m/Monitoring/catalog.json"
     },
     {
       "modelName": "MqttEdgeSample",
