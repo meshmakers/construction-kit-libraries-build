@@ -6,7 +6,12 @@
       "version": "1.0.0",
       "withdrawnAt": "2026-10-28T06:56:14.716368Z",
       "reason": "AB#7260 retired/test model"
+    },
+    {
+      "version": "2.0.0",
+      "withdrawnAt": "2026-10-28T06:57:15.323669Z",
+      "reason": "AB#7260 retired/test model"
     }
   ],
-  "updatedAt": "2026-10-28T06:56:14.716548Z"
+  "updatedAt": "2026-10-28T06:57:15.323926Z"
 }
