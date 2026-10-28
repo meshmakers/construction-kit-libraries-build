@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-26T21:09:54.8780648Z",
+  "updatedAt": "2026-10-28T06:59:36.547994Z",
   "models": [
     {
       "modelName": "Basic",
@@ -93,10 +93,6 @@
     {
       "modelName": "SmartMeterInsights",
       "catalogPath": "ck-models/v3/s/SmartMeterInsights/catalog.json"
-    },
-    {
-      "modelName": "Smoke.CkV2",
-      "catalogPath": "ck-models/v3/s/Smoke.CkV2/catalog.json"
     },
     {
       "modelName": "System",
