@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "modelId": "Smoke.CkV2",
+  "withdrawn": [
+    {
+      "version": "1.0.0",
+      "withdrawnAt": "2026-10-28T06:59:34.293902Z",
+      "reason": "AB#7260 retired/test model"
+    }
+  ],
+  "updatedAt": "2026-10-28T06:59:34.294Z"
+}
