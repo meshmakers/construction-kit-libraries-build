@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "EnergyCommunity",
+  "majorVersion": 5,
+  "latestVersion": "5.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "5.0.0",
+      "fileName": "ck-energycommunity-5.0.0.json",
+      "filePath": "ck-models/v3/e/EnergyCommunity/5/ck-energycommunity-5.0.0.json",
+      "publishedAt": "2026-10-30T16:19:15.2474609Z"
+    }
+  ],
+  "updatedAt": "2026-10-30T16:19:15.2480349Z"
+}
