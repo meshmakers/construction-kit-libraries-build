@@ -5,7 +5,11 @@
     {
       "majorVersion": 4,
       "catalogPath": "ck-models/v3/e/EnergyCommunity/4/catalog.json"
+    },
+    {
+      "majorVersion": 5,
+      "catalogPath": "ck-models/v3/e/EnergyCommunity/5/catalog.json"
     }
   ],
-  "updatedAt": "2026-10-14T21:01:29.8990419Z"
+  "updatedAt": "2026-10-30T16:19:17.5831028Z"
 }
