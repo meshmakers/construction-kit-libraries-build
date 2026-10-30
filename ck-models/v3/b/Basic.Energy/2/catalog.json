@@ -1,0 +1,16 @@
+{
+  "version": "1.0",
+  "modelId": "Basic.Energy",
+  "majorVersion": 2,
+  "latestVersion": "2.0.0",
+  "description": null,
+  "versions": [
+    {
+      "version": "2.0.0",
+      "fileName": "ck-basic.energy-2.0.0.json",
+      "filePath": "ck-models/v3/b/Basic.Energy/2/ck-basic.energy-2.0.0.json",
+      "publishedAt": "2026-10-30T16:18:25.998967Z"
+    }
+  ],
+  "updatedAt": "2026-10-30T16:18:25.9995297Z"
+}
