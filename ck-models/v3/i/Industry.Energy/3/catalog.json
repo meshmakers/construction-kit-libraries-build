@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Industry.Energy",
   "majorVersion": 3,
-  "latestVersion": "3.6.0",
+  "latestVersion": "3.7.0",
   "description": null,
   "versions": [
     {
@@ -10,7 +10,13 @@
       "fileName": "ck-industry.energy-3.6.0.json",
       "filePath": "ck-models/v3/i/Industry.Energy/3/ck-industry.energy-3.6.0.json",
       "publishedAt": "2026-10-14T21:02:41.6109485Z"
+    },
+    {
+      "version": "3.7.0",
+      "fileName": "ck-industry.energy-3.7.0.json",
+      "filePath": "ck-models/v3/i/Industry.Energy/3/ck-industry.energy-3.7.0.json",
+      "publishedAt": "2026-11-16T16:43:24.7939927Z"
     }
   ],
-  "updatedAt": "2026-10-14T21:02:41.6112729Z"
+  "updatedAt": "2026-11-16T16:43:24.7943594Z"
 }
