@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Industry.Maintenance",
   "majorVersion": 2,
-  "latestVersion": "2.6.0",
+  "latestVersion": "2.7.0",
   "description": null,
   "versions": [
     {
@@ -16,7 +16,13 @@
       "fileName": "ck-industry.maintenance-2.6.0.json",
       "filePath": "ck-models/v3/i/Industry.Maintenance/2/ck-industry.maintenance-2.6.0.json",
       "publishedAt": "2026-11-16T16:44:21.8762882Z"
+    },
+    {
+      "version": "2.7.0",
+      "fileName": "ck-industry.maintenance-2.7.0.json",
+      "filePath": "ck-models/v3/i/Industry.Maintenance/2/ck-industry.maintenance-2.7.0.json",
+      "publishedAt": "2026-11-16T18:20:23.5280061Z"
     }
   ],
-  "updatedAt": "2026-11-16T16:44:21.876716Z"
+  "updatedAt": "2026-11-16T18:20:23.5285534Z"
 }
