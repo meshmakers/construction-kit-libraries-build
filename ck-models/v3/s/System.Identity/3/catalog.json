@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "System.Identity",
   "majorVersion": 3,
-  "latestVersion": "3.8.0",
+  "latestVersion": "3.9.0",
   "description": null,
   "versions": [
     {
@@ -70,7 +70,13 @@
       "fileName": "ck-system.identity-3.8.0.json",
       "filePath": "ck-models/v3/s/System.Identity/3/ck-system.identity-3.8.0.json",
       "publishedAt": "2026-11-20T05:43:25.4645811Z"
+    },
+    {
+      "version": "3.9.0",
+      "fileName": "ck-system.identity-3.9.0.json",
+      "filePath": "ck-models/v3/s/System.Identity/3/ck-system.identity-3.9.0.json",
+      "publishedAt": "2026-11-27T22:40:41.3872328Z"
     }
   ],
-  "updatedAt": "2026-11-20T05:43:25.464979Z"
+  "updatedAt": "2026-11-27T22:40:41.3876163Z"
 }
