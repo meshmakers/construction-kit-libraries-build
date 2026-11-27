@@ -2,7 +2,7 @@
   "version": "1.0",
   "modelId": "Industry.Logistics",
   "majorVersion": 3,
-  "latestVersion": "3.6.0",
+  "latestVersion": "3.7.0",
   "description": null,
   "versions": [
     {
@@ -28,7 +28,13 @@
       "fileName": "ck-industry.logistics-3.6.0.json",
       "filePath": "ck-models/v3/i/Industry.Logistics/3/ck-industry.logistics-3.6.0.json",
       "publishedAt": "2026-11-17T13:07:26.5775748Z"
+    },
+    {
+      "version": "3.7.0",
+      "fileName": "ck-industry.logistics-3.7.0.json",
+      "filePath": "ck-models/v3/i/Industry.Logistics/3/ck-industry.logistics-3.7.0.json",
+      "publishedAt": "2026-11-27T16:51:48.9482356Z"
     }
   ],
-  "updatedAt": "2026-11-17T13:07:26.5782201Z"
+  "updatedAt": "2026-11-27T16:51:48.9486912Z"
 }
